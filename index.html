@@ -2,9 +2,11 @@
   <head>
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/index.css" rel="stylesheet"  type="text/css">
     <link href="css/superslides.css" rel="stylesheet"  type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200,300,500' rel='stylesheet' type='text/css'>
   </head>
+
+  <body style="display: none;" data-project-css="css/index.css" data-project-js="js/index.js">
 
   <body>
     <nav class="navbar navbar-default">
@@ -16,7 +18,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand vt-p" href="#">TeamBaker</a>
+          <a class="navbar-brand vt-p" href="#">
+            <!--<img src="..."/> Brand icon-->
+            TeamBaker
+          </a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -43,42 +48,53 @@
       </div>
     </nav>
 
-    <!--http://www.google.com/fonts/specimen/Raleway-->
+
 
     <div id="slides">
       <ul class="slides-container">
         <li>
           <img src="img/flicker-1.jpg" alt="">
           <div class="container">
-            Slide one
+            <h1 class="caption">Language tutor</h1>
+            <div class="contrast">
+              <p>Learn new languages quickly and free.</p>
+              <a href="#" class="button square large pink">Read more</a>
+            </div>
           </div>
         </li>
         <li>
           <img src="img/flicker-2.jpg" alt="">
           <div class="container">
-            Slide two
+            <h1 class="caption">TeamBaker</h1>
+            <div class="contrast">
+              <p>Find a project of your dream. Or let everyone know about your's.</p>
+              <a href="#" class="button square large pink">Read more</a>
+            </div>
           </div>
         </li>
         <li>
           <img src="img/flicker-3.jpg" alt="">
           <div class="container">
-            Slide three
+            <h1 class="caption">Call of Duty Ember</h1>
+            <div class="contrast">
+              <p>Brand new episode of the real-time first-person shooter.</p>
+              <a href="#" class="button square large pink">Read more</a>
+            </div>
           </div>
         </li>
       </ul>
+      <nav class="slides-navigation">
+        <a href="#" class="next"><i class="fa fa-chevron-right"></i></a>
+        <a href="#" class="prev"><i class="fa fa-chevron-left"></i></a>
+      </nav>
     </div>
-    <nav class="slides-navigation">
-      <a href="#" class="next">Next</a>
-      <a href="#" class="prev">Previous</a>
-    </nav>
+
 
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!--<script src="js/modernizr-custom-v2.7.1.min.js"></script>
-    <script src="js/hammer-v2.0.3.min.js"></script>
-    <script src="js/flickerplate.min.js"></script>
-    <link href="css/flickerplate.css" rel="stylesheet" type="text/css">-->
     <script src="js/jquery.superslides.min.js"></script>
+    <script id="webplate-stack" src="webplate/stack.js"></script>
     <script src="js/index.js"></script>
+    <link href="css/index.css" rel="stylesheet" type="text/css">
   </body>
 </html>

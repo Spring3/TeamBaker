@@ -1,8 +1,41 @@
+html, body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased; }
+
 .navbar-default {
+  text-align: center;
+  background: transparent;
   z-index: 10;
   top: 0;
   left: 0;
   right: 0; }
+
+.dropdown-menu {
+  left: -35%;
+  text-align: center;
+  border-width: 0px;
+  background: transparent;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important; }
+  .dropdown-menu li {
+    background: transparent; }
+    .dropdown-menu li a {
+      color: white;
+      font-family: "Raleway", sans-serif;
+      font-weight: 300; }
+  .dropdown-menu li:hover {
+    background: transparent; }
+    .dropdown-menu li:hover a {
+      color: #FFEABF;
+      background: transparent; }
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: transparent; }
 
 .navbar {
   position: absolute;
@@ -12,8 +45,82 @@
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  width: 90%; }
+  width: 85%; }
 
 /*Slides*/
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 60%;
+  max-width: 500px;
+  top: 30%;
+  padding: 10px;
+  color: white; }
+
+.caption {
+  color: white;
+  text-align: center;
+  text-shadow: 0px 1px 1px #010101;
+  font-size: 70px;
+  font-weight: 200; }
+
+.slides-container li img {
+  background-attachment: fixed; }
+
+.slides-navigation a {
+  border-color: 3px solid #fff;
+  text-shadow: 0px 1px 1px #000;
+  border-radius: 30px;
+  display: block;
+  text-decoration: none;
+  border: 3px solid #fff;
+  color: white;
+  font-weight: bold;
+  font-size: 26px;
+  margin: 0 25px;
+  text-shadow: 0 1px 1px #000;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  top: -40px;
+  padding: 1px;
+  opacity: 0.5; }
+
+.slides-navigation a:hover {
+  background-color: #eb5367;
+  opacity: 0.8; }
+
+.fa-chevron-right {
+  margin-right: -3px;
+  margin-top: 3px; }
+
+.fa-chevron-left {
+  margin-top: 3px;
+  margin-right: 3px; }
+
+.slides-pagination a {
+  border-color: white;
+  width: 15px;
+  height: 15px;
+  opacity: 0.8; }
+
+.slides-pagination a.current {
+  background: white; }
+
+.contrast {
+  text-align: center; }
+  .contrast a {
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.95; }
+  .contrast p {
+    text-shadow: 0px 1px 1px #000;
+    color: white;
+    font-size: 20px;
+    font-weight: 500; }
+
+@media screen and (max-width: 767px) {
+  h1.caption {
+    font-size: 50px; } }
 
 /*# sourceMappingURL=index.css.map */
