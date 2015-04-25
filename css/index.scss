@@ -6,6 +6,7 @@ html, body{
   font-weight: 300;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
+  color: #666;
 }
 
 .navbar-default{
@@ -154,4 +155,437 @@ html, body{
   h1.caption {
     font-size: 50px;
   }
+}
+
+
+//Auth view
+@import url(http://fonts.googleapis.com/css?family=Gudea:400,700);
+
+body{
+  ::-webkit-input-placeholder {
+    color: #4E546D
+  }
+  .authent{
+    position: absolute;
+    left: 0;
+    right: 90px;
+    margin: auto;
+    width: 100px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 20px 70px;
+    top: 200px;
+    bottom: 0;
+    height: 70px;
+    opacity: 0;
+    p{
+      text-align:center;
+      color:white;
+    }
+  }
+  .success{
+    display:none;
+    color: rgb(213, 216, 226);
+    p{
+      font-size:14px;
+    }
+  }
+  p{
+    color: #5B5E6F;
+    font-size:10px;
+    text-align:left;
+  }
+  .testtwo{
+    left:-320px !important;
+  }
+  .test{
+    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+    pointer-events:none;
+    top:-100px !important;
+    transform:rotateX(70deg) scale(.8) !important;
+    opacity: .6 !important;
+    filter: blur(1px);
+  }
+  .login{
+    opacity:1;
+    top:20px;
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.25, 0.265, .85);
+    transition-property:transform,opacity,box-shadow,top,left;
+    transition-duration:.5s;
+    transform-origin:161px 100%;
+    transform:rotateX(0deg);
+    position:relative;
+    .validation{
+      position:absolute;
+      z-index:1;
+      right:10px;
+      top:6px;
+      opacity:0;
+    }
+    .disclaimer{
+      position: absolute;
+      bottom: 20px;
+      left: 35px;
+      width: 250px;
+    }
+    width:240px;
+    border-top: 2px solid #D8312A;
+    height:300px;
+    position:absolute;
+    left:0;
+    right:0;
+    margin:auto;
+    top:0;
+    bottom:0;
+    padding:100px 40px 40px 40px;
+    background: #35394a; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #35394a 0%, #1f222e 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#35394a), color-stop(100%,#1f222e)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg,  #35394a 0%,#1f222e 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg,  #35394a 0%,#1f222e 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg,  #35394a 0%,#1f222e 100%); /* IE10+ */
+    background: linear-gradient(45deg,  #35394a 0%,#1f222e 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35394a', endColorstr='#1f222e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    &_title{
+      color:rgb(175, 177, 190);
+      height:60px;
+      text-align:left;
+      font-size:16px;
+    }
+    &_fields{
+      height: 208px;
+      position: absolute;
+      left: 0;
+      .icon{
+        position: absolute;
+        z-index: 1;
+        left: 36px;
+        top: 8px;
+        opacity:.5;
+      }
+      input[type='password']{
+        color:#DC6180 !important;
+      }
+      input[type='text'],input[type='password']{
+        color: #afb1be;
+        width: 190px;
+        margin-top:-2px;
+        background: rgb(50, 54, 74);
+        left: 0;
+        padding: 10px 65px;
+        border-top: 2px solid rgb(57, 61, 82);
+        border-bottom: 2px solid rgb(57, 61, 82);
+        border-right: none;
+        border-left: none;
+        outline: none;
+        font-family: 'Gudea', sans-serif;
+        box-shadow: none;
+      }
+      &__user,&__password{
+        position:relative;
+      }
+      &__submit{
+        position: relative;
+        top: 35px;
+        left: 0;
+        width: 80%;
+        right: 0;
+        margin: auto;
+        .forgot{
+          float: right;
+          font-size: 10px;
+          margin-top: 11px;
+          a{
+            color: rgb(96, 100, 121);
+          }
+          text-decoration: underline;
+        }
+        input{
+          &:focus{
+            box-shadow:none;
+            outline:none;
+          }
+          border-radius:50px;
+          background:transparent;
+          padding:10px 50px;
+          border:2px solid #DC6180 ;
+          color: #DC6180 ;
+          text-transform:uppercase;
+          font-size:11px;
+          transition-property:background,color;
+          transition-duration:.2s;
+          &:hover{
+            color:white;
+            background:#DC6180 ;
+            cursor:pointer;
+            transition-property:background,color;
+            transition-duration:.2s;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Color Schemes */
+
+.love{
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  font-size: 11px;
+  font-weight: normal;
+  p{
+    color:white;
+    font-weight:normal;
+    font-family: 'Open Sans', sans-serif;
+  }
+  a{
+    color:white;
+    font-weight:700;
+    text-decoration:none;
+  }
+  img{
+    position:relative;
+    top:3px;
+    margin:0px 4px;
+    width:10px;
+  }
+}
+
+//popup
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+/* Modal box or Popup box */
+.popupContainer{
+ position:absolute;
+ width:330px;
+ height: auto;
+ left:45%;
+ top:80px;
+ background: #FFF;
+}
+
+#modal_trigger  {
+    margin: 100px auto;
+     width: 100px;
+     display: block;
+}
+
+.btn  {
+    padding: 10px 20px;
+     background:  #F4F4F2;
+}
+
+.btn_red  {
+    background:  #ED6347;
+     color:  #FFF;
+}
+
+.btn:hover  {
+    background:  #E4E4E2;
+}
+
+.btn_red:hover  {
+    background:  #C12B05;
+}
+
+a.btn  {
+    color: #666;
+     text-align:  center;
+     text-decoration:  none;
+}
+
+a.btn_red  {
+    color:  #FFF;
+}
+
+.one_half  {
+    width: 50%;
+     display:  block;
+     float: left;
+}
+
+.one_half.last  {
+    width: 45%;
+     margin-left: 5%;
+}
+/* Popup Styles*/
+.popupHeader  {
+    font-size: 16px;
+     text-transform:  uppercase;
+}
+
+.popupHeader  {
+    background: #F4F4F2;
+     position: relative;
+     padding: 10px 20px;
+     border-bottom: 1px solid #DDD;
+     font-weight: bold;
+}
+
+.popupHeader .modal_close  {
+    position:  absolute;
+     right:  0;
+     top: 0;
+     padding: 10px 15px;
+     background: #E4E4E2;
+     cursor:  pointer;
+     color: #aaa;
+     font-size: 16px;
+}
+
+.popupBody  {
+    padding: 20px;
+}
+
+/* Social Login Form */
+
+.social_login .social_box  {
+    display: block;
+     clear: both;
+     padding: 10px;
+     margin-bottom:  10px;
+     background:  #F4F4F2;
+     overflow:  hidden;
+}
+
+.social_login .icon  {
+    display: block;
+     width: 10px;
+     padding: 5px 10px;
+     margin-right:  10px;
+     float: left;
+     color: #FFF;
+     font-size: 16px;
+     text-align:  center;
+}
+
+.social_login .fb .icon  {
+    background: #3B5998;
+}
+
+.social_login .google .icon  {
+    background: #DD4B39;
+}
+
+.social_login .icon_title  {
+    display: block;
+     padding: 5px 0;
+     float: left;
+     font-weight:  bold;
+     font-size:  16px;
+     color: #777;
+}
+
+.social_login .social_box:hover  {
+    background:  #E4E4E2;
+}
+
+
+.centeredText  {
+    text-align:  center;
+     margin:  20px 0;
+     clear:  both;
+     overflow:  hidden;
+     text-transform:  uppercase;
+}
+
+
+.action_btns  {
+    clear: both;
+     overflow:  hidden;
+}
+
+.action_btns a  {
+    display:  block;
+}
+
+/* User Login Form */
+.user_login  {
+    display:  none;
+}
+
+.user_login label  {
+    display:  block;
+     margin-bottom: 5px;
+}
+
+.user_login input[type="text"],  .user_login input[type="email"],  .user_login input[type="password"]  {
+    display:  block;
+     width: 90%;
+     padding:  10px;
+     border: 1px solid #DDD;
+     color: #666;
+}
+
+.user_login input[type="checkbox"]  {
+    float: left;
+     margin-right: 5px;
+}
+
+.user_login input[type="checkbox"]+label  {
+    float: left;
+}
+
+
+.user_login .checkbox  {
+    margin-bottom:  10px;
+     clear:  both;
+     overflow:  hidden;
+}
+
+.forgot_password  {
+    display: block;
+     margin:  20px 0 10px;
+     clear:  both;
+     overflow:  hidden;
+     text-decoration:  none;
+     color: #ED6347;
+}
+
+/* User Register Form */
+.user_register  {
+    display:  none;
+}
+
+.user_register label  {
+    display:  block;
+     margin-bottom: 5px;
+}
+
+.user_register input[type="text"],  .user_register input[type="email"],  .user_register input[type="password"]  {
+    display:  block;
+     width: 90%;
+     padding:  10px;
+     border: 1px solid #DDD;
+     color: #666;
+}
+
+.user_register input[type="checkbox"]  {
+    float: left;
+     margin-right: 5px;
+}
+
+.user_register input[type="checkbox"]+label  {
+    float: left;
+}
+
+
+.user_register .checkbox  {
+    margin-bottom:  10px;
+     clear:  both;
+     overflow:  hidden;
 }
