@@ -54,55 +54,59 @@
       </div>
     </nav>
 
-    <div id="slides">
-      <ul class="slides-container">
-        <li>
-          <img src="img/flicker-1.jpg" alt="">
-          <div class="container">
-            <h1 class="caption">Language tutor</h1>
-            <div class="contrast">
-              <p>Learn new languages quickly and free.</p>
-              <a href="#" class="button square large pink">Read more</a>
+    <!-- Carousel -->
+    <div class="carousel">
+      <div id="slides">
+        <ul class="slides-container">
+          <li>
+            <img src="img/flicker-1.jpg" alt="">
+            <div class="container">
+              <h1 class="caption">Language tutor</h1>
+              <div class="contrast">
+                <p>Learn new languages quickly and free.</p>
+                <a href="#" class="button square large pink">Read more</a>
+              </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <img src="img/flicker-2.jpg" alt="">
-          <div class="container">
-            <h1 class="caption">TeamBaker</h1>
-            <div class="contrast">
-              <p>Find a project of your dream. Or let everyone know about your's.</p>
-              <a href="#" class="button square large pink">Read more</a>
+          </li>
+          <li>
+            <img src="img/flicker-2.jpg" alt="">
+            <div class="container">
+              <h1 class="caption">TeamBaker</h1>
+              <div class="contrast">
+                <p>Find a project of your dream. Or let everyone know about your's.</p>
+                <a href="#" class="button square large pink">Read more</a>
+              </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <img src="img/flicker-3.jpg" alt="">
-          <div class="container">
-            <h1 class="caption">Call of Duty Ember</h1>
-            <div class="contrast">
-              <p>Brand new episode of the real-time first-person shooter.</p>
-              <a href="#" class="button square large pink">Read more</a>
+          </li>
+          <li>
+            <img src="img/flicker-3.jpg" alt="">
+            <div class="container">
+              <h1 class="caption">Call of Duty Ember</h1>
+              <div class="contrast">
+                <p>Brand new episode of the real-time first-person shooter.</p>
+                <a href="#" class="button square large pink">Read more</a>
+              </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <img src="img/flicker-4.jpg" alt="">
-          <div class="container">
-            <h1 class="caption">PlayTune</h1>
-            <div class="contrast">
-              <p>Listen to music that fits your current mood.</p>
-              <a href="#" class="button square large pink">Read more</a>
+          </li>
+          <li>
+            <img src="img/flicker-4.jpg" alt="">
+            <div class="container">
+              <h1 class="caption">PlayTune</h1>
+              <div class="contrast">
+                <p>Listen to music that fits your current mood.</p>
+                <a href="#" class="button square large pink">Read more</a>
+              </div>
             </div>
-          </div>
-        </li>
-      </ul>
-      <nav class="slides-navigation">
-        <a href="#" class="next"><i class="fa fa-chevron-right"></i></a>
-        <a href="#" class="prev"><i class="fa fa-chevron-left"></i></a>
-      </nav>
+          </li>
+        </ul>
+        <nav class="slides-navigation">
+          <a href="#" class="next"><i class="fa fa-chevron-right"></i></a>
+          <a href="#" class="prev"><i class="fa fa-chevron-left"></i></a>
+        </nav>
+      </div>
     </div>
 
+    <!-- Auth -->
     <div id="signin" class="popupContainer" style="display:none;">
      <header class="popupHeader">
        <span class="header_title">Login</span>
@@ -164,30 +168,90 @@
 
           <a class="forgot_password" style="text-decoration:none;" href="#">Forgot password?</a>
       </div>
-      <div class="user_register">
-        <form>
-            <label>Username</label> <input type="text"><br>
-            <label>Email Address</label> <input type="email"><br>
-            <label>Password</label> <input type="password"><br>
-            <input type="password"><br>
+        <div class="user_register">
+          <form>
+              <label>Username</label> <input type="text"><br>
+              <label>Email Address</label> <input type="email"><br>
+              <label>Password</label> <input type="password"><br>
+              <input type="password"><br>
 
-            <div class="formplate checkbox">
-                <input type="checkbox" name="checkbox" value="checkbox" id="check_send_updates">
-                <p>Send me occasional email updates</p>
+              <div class="formplate checkbox">
+                  <input type="checkbox" name="checkbox" value="checkbox" id="check_send_updates">
+                  <p>Send me updates news</p>
+              </div>
+
+              <div class="action_btns">
+                  <div class="one_half">
+                      <a href="#" style="text-decoration:none;" class="back_btn button square black">Back</a>
+                  </div>
+
+                  <div class="one_half last">
+                      <a href="#" style="text-decoration:none;" class="button square pink">Sign up</a>
+                  </div>
+              </div>
+          </form>
+      </div>
+    </section>
+  </div> <!-- Auth end -->
+
+  <!-- Main content -->
+  <div class="row main-content">
+    <div class="panels col-xs-7 col-sm-8 col-md-8 col-lg-9">
+        <div class="panel panel-primary col-md-5 col-lg-5">
+          <div class="panel-heading">
+            <h3 class="panel-title">Language Tutor</h3>
+          </div>
+          <div class="panel-body">
+            Panel content
+          </div>
+        </div>
+        <div class="panel panel-primary col-md-5 col-lg-5">
+          <div class="panel-heading">
+            <h3 class="panel-title">TeamBaker</h3>
+          </div>
+          <div class="panel-body">
+            Panel content
+          </div>
+        </div>
+          <div class="panel panel-primary col-md-5 col-lg-5">
+            <div class="panel-heading">
+              <h3 class="panel-title">Call of Duty 'Ember'</h3>
             </div>
-
-            <div class="action_btns">
-                <div class="one_half">
-                    <a href="#" style="text-decoration:none;" class="back_btn button square black">Back</a>
-                </div>
-
-                <div class="one_half last">
-                    <a href="#" style="text-decoration:none;" class="button square pink">Sign up</a>
-                </div>
+            <div class="panel-body">
+              Panel content
             </div>
-        </form>
+          </div>
+          <div class="panel panel-primary col-md-5 col-lg-5">
+            <div class="panel-heading">
+              <h3 class="panel-title">PlayTune</h3>
+            </div>
+            <div class="panel-body">
+              Panel content
+            </div>
+          </div>
     </div>
-      </section>
+    <div class="menu-right col-xs-5 col-sm-4 col-md-4 col-lg-3">
+      <div class="list-group">
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <input type="text" class="form-control GINGER_SOFTWARE_control" spellcheck="false" ginger_software_editor="true" style="font-size: 15px; white-space: pre-wrap; line-height: 11px; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO0AAAAVCAYAAACqjGn7AAAAmElEQVR4Xu3TAQ0AAAgCQelf2hy/nQnYCTtHgEBKYKm0whIgcEarBARiAkYbe5i4BIxWBwjEBIw29jBxCRitDhCICRht7GHiEjBaHSAQEzDa2MPEJWC0OkAgJmC0sYeJS8BodYBATMBoYw8Tl4DR6gCBmIDRxh4mLgGj1QECMQGjjT1MXAJGqwMEYgJGG3uYuASMVgcIxAQeplkAFgyMt0UAAAAASUVORK5CYII=) !important; background-attachment: local !important; background-position: 15px 21px !important; background-repeat: no-repeat !important;">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Search</button>
+            </span>
+          </div>
+        </div>
+        <a href="#" class="list-group-item active vt-p">
+          Categories
+        </a>
+        <a href="#" class="list-group-item vt-p">IT
+          <span class="badge">14</span>
+        </a>
+        <a href="#" class="list-group-item vt-p">Music
+          <span class="badge">12</span>
+        </a>
+      </div>
     </div>
+  </div>
   </body>
 </html>

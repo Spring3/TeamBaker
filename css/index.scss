@@ -9,6 +9,14 @@ html, body{
   color: #666;
 }
 
+.carousel {
+  max-height: 700px;
+}
+
+.panel{
+  padding-right:0;
+}
+
 .navbar-default{
   text-align:center;
   background: transparent;
@@ -85,7 +93,7 @@ html, body{
 .slides-container{
   li{
     img{
-      background-attachment:fixed;
+      position:fixed;
     }
   }
 }
@@ -399,4 +407,32 @@ html, body{
   p{
     display:inline;
   }
+}
+
+//Main content
+.main-content{
+  height: 700px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.panels{
+  padding-left:0;
+  padding-right:0;
+}
+
+.menu-right{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.panel{
+  padding: 0;
+  margin:10px;
+}
+
+.list-group{
+  margin: 10px 0px 10px 0px;
+  padding-left:0px;
+  padding-right:0px;
 }

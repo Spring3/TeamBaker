@@ -1,11 +1,13 @@
 $(document).ready(function()
 {
   $("#auth").leanModal({top : 100, overlay : 0.6, closeButton: ".modal_close" });
+  $('.carousel').css('height', $(window).height());
 
   $('#slides').superslides({
     play: 6000,
     animation_easing: 'linear',
-    animation: 'fade'
+    animation: 'fade',
+    inherit_height_from: $('.carousel')
     });
 
     //Auth
@@ -31,4 +33,8 @@ $(document).ready(function()
         $(".header_title").text('Login');
         return false;
     });
+});
+
+$(window).resize(function(){
+  //$('.carousel').css('height', $(window).height());
 });
