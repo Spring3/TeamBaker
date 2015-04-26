@@ -345,19 +345,52 @@ a, input,
   padding: 0;
   margin: 10px;
   margin-right: 0;
+  margin-bottom: 20px;
   border-radius: 0; }
   .panel .panel-heading {
     border-radius: 0;
     text-align: center; }
+  .panel .panel-body {
+    padding: 0; }
+    .panel .panel-body .image-container {
+      margin-bottom: 10px; }
+      .panel .panel-body .image-container a {
+        display: block;
+        text-align: center; }
+        .panel .panel-body .image-container a img {
+          max-width: 100%;
+          max-height: 170px; }
+    .panel .panel-body .info-container {
+      margin: 10px; }
+      .panel .panel-body .info-container .project_hashtags {
+        list-style-type: none;
+        margin-bottom: 20px;
+        text-align: center; }
+        .panel .panel-body .info-container .project_hashtags .hashtag {
+          display: inline; }
+      .panel .panel-body .info-container .progress {
+        border-radius: 0; }
+      .panel .panel-body .info-container .project-params {
+        text-align: center;
+        list-style-type: none;
+        margin-bottom: 10px; }
+        .panel .panel-body .info-container .project-params .param {
+          display: inline-block;
+          margin: 0 5px; }
 
 .list-group {
   margin: 10px 0px 10px 10px;
   padding-left: 0px;
   padding-right: 0px; }
-  .list-group .input-group-addon {
-    border-radius: 0; }
   .list-group p {
     text-align: center; }
+  .list-group .form-group .input-group .search {
+    display: inline; }
+    .list-group .form-group .input-group .search .input-group-btn div {
+      position: relative;
+      display: inline-block; }
+      .list-group .form-group .input-group .search .input-group-btn div a {
+        display: inline-block; }
 
 .search {
   margin: 1px 0; }

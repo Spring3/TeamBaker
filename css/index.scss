@@ -436,10 +436,51 @@ a, input,
   padding: 0;
   margin:10px;
   margin-right:0;
+  margin-bottom: 20px;
   border-radius: 0;
   .panel-heading{
     border-radius: 0;
     text-align: center;
+  }
+  .panel-body{
+    padding: 0;
+
+    .image-container{
+      margin-bottom:10px;
+      a{
+        display:block;
+        text-align:center;
+        img{
+          max-width: 100%;
+          max-height: 170px;
+        }
+      }
+    }
+    .info-container{
+      margin: 10px;
+      .project_hashtags{
+        list-style-type: none;
+        margin-bottom:20px;
+        text-align:center;
+
+        .hashtag{
+          display: inline;
+        }
+      }
+      .progress{
+        border-radius: 0;
+      }
+
+      .project-params{
+        text-align:center;
+        list-style-type: none;
+        margin-bottom:10px;
+        .param{
+          display: inline-block;
+          margin: 0 5px;
+        }
+      }
+    }
   }
 }
 
@@ -447,11 +488,26 @@ a, input,
   margin: 10px 0px 10px 10px;
   padding-left:0px;
   padding-right:0px;
-  .input-group-addon{
-    border-radius: 0;
-  }
   p{
     text-align: center;
+  }
+  .form-group{
+    .input-group{
+      .search{
+        display:inline;
+        .input-group-btn{
+          div{
+            position:relative;
+            display:inline-block;
+            a{
+              display:inline-block;
+            }
+          }
+        }
+      }
+
+    }
+
   }
 }
 
