@@ -9,8 +9,10 @@ html, body{
   color: #666;
 }
 
+a, input,
+
 .carousel {
-  max-height: 700px;
+  max-height: 800px;
 }
 
 .panel{
@@ -134,10 +136,12 @@ html, body{
 }
 
 .slides-pagination a{
+  position: relative;
   border-color:white;
   width:15px;
   height:15px;
   opacity: 0.8;
+  bottom: 50px;
 }
 
 .slides-pagination a.current{
@@ -411,9 +415,9 @@ html, body{
 
 //Main content
 .main-content{
-  height: 700px;
+  height: 300px;
   width: 85%;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 .panels{
@@ -427,12 +431,39 @@ html, body{
 }
 
 .panel{
+  max-width: 320px;
+  margin: 0 auto;
   padding: 0;
   margin:10px;
+  margin-right:0;
+  border-radius: 0;
+  .panel-heading{
+    border-radius: 0;
+    text-align: center;
+  }
 }
 
 .list-group{
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0px 10px 10px;
   padding-left:0px;
   padding-right:0px;
+  .input-group-addon{
+    border-radius: 0;
+  }
+  p{
+    text-align: center;
+  }
+}
+
+.search{
+  margin: 1px 0;
+}
+
+.list-group-item{
+  border: 0px;
+  font-weight:300;
+  text-align:center;
+  .badge{
+    border-radius: 0;
+  }
 }
