@@ -269,6 +269,7 @@ html, body{
       width: 35px;
       padding: 10px;
       margin-right:  10px;
+      margin-top: 3px;
       float: left;
       color: #FFF;
       font-size: 16px;
@@ -328,6 +329,7 @@ html, body{
      padding:  10px;
      border: 1px solid #DDD;
      color: #666;
+     margin:0;
 }
 
 .user_login input[type="checkbox"]  {
@@ -369,6 +371,7 @@ html, body{
     display:  block;
      width: 90%;
      padding:  10px;
+     margin:0;
      border: 1px solid #DDD;
      color: #666;
 }
@@ -383,8 +386,17 @@ html, body{
 }
 
 
-.user_register .checkbox  {
+.user_register {
+  .checkbox  {
     margin-bottom:  10px;
-     clear:  both;
-     overflow:  hidden;
+    clear:  both;
+    overflow:  hidden;
+
+  }
+}
+
+.checkbox{
+  p{
+    display:inline;
+  }
 }
