@@ -9,6 +9,7 @@ html, body{
   color: #666;
 }
 
+
 a, input,
 
 .carousel {
@@ -415,9 +416,9 @@ a, input,
 
 //Main content
 .main-content{
-  height: 300px;
   width: 85%;
   margin: 50px auto;
+  display: inline-block;
 }
 
 .panels{
@@ -491,29 +492,8 @@ a, input,
   p{
     text-align: center;
   }
-  .form-group{
-    .input-group{
-      .search{
-        display:inline;
-        .input-group-btn{
-          div{
-            position:relative;
-            display:inline-block;
-            a{
-              display:inline-block;
-            }
-          }
-        }
-      }
-
-    }
-
-  }
 }
 
-.search{
-  margin: 1px 0;
-}
 
 .list-group-item{
   border: 0px;
@@ -522,4 +502,67 @@ a, input,
   .badge{
     border-radius: 0;
   }
+}
+
+// Footer
+.footer{
+  margin: 0;
+}
+
+.footer-container {
+    background: #272731;
+    width: 100%;
+    max-width: 100%;
+    .row{
+      div{
+        height: 100px;
+      }
+      .copyrights{
+        display: inline-block;
+        width: 100%;
+        height: 0px;
+      }
+    }
+}
+
+.copyright{
+  text-align:center;
+  margin: 10px auto;
+}
+
+.social_list{
+  vertical-align:middle;
+}
+
+.social_btn{
+  display: inline;
+  float:left;
+  color: white;
+  margin-right:5px;
+}
+
+.social-header{
+  line-height:3;
+  margin-right:5px;
+}
+
+.icon  {
+  display: block;
+  width: 35px;
+  padding: 10px;
+  margin-right:  10px;
+  margin-top: 3px;
+  float: left;
+  color: #FFF;
+  font-size: 16px;
+  text-align:  center;
+}
+.icon.fb  {
+  background: #3B5998;
+}
+.icon.google  {
+    background: #DD4B39;
+}
+.icon.linkedIn  {
+    background: #3E5065;
 }
