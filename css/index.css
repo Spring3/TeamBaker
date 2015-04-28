@@ -340,7 +340,8 @@ a, input,
 .menu-left {
   padding-left: 0;
   padding-right: 0;
-  width: 50%; }
+  width: 50%;
+  display: inline-block; }
 
 .panel {
   min-width: 220px;
@@ -398,7 +399,8 @@ a, input,
 .list-group-item {
   border: 0px;
   font-weight: 300;
-  text-align: center; }
+  text-align: center;
+  display: inline; }
   .list-group-item .badge {
     border-radius: 0; }
 
