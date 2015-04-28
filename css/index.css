@@ -328,7 +328,8 @@ a, input,
 
 .main-content {
   width: 85%;
-  margin: 50px auto; }
+  margin: 50px auto;
+  text-align: center; }
 
 .panels {
   padding-left: 0;
@@ -346,6 +347,9 @@ a, input,
   max-width: 335px;
   margin: 0 auto;
   padding: 0;
+  float: none;
+  display: inline-block;
+  text-align: left;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 10px;
