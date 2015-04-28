@@ -2,13 +2,12 @@ $font-family-main: 'Raleway', sans-serif;
 $hover-color: #FFEABF;
 
 html, body{
-  font-family: $font-family-main;
-  font-weight: 300;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  color: #666;
+  font-family: $font-family-main !important;
+  font-weight: 300 !important;
+  text-decoration: none !important;
+  -webkit-font-smoothing: antialiased !important;
+  color: #666 !important;
 }
-
 
 a, input,
 
@@ -72,6 +71,7 @@ a, input,
   margin-right: auto;
   margin-left: auto;
   width: 85%;
+  max-height: 955px;
 }
 
 /*Slides*/
@@ -429,7 +429,7 @@ a, input,
   margin: 0 auto;
 }
 
-.menu-left{
+.menu-top{
   padding-left: 0;
   padding-right: 0;
   width:50%;
@@ -451,6 +451,11 @@ a, input,
   .panel-heading{
     border-radius: 0;
     text-align: center;
+    .panel-title{
+      a{
+        text-decoration: none !important;
+      }
+    }
   }
   .panel-body{
     padding: 0;
@@ -501,8 +506,8 @@ a, input,
   margin: 10px 0px 10px 10px;
   padding-left:0px;
   padding-right:0px;
-  p{
-    text-align: center;
+  .categories{
+    display: inline-block;
   }
 }
 
@@ -511,7 +516,7 @@ a, input,
   border: 0px;
   font-weight:300;
   text-align:center;
-  display: inline;
+  display: inline-block;
   .badge{
     border-radius: 0;
   }
@@ -524,9 +529,9 @@ footer{
 }
 
 .footer-container {
-    display: inline-block;
     width: 100%;
-    max-width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
     max-height: 300px;
 }
 
@@ -546,6 +551,9 @@ footer{
 
 .social_list{
   vertical-align:middle;
+  a{
+    text-decoration: none !important;
+  }
 }
 
 .social_btn{
@@ -554,12 +562,18 @@ footer{
   margin-right:5px;
 }
 
+p, li{
+  text-decoration: none;
+}
+
 .social-header{
+  color: white;
   text-align:left;
   line-height:3;
   display: block;
   width: 100%;
 }
+
 
 .icon  {
   display: block;

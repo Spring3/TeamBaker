@@ -1,9 +1,9 @@
 html, body {
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  color: #666; }
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 300 !important;
+  text-decoration: none !important;
+  -webkit-font-smoothing: antialiased !important;
+  color: #666 !important; }
 
 a, input,
 .carousel {
@@ -53,7 +53,8 @@ a, input,
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  width: 85%; }
+  width: 85%;
+  max-height: 955px; }
 
 /*Slides*/
 .container {
@@ -337,7 +338,7 @@ a, input,
   float: none;
   margin: 0 auto; }
 
-.menu-left {
+.menu-top {
   padding-left: 0;
   padding-right: 0;
   width: 50%;
@@ -358,6 +359,8 @@ a, input,
   .panel .panel-heading {
     border-radius: 0;
     text-align: center; }
+    .panel .panel-heading .panel-title a {
+      text-decoration: none !important; }
   .panel .panel-body {
     padding: 0;
     width: 100%; }
@@ -393,14 +396,14 @@ a, input,
   margin: 10px 0px 10px 10px;
   padding-left: 0px;
   padding-right: 0px; }
-  .list-group p {
-    text-align: center; }
+  .list-group .categories {
+    display: inline-block; }
 
 .list-group-item {
   border: 0px;
   font-weight: 300;
   text-align: center;
-  display: inline; }
+  display: inline-block; }
   .list-group-item .badge {
     border-radius: 0; }
 
@@ -409,9 +412,9 @@ footer {
   background: #272731; }
 
 .footer-container {
-  display: inline-block;
   width: 100%;
-  max-width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
   max-height: 300px; }
 
 .copyrights {
@@ -427,13 +430,19 @@ footer {
 
 .social_list {
   vertical-align: middle; }
+  .social_list a {
+    text-decoration: none !important; }
 
 .social_btn {
   display: inline;
   color: white;
   margin-right: 5px; }
 
+p, li {
+  text-decoration: none; }
+
 .social-header {
+  color: white;
   text-align: left;
   line-height: 3;
   display: block;
