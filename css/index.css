@@ -1,11 +1,20 @@
 html, body {
   font-family: "Raleway", sans-serif !important;
+  font-size: 16px;
   font-weight: 300 !important;
   text-decoration: none !important;
   -webkit-font-smoothing: antialiased !important;
-  color: #666 !important; }
+  background-color: #F2F1ED; }
 
-a, input,
+p, li {
+  color: #AFA8A2 !important; }
+
+p:hover, li:hover {
+  color: #333333 !important; }
+
+a {
+  text-decoration: none !important; }
+
 .carousel {
   max-height: 800px; }
 
@@ -37,7 +46,7 @@ a, input,
   .dropdown-menu li:hover {
     background: transparent; }
     .dropdown-menu li:hover a {
-      color: #FFEABF;
+      color: #D66360;
       background: transparent; }
 
 .navbar-default .navbar-nav > .open > a,
@@ -108,11 +117,13 @@ a, input,
   margin-right: 3px; }
 
 .slides-pagination a {
-  position: relative;
   border-color: white;
   width: 15px;
   height: 15px;
-  opacity: 0.8;
+  opacity: 0.8; }
+
+.slides-pagination {
+  position: relative;
   bottom: 50px; }
 
 .slides-pagination a.current {
@@ -124,15 +135,14 @@ a, input,
     display: inline-block;
     text-decoration: none;
     opacity: 0.95; }
-  .contrast p {
+  .contrast h4 {
     text-shadow: 0px 1px 1px #000;
     color: white;
-    font-size: 20px;
     font-weight: 500; }
 
 @media screen and (max-width: 767px) {
   h1.caption {
-    font-size: 50px; } }
+    font-size: 60px; } }
 /* Color Schemes */
 .love {
   position: absolute;
@@ -391,6 +401,10 @@ a, input,
         .panel .panel-body .info-container .project-params .param {
           display: inline-block;
           margin: 0 5px; }
+        .panel .panel-body .info-container .project-params .param:hover {
+          color: #D66360 !important; }
+        .panel .panel-body .info-container .project-params a {
+          text-decoration: none; }
 
 .list-group {
   margin: 10px 0px 10px 10px;
@@ -401,11 +415,31 @@ a, input,
 
 .list-group-item {
   border: 0px;
-  font-weight: 300;
+  margin: 3px auto;
+  font-weight: 500;
+  border-radius: 0 !important;
   text-align: center;
   display: inline-block; }
   .list-group-item .badge {
     border-radius: 0; }
+
+.btn-load {
+  margin: 40px auto; }
+  .btn-load a {
+    text-decoration: none; }
+
+.input-group-btn a {
+  text-decoration: none; }
+
+.xs-input {
+  height: 30px; }
+
+.footer-content {
+  display: inline-block; }
+
+input.xs-input {
+  border-radius: 0px !important;
+  -webkit-appearance: none !important; }
 
 footer {
   margin: 0;
@@ -427,6 +461,8 @@ footer {
 .list-inline {
   text-align: left;
   margin-left: 10px; }
+  .list-inline li {
+    font-weight: 300; }
 
 .social_list {
   vertical-align: middle; }
@@ -446,7 +482,9 @@ p, li {
   text-align: left;
   line-height: 3;
   display: block;
-  width: 100%; }
+  width: 100%;
+  font-weight: 500;
+  font-size: 20px; }
 
 .icon {
   display: block;
@@ -472,10 +510,14 @@ p, li {
   margin: 0; }
 
 .subscription-header {
-  margin-top: 10px;
-  font-size: 15px;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 500;
   color: white;
   text-align: right; }
+
+.subscription-header:hover, .social-header:hover, .copyright:hover {
+  color: #D66360 !important; }
 
 .subscription {
   margin-top: 20px; }

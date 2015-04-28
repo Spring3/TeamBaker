@@ -5,8 +5,9 @@ $(document).ready(function()
 
   $('#slides').superslides({
     play: 6000,
-    animation_easing: 'linear',
     animation: 'fade',
+    animation_speed: 'normal',
+    animation_easing: 'linear',
     inherit_height_from: $('.carousel')
     });
 
