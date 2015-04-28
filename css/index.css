@@ -419,7 +419,7 @@ footer {
   margin: 40px auto 0px auto; }
 
 .copyright {
-  margin: 0; }
+  margin-top: 20px; }
 
 .list-inline {
   text-align: left;
@@ -458,5 +458,17 @@ footer {
 
 .icon.linkedIn {
   background: #3E5065; }
+
+.footer-row {
+  margin: 0; }
+
+.subscription-header {
+  margin-top: 10px;
+  font-size: 15px;
+  color: white;
+  text-align: right; }
+
+.subscription {
+  margin-top: 20px; }
 
 /*# sourceMappingURL=index.css.map */
