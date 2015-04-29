@@ -4,7 +4,8 @@ html, body {
   font-weight: 300 !important;
   text-decoration: none !important;
   -webkit-font-smoothing: antialiased !important;
-  background-color: #F2F1ED; }
+  background-color: #F2F1ED;
+  z-index: 2; }
 
 p, li {
   color: #AFA8A2 !important; }
@@ -13,10 +14,12 @@ p:hover, li:hover {
   color: #333333 !important; }
 
 a {
-  text-decoration: none !important; }
+  text-decoration: none !important;
+  color: #D66360; }
 
 .carousel {
-  max-height: 800px; }
+  max-height: 800px;
+  z-index: 0; }
 
 .panel {
   padding-right: 0; }
@@ -250,6 +253,7 @@ a {
 .social_login .icon_title {
   display: block;
   padding: 10px 0;
+  margin-top: 3px;
   float: left;
   font-weight: bold;
   font-size: 16px;
@@ -340,7 +344,8 @@ a {
 .main-content {
   width: 85%;
   margin: 50px auto;
-  text-align: center; }
+  text-align: center;
+  z-index: 1; }
 
 .panels {
   padding-left: 0;
@@ -355,6 +360,7 @@ a {
   display: inline-block; }
 
 .panel {
+  vertical-align: top;
   min-width: 220px;
   max-width: 335px;
   margin: 0 auto;
@@ -385,7 +391,8 @@ a {
           max-width: 100%;
           max-height: 180px; }
     .panel .panel-body .info-container {
-      margin: 10px; }
+      margin: 10px 0px 0px 10px;
+      width: 91%; }
       .panel .panel-body .info-container .project_hashtags {
         list-style-type: none;
         margin-bottom: 20px;
@@ -397,7 +404,7 @@ a {
       .panel .panel-body .info-container .project-params {
         text-align: center;
         list-style-type: none;
-        margin-bottom: 10px; }
+        margin-bottom: 30px; }
         .panel .panel-body .info-container .project-params .param {
           display: inline-block;
           margin: 0 5px; }
@@ -405,6 +412,14 @@ a {
           color: #D66360 !important; }
         .panel .panel-body .info-container .project-params a {
           text-decoration: none; }
+      .panel .panel-body .info-container .description-header {
+        margin: 0 auto;
+        color: #AFA8A2;
+        text-align: center; }
+      .panel .panel-body .info-container .description-header:hover {
+        color: #333333; }
+      .panel .panel-body .info-container .description {
+        text-align: both; }
 
 .list-group {
   margin: 10px 0px 10px 10px;
@@ -429,7 +444,8 @@ a {
     text-decoration: none; }
 
 .input-group-btn a {
-  text-decoration: none; }
+  text-decoration: none;
+  margin-left: 5px; }
 
 .xs-input {
   height: 30px; }

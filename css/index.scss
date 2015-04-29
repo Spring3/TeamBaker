@@ -13,6 +13,7 @@ html, body{
   -webkit-font-smoothing: antialiased !important;
   //color: #666 !important;
   background-color: $color-background;
+  z-index: 2;
 }
 p, li{
   color: $color-main !important;
@@ -24,10 +25,12 @@ p:hover, li:hover{
 
 a{
   text-decoration: none !important;
+  color: $color-active;
 }
 
 .carousel {
   max-height: 800px;
+  z-index: 0;
 }
 
 .panel{
@@ -317,6 +320,7 @@ a{
     .icon_title  {
         display: block;
         padding: 10px 0;
+        margin-top:3px;
         float: left;
         font-weight:  bold;
         font-size:  16px;
@@ -436,7 +440,7 @@ a{
   width: 85%;
   margin: 50px auto;
   text-align:center;
-
+  z-index: 1;
 }
 
 .panels{
@@ -454,6 +458,7 @@ a{
 }
 
 .panel{
+  vertical-align: top;
   min-width: 220px;
   max-width: 335px;
   margin: 0 auto;
@@ -492,7 +497,8 @@ a{
       }
     }
     .info-container{
-      margin: 10px;
+      margin: 10px 0px 0px 10px;
+      width: 91%;
       .project_hashtags{
         list-style-type: none;
         margin-bottom:20px;
@@ -509,7 +515,7 @@ a{
       .project-params{
         text-align:center;
         list-style-type: none;
-        margin-bottom:10px;
+        margin-bottom:30px;
 
         .param{
           display: inline-block;
@@ -521,6 +527,18 @@ a{
         a{
           text-decoration: none;
         }
+      }
+      .description-header{
+        margin: 0 auto;
+        color: $color-main;
+        text-align:center;
+      }
+      .description-header:hover{
+        color: $color-main-hover;
+      }
+
+      .description{
+        text-align:both;
       }
     }
   }
@@ -558,6 +576,7 @@ a{
 .input-group-btn{
   a{
     text-decoration: none;
+    margin-left: 5px;
   }
 }
 

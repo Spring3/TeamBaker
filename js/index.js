@@ -11,6 +11,15 @@ $(document).ready(function()
     inherit_height_from: $('.carousel')
     });
 
+  $('.info-container').readmore({
+    moreLink: '<a href="#" class="button grey square">More</a>',
+    lessLink: '<a href="#" class="button grey square">Less</a>',
+    speed: 900,
+    collapsedHeight: 220,
+    heightMargin: 30,
+    
+  });
+
     //Auth
     $("#login_form").click(function () {
         $(".social_login").hide();

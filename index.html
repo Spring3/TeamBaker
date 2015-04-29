@@ -10,52 +10,14 @@
     <script src="js/jquery.superslides.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script id="webplate-stack" src="webplate/stack.js"></script>
+    <script src="js/readmore.min.js"></script>
     <script src="js/index.js"></script>
 
     <link href="css/index.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
 
-  <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand vt-p" href="#">
-            <!--<img src="..."/> Brand icon-->
-            TeamBaker
-          </a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle vt-p" data-toggle="dropdown" role="button" aria-expanded="false">Projects <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#" class="vt-p"><i class="fa fa-plus-circle"></i> Add project</a></li>
-                <li class="divider"></li>
-                <li><a href="#" class="vt-p"><i class="fa fa-check-circle"></i> Apply for a project</a></li>
-              </ul>
-            </li>
-          </ul>
-          <!--<form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>-->
-          <ul class="nav navbar-nav navbar-right">
-            <li><a id="auth" href="#signin" class="vt-p">Sign in</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
+  <header>
     <!-- Carousel -->
     <div class="carousel">
       <div id="slides">
@@ -157,6 +119,43 @@
         </nav>
       </div>
     </div>
+  </header>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand vt-p" href="#">
+            <!--<img src="..."/> Brand icon-->
+            TeamBaker
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle vt-p" data-toggle="dropdown" role="button" aria-expanded="false">Projects <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#" class="vt-p"><i class="fa fa-plus-circle"></i> Add project</a></li>
+                <li class="divider"></li>
+                <li><a href="#" class="vt-p"><i class="fa fa-check-circle"></i> Apply for a project</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a id="auth" href="#signin" class="vt-p">Sign in</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
 
     <!-- Auth -->
     <div id="signin" class="popupContainer" style="display:none;">
@@ -285,9 +284,8 @@
               <a href="#"><img src="img/proj_img-1.jpg"></img></a>
             </div>
             <div class="info-container">
-              <p><b>by <a href="#">Daniel Vasylenko</a></b></p>
-              <b>Description:</b>
-              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et finibus felis. Aliquam ante nunc, venenatis vitae tristique convallis, ultrices a nunc. Duis at nibh.</p>
+              <p><b>by <a href="#" class="author">Daniel Vasylenko</a></b></p>
+              <p class="project-category">Category: <a href="#">IT</a></p>
               <ul class="project_hashtags">
                 <li class="hashtag">
                   <a href="#"><span class="label label-success">JavaFX</span></a>
@@ -317,6 +315,8 @@
                   <span>0/3 <i class="fa fa-child"></i></span>
                 </li>
               </ul>
+              <p class="description-header"><b>Description</b></p>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et finibus felis. Aliquam ante nunc, venenatis vitae tristique convallis, ultrices a nunc. Duis at nibh.</p>
             </div>
           </div>
         </div>
@@ -329,9 +329,8 @@
               <a href="#"><img src="img/proj_img-4.jpg"></img></a>
             </div>
             <div class="info-container">
-              <p><b>by <a href="#">Daniel Vasylenko</a></b></p>
-              <b>Description:</b>
-              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et finibus felis. Aliquam ante nunc, venenatis vitae tristique convallis, ultrices a nunc. Duis at nibh.</p>
+              <p><b>by <a href="#" class="author">Daniel Vasylenko</a></b></p>
+              <p class="project-category">Category: <a href="#">IT</a></p>
               <ul class="project_hashtags">
                 <li class="hashtag">
                   <a href="#"><span class="label label-success">JavaFX</span></a>
@@ -361,6 +360,9 @@
                   <span>2/4 <i class="fa fa-child"></i></span>
                 </li>
               </ul>
+              <p class="description-header"><b>Description</b></p>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et finibus felis. Aliquam ante nunc, venenatis vitae tristique convallis, ultrices a nunc. Duis at nibh.</p>
+
             </div>
           </div>
         </div>
@@ -373,9 +375,8 @@
                 <a href="#"><img src="img/proj_img-2.jpg"></img></a>
               </div>
               <div class="info-container">
-                <p><b>by <a href="#">Daniel Vasylenko</a></b></p>
-                <b>Description:</b>
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et finibus felis. Aliquam ante nunc, venenatis vitae tristique convallis, ultrices a nunc. Duis at nibh.</p>
+                <p><b>by <a href="#" class="author">Daniel Vasylenko</a></b></p>
+                <p class="project-category">Category: <a href="#">IT</a></p>
                 <ul class="project_hashtags">
                   <li class="hashtag">
                     <a href="#"><span class="label label-success">JavaFX</span></a>
@@ -405,6 +406,8 @@
                     <span>8/8 <i class="fa fa-child"></i></span>
                   </li>
                 </ul>
+                <p class="description-header"><b>Description</b></p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et finibus felis. Aliquam ante nunc, venenatis vitae tristique convallis, ultrices a nunc. Duis at nibh.</p>
               </div>
             </div>
           </div>
@@ -417,9 +420,8 @@
                 <a href="#"><img src="img/proj_img-3.jpg"></img></a>
               </div>
               <div class="info-container">
-                <p><b>by <a href="#">Daniel Vasylenko</a></b></p>
-                <b>Description:</b>
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et finibus felis. Aliquam ante nunc, venenatis vitae tristique convallis, ultrices a nunc. Duis at nibh.</p>
+                <p><b>by <a href="#" class="author">Daniel Vasylenko</a></b></p>
+                <p class="project-category">Category: <a href="#">IT</a></p>
                 <ul class="project_hashtags">
                   <li class="hashtag">
                     <a href="#"><span class="label label-success">JavaFX</span></a>
@@ -449,6 +451,8 @@
                     <span>1/6 <i class="fa fa-child"></i></span>
                   </li>
                 </ul>
+                <p class="description-header"><b>Description</b></p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et finibus felis. Aliquam ante nunc, venenatis vitae tristique convallis, ultrices a nunc. Duis at nibh.</p>
               </div>
             </div>
           </div>
@@ -462,9 +466,8 @@
                 <a href="#"><img src="img/proj_img-4.jpg"></img></a>
               </div>
               <div class="info-container">
-                <p><b>by <a href="#">Daniel Vasylenko</a></b></p>
-                <b>Description:</b>
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et finibus felis. Aliquam ante nunc, venenatis vitae tristique convallis, ultrices a nunc. Duis at nibh.</p>
+                <p><b>by <a href="#" class="author">Daniel Vasylenko</a></b></p>
+                <p class="project-category">Category: <a href="#">IT</a></p>
                 <ul class="project_hashtags">
                   <li class="hashtag">
                     <a href="#"><span class="label label-success">JavaFX</span></a>
@@ -494,6 +497,8 @@
                     <span>8/8 <i class="fa fa-child"></i></span>
                   </li>
                 </ul>
+                <p class="description-header"><b>Description</b></p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et finibus felis. Aliquam ante nunc, venenatis vitae tristique convallis, ultrices a nunc. Duis at nibh.</p>
               </div>
             </div>
           </div>
@@ -508,9 +513,8 @@
                 <a href="#"><img src="img/proj_img-3.jpg"></img></a>
               </div>
               <div class="info-container">
-                <p><b>by <a href="#">Daniel Vasylenko</a></b></p>
-                <b>Description:</b>
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et finibus felis. Aliquam ante nunc, venenatis vitae tristique convallis, ultrices a nunc. Duis at nibh.</p>
+                <p><b>by <a href="#" class="author">Daniel Vasylenko</a></b></p>
+                <p class="project-category">Category: <a href="#">IT</a></p>
                 <ul class="project_hashtags">
                   <li class="hashtag">
                     <a href="#"><span class="label label-success">JavaFX</span></a>
@@ -540,6 +544,8 @@
                     <span>1/6 <i class="fa fa-child"></i></span>
                   </li>
                 </ul>
+                <p class="description-header"><b>Description</b></p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et finibus felis. Aliquam ante nunc, venenatis vitae tristique convallis, ultrices a nunc. Duis at nibh.</p>
               </div>
             </div>
           </div>
@@ -552,9 +558,8 @@
                 <a href="#"><img src="img/proj_img-2.jpg"></img></a>
               </div>
               <div class="info-container">
-                <p><b>by <a href="#">Daniel Vasylenko</a></b></p>
-                <b>Description:</b>
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et finibus felis. Aliquam ante nunc, venenatis vitae tristique convallis, ultrices a nunc. Duis at nibh.</p>
+                <p><b>by <a href="#" class="author">Daniel Vasylenko</a></b></p>
+                <p class="project-category">Category: <a href="#">IT</a></p>
                 <ul class="project_hashtags">
                   <li class="hashtag">
                     <a href="#"><span class="label label-success">JavaFX</span></a>
@@ -584,6 +589,8 @@
                     <span>2/4 <i class="fa fa-child"></i></span>
                   </li>
                 </ul>
+                <p class="description-header"><b>Description</b></p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et finibus felis. Aliquam ante nunc, venenatis vitae tristique convallis, ultrices a nunc. Duis at nibh.</p>
               </div>
             </div>
           </div>
@@ -597,9 +604,8 @@
                   <a href="#"><img src="img/proj_img-1.jpg"></img></a>
                 </div>
                 <div class="info-container">
-                  <p><b>by <a href="#">Daniel Vasylenko</a></b></p>
-                  <b>Description:</b>
-                  <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et finibus felis. Aliquam ante nunc, venenatis vitae tristique convallis, ultrices a nunc. Duis at nibh.</p>
+                  <p><b>by <a href="#" class="author">Daniel Vasylenko</a></b></p>
+                  <p class="project-category">Category: <a href="#">IT</a></p>
                   <ul class="project_hashtags">
                     <li class="hashtag">
                       <a href="#"><span class="label label-success">JavaFX</span></a>
@@ -629,6 +635,8 @@
                       <span>0/3 <i class="fa fa-child"></i></span>
                     </li>
                   </ul>
+                  <p class="description-header"><b>Description</b></p>
+                  <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et finibus felis. Aliquam ante nunc, venenatis vitae tristique convallis, ultrices a nunc. Duis at nibh.</p>
                 </div>
               </div>
             </div>
@@ -686,7 +694,7 @@
                         <a href="#top">Sign up</a>
                       </li>
                   </ul>
-                  <p class="copyright text-muted small">Copyright &copy; Daniel Vasylenko 2014. All Rights Reserved</p>
+                  <p class="copyright text-muted small">Copyright &copy; Daniel Vasylenko 2015. All Rights Reserved</p>
                 </div>
             </div>
         </div>

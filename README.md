@@ -2,7 +2,9 @@
 A project for finding team members for various types of projects.
 
 ## Insides:
-* Supersliders
-* Webplate
+* supersliders
+* webplate
 * scss
 * bootstrap
+* readmore.js
+* animate.css
