@@ -437,10 +437,18 @@ a{
 
 //Main content
 .main-content{
-  width: 85%;
+width: 100%;
+margin: auto;
+padding-top: 50px;
+text-align: center;
+z-index: 1;
+background-color: #F2F1ED;
+position: relative;
+
+  /*width: 85%;
   margin: 50px auto;
   text-align:center;
-  z-index: 1;
+  z-index: 1;*/
 }
 
 .panels{
@@ -597,6 +605,7 @@ input.xs-input{
 footer{
   margin: 0;
   background: #272731;
+  position: relative;
 }
 
 .footer-container {
