@@ -358,13 +358,18 @@ a {
   padding-left: 0;
   padding-right: 0;
   float: none;
+  width: 87%;
   margin: 0 auto; }
 
 .menu-top {
   padding-left: 0;
   padding-right: 0;
-  width: 50%;
+  width: 60%;
   display: inline-block; }
+
+.search-group {
+  width: 85%;
+  margin: 20px auto; }
 
 .panel {
   vertical-align: top;

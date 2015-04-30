@@ -4,6 +4,18 @@ $color-active: #D66360;
 $color-main-hover: #333333;
 $color-background: #F2F1ED;
 
+$color-category-art: #F2B252;
+$color-category-dance: #4B5D70;
+$color-category-design: #548AAD;
+$color-category-filmAndVideo: #E5675B;
+$color-category-games: #5FCC73;
+$color-category-it: #9F71C4;
+$color-category-journalism: #70C1A5;
+$color-category-music: #BC996F;
+$color-category-photography: #BA6F6F;
+$color-category-publishing: #42846F;
+$color-category-technology: #B2CE6B;
+$color-category-other: #333333;
 
 html, body{
   font-family: $font-family-main !important;
@@ -455,14 +467,20 @@ position: relative;
   padding-left:0;
   padding-right:0;
   float: none;
+  width: 87%;
   margin: 0 auto;
 }
 
 .menu-top{
   padding-left: 0;
   padding-right: 0;
-  width:50%;
+  width:60%;
   display: inline-block;
+}
+
+.search-group{
+  width: 85%;
+  margin: 20px auto;
 }
 
 .panel{
@@ -582,6 +600,7 @@ position: relative;
 }
 
 .input-group-btn{
+
   a{
     text-decoration: none;
     margin-left: 5px;
