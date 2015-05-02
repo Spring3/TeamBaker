@@ -234,7 +234,7 @@ a {
   margin-bottom: 10px;
   background: #F4F4F2;
   overflow: hidden; }
-.social_login .icon {
+.social_login .icon, .social_login .social-icon {
   display: block;
   width: 35px;
   padding: 10px;
@@ -244,11 +244,11 @@ a {
   color: #FFF;
   font-size: 16px;
   text-align: center; }
-.social_login .fb .icon {
+.social_login .fb .icon, .social_login .fb .social-icon {
   background: #3B5998; }
-.social_login .google .icon {
+.social_login .google .icon, .social_login .google .social-icon {
   background: #DD4B39; }
-.social_login .linkedIn .icon {
+.social_login .linkedIn .icon, .social_login .linkedIn .social-icon {
   background: #3E5065; }
 .social_login .icon_title {
   display: block;
@@ -473,6 +473,7 @@ input.xs-input {
   -webkit-appearance: none !important; }
 
 footer {
+  text-align: center;
   margin: 0;
   background: #272731;
   position: relative; }
@@ -481,13 +482,37 @@ footer {
   width: 100%;
   max-width: 90%;
   margin: 0 auto;
-  max-height: 300px; }
+  max-height: 300px;
+  display: inline-block; }
 
+@media screen and (max-width: 767px) {
+  .footer-container {
+    max-width: 100%; }
+
+  .subscr-sector {
+    padding-right: 0; }
+    .subscr-sector .subscription-header {
+      margin-bottom: 0; }
+    .subscr-sector .subscription {
+      margin-top: 0; }
+
+  .social-sector {
+    padding-left: 0; }
+
+  .copyrights .list-inline {
+    text-align: center; }
+
+  .caption {
+    font-size: 35px !important; }
+
+  .contrast h4 {
+    font-size: 20px !important; } }
 .copyrights {
   text-align: center;
   margin: 40px auto 0px auto; }
 
 .copyright {
+  margin: 0;
   margin-top: 20px; }
 
 .list-inline {
@@ -497,14 +522,14 @@ footer {
     font-weight: 300; }
 
 .social_list {
+  display: inline-block;
   vertical-align: middle; }
   .social_list a {
     text-decoration: none !important; }
 
 .social_btn {
   display: inline;
-  color: white;
-  margin-right: 5px; }
+  color: white; }
 
 p, li {
   text-decoration: none; }
@@ -529,9 +554,10 @@ p, li {
   #nav.affix .container-fluid #bs-example-navbar-collapse-1 .navbar-nav li.dropdown ul.dropdown-menu {
     background-color: #272731; }
 
-.icon {
+.icon, .social-icon {
   display: block;
   width: 35px;
+  height: 35px;
   padding: 10px;
   margin-right: 10px;
   margin-top: 3px;
@@ -540,13 +566,20 @@ p, li {
   font-size: 16px;
   text-align: center; }
 
-.icon.fb {
+.social-icon {
+  height: 35px;
+  margin-top: 5px;
+  margin-right: 5px; }
+  .social-icon i {
+    line-height: 2px; }
+
+.social-icon.fb {
   background: #3B5998; }
 
-.icon.google {
+.social-icon.google {
   background: #DD4B39; }
 
-.icon.linkedIn {
+.social-icon.linkedIn {
   background: #3E5065; }
 
 .footer-row {
