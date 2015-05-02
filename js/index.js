@@ -43,4 +43,11 @@ $(document).ready(function()
         $(".header_title").text('Login');
         return false;
     });
+
+    //navbar
+    $('#nav').affix({
+      offset: {
+        top: $('header').height()-$('#nav').height()
+      }
+    });	
 });
