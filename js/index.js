@@ -11,12 +11,11 @@ $(document).ready(function()
     inherit_height_from: $('.carousel')
     });
 
-  $('.info-container').readmore({
+  $('.description-sector').readmore({
     moreLink: '<a href="#" class="button grey square">More</a>',
     lessLink: '<a href="#" class="button grey square">Less</a>',
     speed: 900,
-    collapsedHeight: 220,
-    heightMargin: 30,
+    collapsedHeight:0
 
   });
 
@@ -49,5 +48,5 @@ $(document).ready(function()
       offset: {
         top: $('header').height()-$('#nav').height()
       }
-    });	
+    });
 });

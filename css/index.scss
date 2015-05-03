@@ -4,18 +4,18 @@ $color-active: #D66360;
 $color-main-hover: #333333;
 $color-background: #F2F1ED;
 
-$color-category-art: #F2B252;
-$color-category-dance: #4B5D70;
-$color-category-design: #548AAD;
-$color-category-filmAndVideo: #E5675B;
-$color-category-games: #5FCC73;
-$color-category-it: #9F71C4;
+$color-category-art: #FAC06B;
+$color-category-dance: #6F8398;
+$color-category-design: #87AEC8;
+$color-category-filmAndVideo: #FF8477;
+$color-category-games: #76CE85;
+$color-category-it: #806E8F;
 $color-category-journalism: #70C1A5;
-$color-category-music: #BC996F;
-$color-category-photography: #BA6F6F;
-$color-category-publishing: #42846F;
-$color-category-technology: #B2CE6B;
-$color-category-other: #333333;
+$color-category-music: #DDBD98;
+$color-category-photography: #D38383;
+$color-category-publishing: #518A77;
+$color-category-technology: #ACC471;
+$color-category-other: #676060;
 
 html, body{
   font-family: $font-family-main !important;
@@ -44,10 +44,6 @@ a{
 .carousel {
   max-height: 800px;
   z-index: 0;
-}
-
-.panel{
-  padding-right:0;
 }
 
 .navbar-default{
@@ -194,12 +190,6 @@ a{
     text-shadow: 0px 1px 1px #000;
     color: white;
     font-weight: 500;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  h1.caption {
-    font-size: 60px;
   }
 }
 
@@ -505,7 +495,10 @@ position: relative;
     text-align: center;
     .panel-title{
       a{
+        color: white;
         text-decoration: none !important;
+        font-weight: 500;
+        font-family: $font-family-main;
       }
     }
   }
@@ -527,25 +520,38 @@ position: relative;
       }
     }
     .info-container{
-      margin: 10px 0px 0px 10px;
-      width: 91%;
+      p{
+        margin: 0px 5px 10px 5px;
+        b{
+          font-family: $font-family-main;
+          font-weight: 500;
+        }
+      }
       .project_hashtags{
         list-style-type: none;
-        margin-bottom:20px;
+        margin: 0px 5px 20px 5px;
         text-align:center;
 
         .hashtag{
           display: inline;
+          a{
+            span{
+              font-family: $font-family-main;
+              font-weight: 500;
+              border-radius: 0;
+            }
+          }
         }
       }
       .progress{
         border-radius: 0;
+        margin: 0px 5px 20px 5px;
       }
 
       .project-params{
         text-align:center;
         list-style-type: none;
-        margin-bottom:30px;
+        margin: 0px 5px 20px 5px;
 
         .param{
           display: inline-block;
@@ -574,12 +580,325 @@ position: relative;
   }
 }
 
+.panel-art{
+  border-color: $color-category-art;
+  .panel-heading{
+    background-color: $color-category-art;
+  }
+
+  .panel-body{
+    .info-container{
+      .project_hashtags{
+        .hashtag{
+          a{
+            span{
+              background-color: $color-category-art;
+            }
+          }
+        }
+      }
+      .progress{
+        .progress-bar{
+          background-color: $color-category-art;
+        }
+      }
+    }
+  }
+}
+
+.panel-dance{
+  border-color: $color-category-dance;
+  .panel-heading{
+    background-color: $color-category-dance;
+  }
+
+  .panel-body{
+    .info-container{
+      .project_hashtags{
+        .hashtag{
+          a{
+            span{
+              background-color: $color-category-dance;
+            }
+          }
+        }
+      }
+      .progress{
+        .progress-bar{
+          background-color: $color-category-dance;
+        }
+      }
+    }
+  }
+}
+
+.panel-design{
+  border-color: $color-category-design;
+  .panel-heading{
+    background-color: $color-category-design;
+  }
+
+  .panel-body{
+    .info-container{
+      .project_hashtags{
+        .hashtag{
+          a{
+            span{
+              background-color: $color-category-design;
+            }
+          }
+        }
+      }
+      .progress{
+        .progress-bar{
+          background-color: $color-category-design;
+        }
+      }
+    }
+  }
+}
+
+.panel-filmAndVideo{
+  border-color: $color-category-filmAndVideo;
+  .panel-heading{
+    background-color: $color-category-filmAndVideo;
+  }
+
+  .panel-body{
+    .info-container{
+      .project_hashtags{
+        .hashtag{
+          a{
+            span{
+              background-color: $color-category-filmAndVideo;
+            }
+          }
+        }
+      }
+      .progress{
+        .progress-bar{
+          background-color: $color-category-filmAndVideo;
+        }
+      }
+    }
+  }
+}
+
+.panel-games{
+  border-color: $color-category-games;
+  .panel-heading{
+    background-color: $color-category-games;
+  }
+
+  .panel-body{
+    .info-container{
+      .project_hashtags{
+        .hashtag{
+          a{
+            span{
+              background-color: $color-category-games;
+            }
+          }
+        }
+      }
+      .progress{
+        .progress-bar{
+          background-color: $color-category-games;
+        }
+      }
+    }
+  }
+}
+
+.panel-it{
+  border-color: $color-category-it;
+  .panel-heading{
+    background-color: $color-category-it;
+  }
+
+  .panel-body{
+    .info-container{
+      .project_hashtags{
+        .hashtag{
+          a{
+            span{
+              background-color: $color-category-it;
+            }
+          }
+        }
+      }
+      .progress{
+        .progress-bar{
+          background-color: $color-category-it;
+        }
+      }
+    }
+  }
+}
+
+.panel-journalism{
+  border-color: $color-category-journalism;
+  .panel-heading{
+    background-color: $color-category-journalism;
+  }
+
+  .panel-body{
+    .info-container{
+      .project_hashtags{
+        .hashtag{
+          a{
+            span{
+              background-color: $color-category-journalism;
+            }
+          }
+        }
+      }
+      .progress{
+        .progress-bar{
+          background-color: $color-category-journalism;
+        }
+      }
+    }
+  }
+}
+
+.panel-music{
+  border-color: $color-category-music;
+  .panel-heading{
+    background-color: $color-category-music;
+  }
+
+  .panel-body{
+    .info-container{
+      .project_hashtags{
+        .hashtag{
+          a{
+            span{
+              background-color: $color-category-music;
+            }
+          }
+        }
+      }
+      .progress{
+        .progress-bar{
+          background-color: $color-category-music;
+        }
+      }
+    }
+  }
+}
+
+.panel-photography{
+  border-color: $color-category-photography;
+  .panel-heading{
+    background-color: $color-category-photography;
+  }
+
+  .panel-body{
+    .info-container{
+      .project_hashtags{
+        .hashtag{
+          a{
+            span{
+              background-color: $color-category-photography;
+            }
+          }
+        }
+      }
+      .progress{
+        .progress-bar{
+          background-color: $color-category-photography;
+        }
+      }
+    }
+  }
+}
+
+.panel-publishing{
+  border-color: $color-category-publishing;
+  .panel-heading{
+    background-color: $color-category-publishing;
+  }
+
+  .panel-body{
+    .info-container{
+      .project_hashtags{
+        .hashtag{
+          a{
+            span{
+              background-color: $color-category-publishing;
+            }
+          }
+        }
+      }
+      .progress{
+        .progress-bar{
+          background-color: $color-category-publishing;
+        }
+      }
+    }
+  }
+}
+
+.panel-technology{
+  border-color: $color-category-technology;
+  .panel-heading{
+    background-color: $color-category-technology;
+  }
+
+  .panel-body{
+    .info-container{
+      .project_hashtags{
+        .hashtag{
+          a{
+            span{
+              background-color: $color-category-technology;
+            }
+          }
+        }
+      }
+      .progress{
+        .progress-bar{
+          background-color: $color-category-technology;
+        }
+      }
+    }
+  }
+}
+
+.panel-other{
+  border-color: $color-category-other;
+  .panel-heading{
+    background-color: $color-category-other;
+  }
+
+  .panel-body{
+    .info-container{
+      .project_hashtags{
+        .hashtag{
+          a{
+            span{
+              background-color: $color-category-other;
+            }
+          }
+        }
+      }
+      .progress{
+        .progress-bar{
+          background-color: $color-category-other;
+        }
+      }
+    }
+  }
+}
+
 .list-group{
   margin: 10px 0px 10px 10px;
   padding-left:0px;
   padding-right:0px;
   .categories{
     display: inline-block;
+
   }
 }
 
@@ -595,6 +914,68 @@ position: relative;
     border-radius: 0;
   }
 }
+
+#category-art:hover{
+  background-color: $color-category-art;
+  color: #FFF;
+}
+
+#category-dance:hover{
+  background-color: $color-category-dance;
+  color: #FFF;
+}
+
+#category-design:hover{
+  background-color: $color-category-design;
+  color: #FFF;
+}
+
+#category-filmAndVideo:hover{
+  background-color: $color-category-filmAndVideo;
+  color: #FFF;
+}
+
+#category-games:hover{
+  background-color: $color-category-games;
+  color: #FFF;
+}
+
+#category-it:hover{
+  background-color: $color-category-it;
+  color: #FFF;
+}
+
+#category-journalism:hover{
+  background-color: $color-category-journalism;
+  color: #FFF;
+}
+
+#category-music:hover{
+  background-color: $color-category-music;
+  color: #FFF;
+}
+
+#category-photography:hover{
+  background-color: $color-category-photography;
+  color: #FFF;
+}
+
+#category-publishing:hover{
+  background-color: $color-category-publishing;
+  color: #FFF;
+}
+
+#category-technology:hover{
+  background: $color-category-technology;
+  color: #FFF;
+}
+
+#category-other:hover{
+  background: $color-category-other;
+  color: #FFF;
+}
+
+
 
 .btn-load{
   margin: 40px auto;
@@ -648,7 +1029,9 @@ footer{
   .subscr-sector{
     padding-right: 0;
     .subscription-header{
-      margin-bottom:0;
+      margin-bottom: 20px;
+      margin-top: 10px;
+      font-size: 16px;
     }
     .subscription{
       margin-top:0;
@@ -657,6 +1040,9 @@ footer{
 
   .social-sector{
     padding-left: 0;
+    .social-header{
+      font-size: 15px;
+    }
   }
 
   .copyrights{
@@ -675,6 +1061,11 @@ footer{
     }
   }
 
+  .input-group-btn{
+    a.button{
+      padding: 0;
+    }
+  }
 }
 
 .copyrights{
@@ -748,7 +1139,6 @@ p, li{
 .icon{
   display: block;
   width: 35px;
-  height:35px;
   padding: 10px;
   margin-right:  10px;
   margin-top: 3px;
@@ -789,6 +1179,7 @@ p, li{
   font-weight: 500;
   color: white;
   text-align: right;
+  margin-bottom:0;
 }
 
 .subscription-header:hover, .social-header:hover, .copyright:hover{

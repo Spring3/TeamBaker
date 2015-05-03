@@ -21,9 +21,6 @@ a {
   max-height: 800px;
   z-index: 0; }
 
-.panel {
-  padding-right: 0; }
-
 .navbar-default {
   text-align: center;
   background: transparent;
@@ -143,9 +140,6 @@ a {
     color: white;
     font-weight: 500; }
 
-@media screen and (max-width: 767px) {
-  h1.caption {
-    font-size: 60px; } }
 /* Color Schemes */
 .love {
   position: absolute;
@@ -391,7 +385,10 @@ a {
     border-radius: 0;
     text-align: center; }
     .panel .panel-heading .panel-title a {
-      text-decoration: none !important; }
+      color: white;
+      text-decoration: none !important;
+      font-weight: 500;
+      font-family: "Raleway", sans-serif; }
   .panel .panel-body {
     padding: 0;
     width: 100%; }
@@ -405,36 +402,151 @@ a {
         .panel .panel-body .image-container a img {
           max-width: 100%;
           max-height: 180px; }
-    .panel .panel-body .info-container {
-      margin: 10px 0px 0px 10px;
-      width: 91%; }
-      .panel .panel-body .info-container .project_hashtags {
-        list-style-type: none;
-        margin-bottom: 20px;
-        text-align: center; }
-        .panel .panel-body .info-container .project_hashtags .hashtag {
-          display: inline; }
-      .panel .panel-body .info-container .progress {
-        border-radius: 0; }
-      .panel .panel-body .info-container .project-params {
-        text-align: center;
-        list-style-type: none;
-        margin-bottom: 30px; }
-        .panel .panel-body .info-container .project-params .param {
-          display: inline-block;
-          margin: 0 5px; }
-        .panel .panel-body .info-container .project-params .param:hover {
-          color: #D66360 !important; }
-        .panel .panel-body .info-container .project-params a {
-          text-decoration: none; }
-      .panel .panel-body .info-container .description-header {
-        margin: 0 auto;
-        color: #AFA8A2;
-        text-align: center; }
-      .panel .panel-body .info-container .description-header:hover {
-        color: #333333; }
-      .panel .panel-body .info-container .description {
-        text-align: both; }
+    .panel .panel-body .info-container p {
+      margin: 0px 5px 10px 5px; }
+      .panel .panel-body .info-container p b {
+        font-family: "Raleway", sans-serif;
+        font-weight: 500; }
+    .panel .panel-body .info-container .project_hashtags {
+      list-style-type: none;
+      margin: 0px 5px 20px 5px;
+      text-align: center; }
+      .panel .panel-body .info-container .project_hashtags .hashtag {
+        display: inline; }
+        .panel .panel-body .info-container .project_hashtags .hashtag a span {
+          font-family: "Raleway", sans-serif;
+          font-weight: 500;
+          border-radius: 0; }
+    .panel .panel-body .info-container .progress {
+      border-radius: 0;
+      margin: 0px 5px 20px 5px; }
+    .panel .panel-body .info-container .project-params {
+      text-align: center;
+      list-style-type: none;
+      margin: 0px 5px 20px 5px; }
+      .panel .panel-body .info-container .project-params .param {
+        display: inline-block;
+        margin: 0 5px; }
+      .panel .panel-body .info-container .project-params .param:hover {
+        color: #D66360 !important; }
+      .panel .panel-body .info-container .project-params a {
+        text-decoration: none; }
+    .panel .panel-body .info-container .description-header {
+      margin: 0 auto;
+      color: #AFA8A2;
+      text-align: center; }
+    .panel .panel-body .info-container .description-header:hover {
+      color: #333333; }
+    .panel .panel-body .info-container .description {
+      text-align: both; }
+
+.panel-art {
+  border-color: #FAC06B; }
+  .panel-art .panel-heading {
+    background-color: #FAC06B; }
+  .panel-art .panel-body .info-container .project_hashtags .hashtag a span {
+    background-color: #FAC06B; }
+  .panel-art .panel-body .info-container .progress .progress-bar {
+    background-color: #FAC06B; }
+
+.panel-dance {
+  border-color: #6F8398; }
+  .panel-dance .panel-heading {
+    background-color: #6F8398; }
+  .panel-dance .panel-body .info-container .project_hashtags .hashtag a span {
+    background-color: #6F8398; }
+  .panel-dance .panel-body .info-container .progress .progress-bar {
+    background-color: #6F8398; }
+
+.panel-design {
+  border-color: #87AEC8; }
+  .panel-design .panel-heading {
+    background-color: #87AEC8; }
+  .panel-design .panel-body .info-container .project_hashtags .hashtag a span {
+    background-color: #87AEC8; }
+  .panel-design .panel-body .info-container .progress .progress-bar {
+    background-color: #87AEC8; }
+
+.panel-filmAndVideo {
+  border-color: #FF8477; }
+  .panel-filmAndVideo .panel-heading {
+    background-color: #FF8477; }
+  .panel-filmAndVideo .panel-body .info-container .project_hashtags .hashtag a span {
+    background-color: #FF8477; }
+  .panel-filmAndVideo .panel-body .info-container .progress .progress-bar {
+    background-color: #FF8477; }
+
+.panel-games {
+  border-color: #76CE85; }
+  .panel-games .panel-heading {
+    background-color: #76CE85; }
+  .panel-games .panel-body .info-container .project_hashtags .hashtag a span {
+    background-color: #76CE85; }
+  .panel-games .panel-body .info-container .progress .progress-bar {
+    background-color: #76CE85; }
+
+.panel-it {
+  border-color: #806E8F; }
+  .panel-it .panel-heading {
+    background-color: #806E8F; }
+  .panel-it .panel-body .info-container .project_hashtags .hashtag a span {
+    background-color: #806E8F; }
+  .panel-it .panel-body .info-container .progress .progress-bar {
+    background-color: #806E8F; }
+
+.panel-journalism {
+  border-color: #70C1A5; }
+  .panel-journalism .panel-heading {
+    background-color: #70C1A5; }
+  .panel-journalism .panel-body .info-container .project_hashtags .hashtag a span {
+    background-color: #70C1A5; }
+  .panel-journalism .panel-body .info-container .progress .progress-bar {
+    background-color: #70C1A5; }
+
+.panel-music {
+  border-color: #DDBD98; }
+  .panel-music .panel-heading {
+    background-color: #DDBD98; }
+  .panel-music .panel-body .info-container .project_hashtags .hashtag a span {
+    background-color: #DDBD98; }
+  .panel-music .panel-body .info-container .progress .progress-bar {
+    background-color: #DDBD98; }
+
+.panel-photography {
+  border-color: #D38383; }
+  .panel-photography .panel-heading {
+    background-color: #D38383; }
+  .panel-photography .panel-body .info-container .project_hashtags .hashtag a span {
+    background-color: #D38383; }
+  .panel-photography .panel-body .info-container .progress .progress-bar {
+    background-color: #D38383; }
+
+.panel-publishing {
+  border-color: #518A77; }
+  .panel-publishing .panel-heading {
+    background-color: #518A77; }
+  .panel-publishing .panel-body .info-container .project_hashtags .hashtag a span {
+    background-color: #518A77; }
+  .panel-publishing .panel-body .info-container .progress .progress-bar {
+    background-color: #518A77; }
+
+.panel-technology {
+  border-color: #ACC471; }
+  .panel-technology .panel-heading {
+    background-color: #ACC471; }
+  .panel-technology .panel-body .info-container .project_hashtags .hashtag a span {
+    background-color: #ACC471; }
+  .panel-technology .panel-body .info-container .progress .progress-bar {
+    background-color: #ACC471; }
+
+.panel-other {
+  border-color: #676060; }
+  .panel-other .panel-heading {
+    background-color: #676060; }
+  .panel-other .panel-body .info-container .project_hashtags .hashtag a span {
+    background-color: #676060; }
+  .panel-other .panel-body .info-container .progress .progress-bar {
+    background-color: #676060; }
 
 .list-group {
   margin: 10px 0px 10px 10px;
@@ -452,6 +564,54 @@ a {
   display: inline-block; }
   .list-group-item .badge {
     border-radius: 0; }
+
+#category-art:hover {
+  background-color: #FAC06B;
+  color: #FFF; }
+
+#category-dance:hover {
+  background-color: #6F8398;
+  color: #FFF; }
+
+#category-design:hover {
+  background-color: #87AEC8;
+  color: #FFF; }
+
+#category-filmAndVideo:hover {
+  background-color: #FF8477;
+  color: #FFF; }
+
+#category-games:hover {
+  background-color: #76CE85;
+  color: #FFF; }
+
+#category-it:hover {
+  background-color: #806E8F;
+  color: #FFF; }
+
+#category-journalism:hover {
+  background-color: #70C1A5;
+  color: #FFF; }
+
+#category-music:hover {
+  background-color: #DDBD98;
+  color: #FFF; }
+
+#category-photography:hover {
+  background-color: #D38383;
+  color: #FFF; }
+
+#category-publishing:hover {
+  background-color: #518A77;
+  color: #FFF; }
+
+#category-technology:hover {
+  background: #ACC471;
+  color: #FFF; }
+
+#category-other:hover {
+  background: #676060;
+  color: #FFF; }
 
 .btn-load {
   margin: 40px auto; }
@@ -492,12 +652,16 @@ footer {
   .subscr-sector {
     padding-right: 0; }
     .subscr-sector .subscription-header {
-      margin-bottom: 0; }
+      margin-bottom: 20px;
+      margin-top: 10px;
+      font-size: 16px; }
     .subscr-sector .subscription {
       margin-top: 0; }
 
   .social-sector {
     padding-left: 0; }
+    .social-sector .social-header {
+      font-size: 15px; }
 
   .copyrights .list-inline {
     text-align: center; }
@@ -506,7 +670,10 @@ footer {
     font-size: 35px !important; }
 
   .contrast h4 {
-    font-size: 20px !important; } }
+    font-size: 20px !important; }
+
+  .input-group-btn a.button {
+    padding: 0; } }
 .copyrights {
   text-align: center;
   margin: 40px auto 0px auto; }
@@ -557,7 +724,6 @@ p, li {
 .icon, .social-icon {
   display: block;
   width: 35px;
-  height: 35px;
   padding: 10px;
   margin-right: 10px;
   margin-top: 3px;
@@ -590,7 +756,8 @@ p, li {
   font-size: 20px;
   font-weight: 500;
   color: white;
-  text-align: right; }
+  text-align: right;
+  margin-bottom: 0; }
 
 .subscription-header:hover, .social-header:hover, .copyright:hover {
   color: #D66360 !important; }
