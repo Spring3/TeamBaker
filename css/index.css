@@ -394,7 +394,8 @@ a {
     width: 100%; }
     .panel .panel-body .image-container {
       margin-bottom: 10px;
-      width: 100%; }
+      width: 100%;
+      opacity: 50%; }
       .panel .panel-body .image-container a {
         width: 100%;
         display: block;

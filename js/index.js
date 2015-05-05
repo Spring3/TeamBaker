@@ -50,3 +50,7 @@ $(document).ready(function()
       }
     });
 });
+
+$('.panel').ready(function(){
+  $('.panel').addClass('animated fadeInUp');
+});
