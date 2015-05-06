@@ -1,8 +1,4 @@
-$font-family-main: 'Raleway', sans-serif;
-$color-main: #AFA8A2;
-$color-active: #D66360;
-$color-main-hover: #333333;
-$color-background: #F2F1ED;
+@import 'common';
 
 $color-category-art: #FAC06B;
 $color-category-dance: #6F8398;
@@ -17,88 +13,9 @@ $color-category-publishing: #518A77;
 $color-category-technology: #ACC471;
 $color-category-other: #676060;
 
-html, body{
-  font-family: $font-family-main !important;
-  font-size: 16px;
-  font-weight: 300 !important;
-  text-decoration: none !important;
-  -webkit-font-smoothing: antialiased !important;
-  //color: #666 !important;
-  background-color: $color-background;
-  z-index: 2;
-}
-
-p, li{
-  color: $color-main !important;
-}
-
-p:hover, li:hover{
-  color: $color-main-hover !important;
-}
-
-a{
-  text-decoration: none !important;
-  color: $color-active;
-}
-
 .carousel {
   max-height: 800px;
   z-index: 0;
-}
-
-.navbar-default{
-  text-align:center;
-  background: transparent;
-  z-index: 10;
-  top:0;
-  left:0;
-  right:0;
-}
-
-.dropdown-menu{
-  left: -35%;
-  text-align:center;
-  border-width: 0px;
-  background: transparent;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important;
-  li{
-    background: transparent;
-    a{
-      color: white;
-      font-family: $font-family-main;
-      font-weight:300;
-    }
-  }
-  li:hover{
-    background: transparent;
-    a{
-      color: $color-active;
-      background: transparent;
-    }
-  }
-}
-
-.navbar-default .navbar-nav>.open>a,
-.navbar-default .navbar-nav>.open>a:hover,
-.navbar-default .navbar-nav>.open>a:focus
-{
-  background-color: transparent;
-}
-
-
-.navbar {
-  position: absolute;
-  border-radius: 0px;
-  opacity: 0.95;
-}
-
-.container-fluid{
-  margin-right: auto;
-  margin-left: auto;
-  width: 85%;
-  max-height: 955px;
 }
 
 /*Slides*/
@@ -447,11 +364,6 @@ text-align: center;
 z-index: 1;
 background-color: #F2F1ED;
 position: relative;
-
-  /*width: 85%;
-  margin: 50px auto;
-  text-align:center;
-  z-index: 1;*/
 }
 
 .panels{
@@ -1114,29 +1026,6 @@ p, li{
   font-size: 20px;
 }
 
-#nav.affix-top{
-  position:absolute;
-  background-color:transparent;
-}
-
-#nav.affix{
-  position:fixed;
-  background-color:#272731;
-  -webkit-transition: all .6s ease-in-out;
-  .container-fluid{
-    #bs-example-navbar-collapse-1{
-      .navbar-nav{
-          li.dropdown{
-            ul.dropdown-menu{
-              background-color:#272731;
-            }
-          }
-      }
-    }
-  }
-
-}
-
 .icon{
   display: block;
   width: 35px;
@@ -1148,8 +1037,6 @@ p, li{
   font-size: 16px;
   text-align: center;
 }
-
-
 
 .social-icon  {
   @extend .icon;

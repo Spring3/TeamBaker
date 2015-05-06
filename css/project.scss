@@ -1,0 +1,29 @@
+@import 'common';
+
+
+#nav.affix{
+  position: static;
+}
+
+.content-wrapper{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.leftPart{
+  display: inline-block;
+  height: 500px;
+  background-color: yellow;
+}
+
+.rightPart{
+  display: inline-block;
+  height: 500px;
+  background-color: red;
+}
+
+.footer{
+  display: inline-block;
+  background-color: blue;
+  height: 70px;
+}

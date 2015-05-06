@@ -1,0 +1,98 @@
+html, body {
+  font-family: "Raleway", sans-serif !important;
+  font-size: 16px;
+  font-weight: 300 !important;
+  text-decoration: none !important;
+  -webkit-font-smoothing: antialiased !important;
+  background-color: #F2F1ED;
+  z-index: 2; }
+
+p, li {
+  color: #AFA8A2 !important; }
+
+p:hover, li:hover {
+  color: #333333 !important; }
+
+a {
+  text-decoration: none !important;
+  color: #D66360; }
+
+.navbar-default {
+  text-align: center;
+  background: transparent;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+.dropdown-menu {
+  left: -35%;
+  text-align: center;
+  border-width: 0px;
+  background: transparent;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important; }
+  .dropdown-menu li {
+    background: transparent; }
+    .dropdown-menu li a {
+      color: white;
+      font-family: "Raleway", sans-serif;
+      font-weight: 300; }
+  .dropdown-menu li:hover {
+    background: transparent; }
+    .dropdown-menu li:hover a {
+      color: #D66360;
+      background: transparent; }
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: transparent; }
+
+.navbar {
+  position: absolute;
+  border-radius: 0px;
+  opacity: 0.95;
+  margin: 0 auto; }
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  width: 85%;
+  max-height: 955px; }
+
+#nav.affix-top {
+  position: absolute;
+  background-color: transparent; }
+
+#nav.affix {
+  position: fixed;
+  background-color: #272731;
+  -webkit-transition: all .6s ease-in-out; }
+  #nav.affix .container-fluid #bs-example-navbar-collapse-1 .navbar-nav li.dropdown ul.dropdown-menu {
+    background-color: #272731; }
+
+#nav.affix {
+  position: static; }
+
+.content-wrapper {
+  text-align: center;
+  margin: 0 auto; }
+
+.leftPart {
+  display: inline-block;
+  height: 500px;
+  background-color: yellow; }
+
+.rightPart {
+  display: inline-block;
+  height: 500px;
+  background-color: red; }
+
+.footer {
+  display: inline-block;
+  background-color: blue;
+  height: 70px; }
+
+/*# sourceMappingURL=project.css.map */
