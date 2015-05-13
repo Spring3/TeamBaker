@@ -92,7 +92,8 @@ a {
   text-align: center;
   text-shadow: 0px 1px 1px #010101;
   font-size: 70px;
-  font-weight: 200; }
+  font-weight: 200;
+  font-family: "Raleway", sans-serif !important; }
 
 .slides-container li img {
   position: fixed; }
@@ -146,11 +147,14 @@ a {
   .contrast a {
     display: inline-block;
     text-decoration: none;
-    opacity: 0.95; }
+    opacity: 0.85; }
+  .contrast a:hover {
+    opacity: 1; }
   .contrast h4 {
     text-shadow: 0px 1px 1px #000;
     color: white;
-    font-weight: 500; }
+    font-weight: 500;
+    font-family: "Raleway", sans-serif !important; }
 
 /* Color Schemes */
 .love {
@@ -375,8 +379,8 @@ a {
 
 .panel {
   vertical-align: top;
-  min-width: 220px;
-  max-width: 335px;
+  min-width: 250px;
+  max-width: 300px;
   margin: 0 auto;
   padding: 0;
   float: none;
@@ -386,9 +390,9 @@ a {
   margin-bottom: 10px;
   margin-right: 10px;
   border-radius: 0;
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.57) !important;
-  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.57) !important;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.57) !important; }
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) !important;
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) !important; }
   .panel .panel-heading {
     border-radius: 0;
     text-align: center; }
