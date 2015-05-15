@@ -73,26 +73,56 @@ a {
   #nav.affix .container-fluid #bs-example-navbar-collapse-1 .navbar-nav li.dropdown ul.dropdown-menu {
     background-color: #272731; }
 
+body {
+  display: inline-block !important;
+  width: 100% !important; }
+
 #nav.affix {
   position: static; }
 
 .content-wrapper {
-  text-align: center;
-  margin: 0 auto; }
-
-.leftPart {
-  display: inline-block;
-  height: 500px;
-  background-color: yellow; }
-
-.rightPart {
-  display: inline-block;
-  height: 500px;
-  background-color: red; }
+  overflow: hidden;
+  margin: 0 auto;
+  clear: both; }
+  .content-wrapper .leftPart {
+    height: 452px;
+    background-color: #546451; }
+    .content-wrapper .leftPart .profile-image {
+      height: 270px;
+      min-width: 270px;
+      width: 60%;
+      margin: 0 auto;
+      margin-top: 14%; }
+      .content-wrapper .leftPart .profile-image a {
+        display: block;
+        height: 100%;
+        max-width: 270px;
+        margin: 0 auto; }
+        .content-wrapper .leftPart .profile-image a img {
+          height: 100%;
+          width: 80%;
+          max-width: 270px;
+          max-height: 270px;
+          min-width: 270px;
+          min-height: 270px;
+          display: block;
+          margin: 0 auto; }
+  .content-wrapper .rightPart {
+    background-color: #766162; }
+    .content-wrapper .rightPart .project-name {
+      margin: 25px 0px 0px 0px;
+      font-size: 24px;
+      font-family: "Raleway", sans-serif;
+      text-align: center; }
+    .content-wrapper .rightPart .project-info .basic-info {
+      width: 50%;
+      margin: 25px auto 0px auto; }
+      .content-wrapper .rightPart .project-info .basic-info p {
+        text-align: left; }
 
 .footer {
   display: inline-block;
-  background-color: blue;
+  background-color: #454753;
   height: 70px; }
 
 /*# sourceMappingURL=project.css.map */
