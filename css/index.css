@@ -399,7 +399,7 @@ a {
     .panel .panel-heading .panel-title a {
       color: white;
       text-decoration: none !important;
-      font-weight: 500;
+      font-weight: 300;
       font-family: "Raleway", sans-serif; }
   .panel .panel-body {
     padding: 0;

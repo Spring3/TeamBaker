@@ -1,5 +1,8 @@
 @import 'common';
 
+$color-star-hover: #FFED5F;
+$color-eye-hover: #67A3C0;
+
 body{
   display: inline-block !important;
   width: 100% !important;
@@ -13,7 +16,6 @@ body{
   overflow:hidden;
   margin:0 auto;
   .leftPart{
-    height: 452px;
 
     background-color: #546451;
       .profile-image{
@@ -43,26 +45,99 @@ body{
 
       }
     .author-name{
-
+      margin: 20px auto;
+      font-size: 25px;
+      text-align:center;
+      font-family: $font-family-main;
+      color: $color-main;
     }
     .user-action-buttons{
+      margin: 0px auto 20px auto;
+      .btn-follow{
+        text-align:center;
+        margin-bottom: 20px;
+      }
+      .action-buttons{
+        list-style-type: none;
+        text-align: center;
+        font-size: 20px;
+        display:inline-block;
+        width: 100%;
+        li{
+          display: inline-block;
+          margin-left: 25px;
+          margin-right: 25px;
+          a{
+            color: $color-main;
+          }
+          .fa-heart:hover{
+            color: $color-active;
+          }
+          .fa-star:hover{
+            color: $color-star-hover;
+          }
+          .fa-eye:hover{
+            color: $color-eye-hover;
+          }
+          p{
+            margin: 0;
+          }
+
+        }
+      }
 
     }
     .team-header{
-
+      text-align:center;
+      font-family: $font-family-main;
+      color: $color-main;
+      font-size: 22px;
+      margin: 50px auto 0px auto;
     }
     .team-specs{
-      p{
+      margin-bottom: 20px;
+      text-align: center;
+      .spec{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .spec-container{
+          display:inline-block;
+          width: 100%;
+          text-align:center;
 
+          .spec-name{
+            max-width: 80%;
+            margin: 0;
+            display:inline-block;
+            border-radius: 20px;
+            color: white;
+            float: center;
+          }
+          .btn-apply{
+            display:inline-block;
+            float: center;
+            max-width:46px;
+            margin-left: 10px;
+            color: white;
+            font-size: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 50%;
+          }
+        }
       }
     }
-  }
+    .team-count{
+      font-size: 20px;
+      }
+
+    }
 
   .rightPart{
     background-color: #766162;
 
     .project-name{
-      margin: 25px 0px 0px 0px;
+      margin: 85px 0px 0px 0px;
       font-size: 24px;
       font-family: $font-family-main;
       text-align:center;
