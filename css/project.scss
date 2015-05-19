@@ -4,7 +4,6 @@ $color-star-hover: #FFED5F;
 $color-eye-hover: #67A3C0;
 
 body{
-  display: inline-block !important;
   width: 100% !important;
 }
 
@@ -147,17 +146,70 @@ body{
         width: 50%;
         margin: 25px auto 0px auto;
         p{
+          margin-bottom: 10px;
           text-align: left;
+          display: inline-block;
+          min-width: 100px;
+        }
+        span{
+          display: inline;
         }
 
-        .attachments{
 
+
+
+      }
+
+      .additional-info{
+        width: 50%;
+        margin: 50px auto;
+        .progress{
+            border-radius: 0;
+        }
+        .attachments{
+          font-size: 20px;
+
+          .attachments-list{
+            font-size: 16px;
+            list-style-type: none;
+            .attachment{
+              display: block;
+            }
+          }
         }
         .links{
+          @extend .attachments;
+          margin-top: 20px;
+
+          .links-list{
+            font-size: 16px;
+            list-style-type: none;
+            .link{
+              display: block;
+            }
+          }
 
         }
         .media{
+          @extend .links;
+          .media-list{
+            font-size: 16px;
+            list-style-type: none;
+            .media{
+              display: inline-block;
+              max-width: 200px;
+              margin: auto 10px auto 0px;
+              img{
+                max-width: 100%;
+                max-height: 100%;
+              }
+              p{
+                font-size: 16px;
+                text-align: center;
+              }
 
+            }
+          }
         }
       }
     }
@@ -166,6 +218,12 @@ body{
     }
   }
   clear:both;
+}
+
+hr{
+  max-width: 250px;
+  margin: 5px auto 15px 0px;
+  opacity: 0.7;
 }
 
 .footer{

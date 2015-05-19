@@ -74,7 +74,6 @@ a {
     background-color: #272731; }
 
 body {
-  display: inline-block !important;
   width: 100% !important; }
 
 #nav.affix {
@@ -183,7 +182,49 @@ body {
       width: 50%;
       margin: 25px auto 0px auto; }
       .content-wrapper .rightPart .project-info .basic-info p {
-        text-align: left; }
+        margin-bottom: 10px;
+        text-align: left;
+        display: inline-block;
+        min-width: 100px; }
+      .content-wrapper .rightPart .project-info .basic-info span {
+        display: inline; }
+    .content-wrapper .rightPart .project-info .additional-info {
+      width: 50%;
+      margin: 50px auto; }
+      .content-wrapper .rightPart .project-info .additional-info .progress {
+        border-radius: 0; }
+      .content-wrapper .rightPart .project-info .additional-info .attachments, .content-wrapper .rightPart .project-info .additional-info .links, .content-wrapper .rightPart .project-info .additional-info .media {
+        font-size: 20px; }
+        .content-wrapper .rightPart .project-info .additional-info .attachments .attachments-list, .content-wrapper .rightPart .project-info .additional-info .links .attachments-list, .content-wrapper .rightPart .project-info .additional-info .media .attachments-list {
+          font-size: 16px;
+          list-style-type: none; }
+          .content-wrapper .rightPart .project-info .additional-info .attachments .attachments-list .attachment, .content-wrapper .rightPart .project-info .additional-info .links .attachments-list .attachment, .content-wrapper .rightPart .project-info .additional-info .media .attachments-list .attachment {
+            display: block; }
+      .content-wrapper .rightPart .project-info .additional-info .links, .content-wrapper .rightPart .project-info .additional-info .media {
+        margin-top: 20px; }
+        .content-wrapper .rightPart .project-info .additional-info .links .links-list, .content-wrapper .rightPart .project-info .additional-info .media .links-list {
+          font-size: 16px;
+          list-style-type: none; }
+          .content-wrapper .rightPart .project-info .additional-info .links .links-list .link, .content-wrapper .rightPart .project-info .additional-info .media .links-list .link {
+            display: block; }
+      .content-wrapper .rightPart .project-info .additional-info .media .media-list {
+        font-size: 16px;
+        list-style-type: none; }
+        .content-wrapper .rightPart .project-info .additional-info .media .media-list .media {
+          display: inline-block;
+          max-width: 200px;
+          margin: auto 10px auto 0px; }
+          .content-wrapper .rightPart .project-info .additional-info .media .media-list .media img {
+            max-width: 100%;
+            max-height: 100%; }
+          .content-wrapper .rightPart .project-info .additional-info .media .media-list .media p {
+            font-size: 16px;
+            text-align: center; }
+
+hr {
+  max-width: 250px;
+  margin: 5px auto 15px 0px;
+  opacity: 0.7; }
 
 .footer {
   display: inline-block;
