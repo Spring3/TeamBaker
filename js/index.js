@@ -5,8 +5,10 @@ $(document).ready(function()
 
   $('#slides').superslides({
     play: 6000,
+    slide_speed: 800,
     animation: 'fade',
-    animation_speed: 'normal',
+    slide_easing: 'easeInOutCubic',
+    animation_speed: 800,
     animation_easing: 'linear',
     inherit_height_from: $('.carousel')
     });
@@ -53,4 +55,16 @@ $(document).ready(function()
 
 $('.panel').ready(function(){
   $('.panel').addClass('animated fadeInUp');
+});
+
+$('footer').ready(function(){
+  $('footer').addClass('animated fadeInUp');
+});
+
+$('nav').ready(function(){
+  $('nav').addClass('animated fadeInDown');
+});
+
+$('.list-group-item').ready(function(){
+  $('.list-group-item').addClass('animated zoomIn');
 });
