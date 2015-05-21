@@ -110,7 +110,7 @@ body{
     .team-header{
       text-align:center;
       font-family: $font-geo;
-      color: $color-background;//$color-main;
+      color: $color-background;
       font-size: 22px;
       margin: 40px auto 0px auto;
     }
@@ -131,7 +131,6 @@ body{
             display:inline-block;
             border-radius: 20px;
             font-size: 18px;
-            //color: $color-main;
             float: center;
           }
           .spec-name:hover{
@@ -142,7 +141,6 @@ body{
             float: center;
             max-width:46px;
             margin-left: 10px;
-            //color: $color-main;
             font-size: 20px;
             padding-left: 15px;
             padding-right: 15px;

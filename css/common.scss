@@ -40,6 +40,25 @@ a:hover{
   top:0;
   left:0;
   right:0;
+  .container-fluid{
+    .navbar-header{
+      .navbar-brand{
+        img{
+          display:inline-block;
+          margin: 0;
+          max-height: 50px;
+          position:relative;
+          bottom: 15px;
+        }
+        .brand-name{
+          display:inline-block;
+          color: $color-background !important;
+          position:relative;
+          bottom: 14px;
+        }
+      }
+    }
+  }
 }
 
 .dropdown-menu{

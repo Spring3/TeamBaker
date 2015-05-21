@@ -8,10 +8,10 @@ $(document).ready(function(){
   })
 
   $('nav').ready(function(){
-    $('nav').addClass('animated fadeInDown');
+    $('nav').addClass('animated fadeInDownBig');
   })
 
   $('footer').ready(function(){
-    $('footer').addClass('animated fadeInUp');
+    $('footer').addClass('animated fadeInUpBig');
   })
 });

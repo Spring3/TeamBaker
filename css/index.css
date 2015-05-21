@@ -27,6 +27,17 @@ a:hover {
   top: 0;
   left: 0;
   right: 0; }
+  .navbar-default .container-fluid .navbar-header .navbar-brand img {
+    display: inline-block;
+    margin: 0;
+    max-height: 50px;
+    position: relative;
+    bottom: 15px; }
+  .navbar-default .container-fluid .navbar-header .navbar-brand .brand-name {
+    display: inline-block;
+    color: #F3F3F3 !important;
+    position: relative;
+    bottom: 14px; }
 
 .dropdown-menu {
   left: -35%;
