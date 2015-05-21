@@ -1,21 +1,24 @@
-html, body {
-  font-family: "Raleway", sans-serif !important;
+@font-face {
+  font-family: Geomanist;
+  src: url("../fonts/Geomanist-Regular.otf"); }
+html, body, label {
+  font-family: Geomanist !important;
   font-size: 16px;
   font-weight: 300 !important;
   text-decoration: none !important;
   -webkit-font-smoothing: antialiased !important;
-  background-color: #F2F1ED;
+  background-color: #F3F3F3;
   z-index: 2; }
 
 p, li {
-  color: #AFA8A2 !important; }
-
-p:hover, li:hover {
-  color: #333333 !important; }
+  color: #666B6E !important; }
 
 a {
   text-decoration: none !important;
-  color: #D66360; }
+  color: #B8807F; }
+
+a:hover {
+  color: #985C5A; }
 
 .navbar-default {
   text-align: center;
@@ -37,12 +40,12 @@ a {
     background: transparent; }
     .dropdown-menu li a {
       color: white;
-      font-family: "Raleway", sans-serif;
+      font-family: Geomanist;
       font-weight: 300; }
   .dropdown-menu li:hover {
     background: transparent; }
     .dropdown-menu li:hover a {
-      color: #D66360;
+      color: #B8807F;
       background: transparent; }
 
 .navbar-default .navbar-nav > .open > a,
@@ -68,10 +71,136 @@ a {
 
 #nav.affix {
   position: fixed;
-  background-color: #272731;
+  background-color: #373E53;
   -webkit-transition: all .6s ease-in-out; }
   #nav.affix .container-fluid #bs-example-navbar-collapse-1 .navbar-nav li.dropdown ul.dropdown-menu {
-    background-color: #272731; }
+    background-color: #373E53; }
+
+footer {
+  text-align: center;
+  margin: 0;
+  background: #373E53;
+  position: relative; }
+
+.footer-container {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  max-height: 300px;
+  display: inline-block; }
+
+@media screen and (max-width: 767px) {
+  .footer-container {
+    max-width: 100%; }
+
+  .subscr-sector {
+    padding-right: 0; }
+
+  .subscr-sector .subscription-header {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 16px; }
+
+  .subscr-sector .subscription {
+    margin-top: 0; }
+
+  .social-sector {
+    padding-left: 0; }
+
+  .social-sector .social-header {
+    font-size: 15px; }
+
+  .copyrights .list-inline {
+    text-align: center; }
+
+  .caption {
+    font-size: 35px !important; }
+
+  .contrast h4 {
+    font-size: 20px !important; }
+
+  .input-group-btn a.button {
+    padding: 0; } }
+.copyrights {
+  text-align: center;
+  margin: 40px auto 0px auto; }
+
+.copyright {
+  margin: 0;
+  color: #F3F3F3 !important;
+  margin-top: 20px; }
+
+.list-inline {
+  text-align: left;
+  margin-left: 10px; }
+
+.list-inline li {
+  font-weight: 300; }
+
+.social_list {
+  display: inline-block;
+  vertical-align: middle; }
+
+.social_list a {
+  text-decoration: none !important; }
+
+.social_btn {
+  display: inline;
+  color: white; }
+
+p, li {
+  text-decoration: none; }
+
+.social-header {
+  color: #F3F3F3 !important;
+  text-align: left;
+  line-height: 3;
+  display: block;
+  width: 100%;
+  font-weight: 500;
+  font-size: 20px; }
+
+.icon, .social-icon {
+  display: block;
+  width: 35px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-top: 3px;
+  float: left;
+  color: #FFF;
+  font-size: 16px;
+  text-align: center; }
+
+.social-icon {
+  height: 35px;
+  margin-top: 5px;
+  margin-right: 5px; }
+
+.social-icon i {
+  line-height: 2px; }
+
+.social-icon.fb {
+  background: #3B5998; }
+
+.social-icon.google {
+  background: #DD4B39; }
+
+.social-icon.linkedIn {
+  background: #3E5065; }
+
+.footer-row {
+  margin: 0; }
+
+.subscription-header {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #F3F3F3 !important;
+  text-align: right;
+  margin-bottom: 0; }
+
+.subscription {
+  margin-top: 20px; }
 
 .carousel {
   max-height: 800px;
@@ -166,7 +295,7 @@ a {
   .love p {
     color: white;
     font-weight: normal;
-    font-family: "Raleway", sans-serif; }
+    font-family: Geomanist; }
   .love a {
     color: white;
     font-weight: 700;
@@ -244,7 +373,7 @@ a {
   margin-bottom: 10px;
   background: #F4F4F2;
   overflow: hidden; }
-.social_login .icon, .social_login .social-icon {
+.social_login .icon {
   display: block;
   width: 35px;
   padding: 10px;
@@ -254,11 +383,11 @@ a {
   color: #FFF;
   font-size: 16px;
   text-align: center; }
-.social_login .fb .icon, .social_login .fb .social-icon {
+.social_login .fb .icon {
   background: #3B5998; }
-.social_login .google .icon, .social_login .google .social-icon {
+.social_login .google .icon {
   background: #DD4B39; }
-.social_login .linkedIn .icon, .social_login .linkedIn .social-icon {
+.social_login .linkedIn .icon {
   background: #3E5065; }
 .social_login .icon_title {
   display: block;
@@ -378,6 +507,7 @@ a {
   margin: 20px auto; }
 
 .panel {
+  border-color: #629B9E;
   vertical-align: top;
   min-width: 250px;
   max-width: 300px;
@@ -395,12 +525,13 @@ a {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) !important; }
   .panel .panel-heading {
     border-radius: 0;
-    text-align: center; }
+    text-align: center;
+    background-color: #629B9E; }
     .panel .panel-heading .panel-title a {
       color: white;
       text-decoration: none !important;
       font-weight: 300;
-      font-family: "Raleway", sans-serif; }
+      font-family: Geomanist; }
   .panel .panel-body {
     padding: 0;
     width: 100%; }
@@ -429,10 +560,15 @@ a {
         .panel .panel-body .info-container .project_hashtags .hashtag a span {
           font-family: "Raleway", sans-serif;
           font-weight: 500;
-          border-radius: 0; }
+          border-radius: 0;
+          background-color: #629B9E; }
+    .panel .panel-body .info-container .progress-header {
+      text-align: center; }
     .panel .panel-body .info-container .progress {
       border-radius: 0;
       margin: 0px 5px 20px 5px; }
+      .panel .panel-body .info-container .progress .progress-bar {
+        background-color: #629B9E; }
     .panel .panel-body .info-container .project-params {
       text-align: center;
       list-style-type: none;
@@ -441,125 +577,18 @@ a {
         display: inline-block;
         margin: 0 5px; }
       .panel .panel-body .info-container .project-params .param:hover {
-        color: #D66360 !important; }
+        color: #B8807F !important; }
       .panel .panel-body .info-container .project-params a {
         text-decoration: none; }
     .panel .panel-body .info-container .description-header {
-      margin: 0 auto;
-      color: #AFA8A2;
+      margin: 5px auto;
+      font-weight: bold;
+      color: #666B6E;
       text-align: center; }
     .panel .panel-body .info-container .description-header:hover {
-      color: #333333; }
+      color: #3F3F3F; }
     .panel .panel-body .info-container .description {
       text-align: both; }
-
-.panel-art {
-  border-color: #FAC06B; }
-  .panel-art .panel-heading {
-    background-color: #FAC06B; }
-  .panel-art .panel-body .info-container .project_hashtags .hashtag a span {
-    background-color: #FAC06B; }
-  .panel-art .panel-body .info-container .progress .progress-bar {
-    background-color: #FAC06B; }
-
-.panel-dance {
-  border-color: #6F8398; }
-  .panel-dance .panel-heading {
-    background-color: #6F8398; }
-  .panel-dance .panel-body .info-container .project_hashtags .hashtag a span {
-    background-color: #6F8398; }
-  .panel-dance .panel-body .info-container .progress .progress-bar {
-    background-color: #6F8398; }
-
-.panel-design {
-  border-color: #87AEC8; }
-  .panel-design .panel-heading {
-    background-color: #87AEC8; }
-  .panel-design .panel-body .info-container .project_hashtags .hashtag a span {
-    background-color: #87AEC8; }
-  .panel-design .panel-body .info-container .progress .progress-bar {
-    background-color: #87AEC8; }
-
-.panel-filmAndVideo {
-  border-color: #FF8477; }
-  .panel-filmAndVideo .panel-heading {
-    background-color: #FF8477; }
-  .panel-filmAndVideo .panel-body .info-container .project_hashtags .hashtag a span {
-    background-color: #FF8477; }
-  .panel-filmAndVideo .panel-body .info-container .progress .progress-bar {
-    background-color: #FF8477; }
-
-.panel-games {
-  border-color: #76CE85; }
-  .panel-games .panel-heading {
-    background-color: #76CE85; }
-  .panel-games .panel-body .info-container .project_hashtags .hashtag a span {
-    background-color: #76CE85; }
-  .panel-games .panel-body .info-container .progress .progress-bar {
-    background-color: #76CE85; }
-
-.panel-it {
-  border-color: #806E8F; }
-  .panel-it .panel-heading {
-    background-color: #806E8F; }
-  .panel-it .panel-body .info-container .project_hashtags .hashtag a span {
-    background-color: #806E8F; }
-  .panel-it .panel-body .info-container .progress .progress-bar {
-    background-color: #806E8F; }
-
-.panel-journalism {
-  border-color: #70C1A5; }
-  .panel-journalism .panel-heading {
-    background-color: #70C1A5; }
-  .panel-journalism .panel-body .info-container .project_hashtags .hashtag a span {
-    background-color: #70C1A5; }
-  .panel-journalism .panel-body .info-container .progress .progress-bar {
-    background-color: #70C1A5; }
-
-.panel-music {
-  border-color: #DDBD98; }
-  .panel-music .panel-heading {
-    background-color: #DDBD98; }
-  .panel-music .panel-body .info-container .project_hashtags .hashtag a span {
-    background-color: #DDBD98; }
-  .panel-music .panel-body .info-container .progress .progress-bar {
-    background-color: #DDBD98; }
-
-.panel-photography {
-  border-color: #D38383; }
-  .panel-photography .panel-heading {
-    background-color: #D38383; }
-  .panel-photography .panel-body .info-container .project_hashtags .hashtag a span {
-    background-color: #D38383; }
-  .panel-photography .panel-body .info-container .progress .progress-bar {
-    background-color: #D38383; }
-
-.panel-publishing {
-  border-color: #518A77; }
-  .panel-publishing .panel-heading {
-    background-color: #518A77; }
-  .panel-publishing .panel-body .info-container .project_hashtags .hashtag a span {
-    background-color: #518A77; }
-  .panel-publishing .panel-body .info-container .progress .progress-bar {
-    background-color: #518A77; }
-
-.panel-technology {
-  border-color: #ACC471; }
-  .panel-technology .panel-heading {
-    background-color: #ACC471; }
-  .panel-technology .panel-body .info-container .project_hashtags .hashtag a span {
-    background-color: #ACC471; }
-  .panel-technology .panel-body .info-container .progress .progress-bar {
-    background-color: #ACC471; }
-
-.panel-other {
-  border-color: #676060; }
-  .panel-other .panel-heading {
-    background-color: #676060; }
-  .panel-other .panel-body .info-container .project_hashtags .hashtag a span {
-    background-color: #676060; }
-  .panel-other .panel-body .info-container .progress .progress-bar {
-    background-color: #676060; }
 
 .list-group {
   margin: 10px 0px 10px 10px;
@@ -578,53 +607,10 @@ a {
   .list-group-item .badge {
     border-radius: 0; }
 
-#category-art:hover {
-  background-color: #FAC06B;
-  color: #FFF; }
-
-#category-dance:hover {
-  background-color: #6F8398;
-  color: #FFF; }
-
-#category-design:hover {
-  background-color: #87AEC8;
-  color: #FFF; }
-
-#category-filmAndVideo:hover {
-  background-color: #FF8477;
-  color: #FFF; }
-
-#category-games:hover {
-  background-color: #76CE85;
-  color: #FFF; }
-
-#category-it:hover {
-  background-color: #806E8F;
-  color: #FFF; }
-
-#category-journalism:hover {
-  background-color: #70C1A5;
-  color: #FFF; }
-
-#category-music:hover {
-  background-color: #DDBD98;
-  color: #FFF; }
-
-#category-photography:hover {
-  background-color: #D38383;
-  color: #FFF; }
-
-#category-publishing:hover {
-  background-color: #518A77;
-  color: #FFF; }
-
-#category-technology:hover {
-  background: #ACC471;
-  color: #FFF; }
-
-#category-other:hover {
-  background: #676060;
-  color: #FFF; }
+.list-group-item:hover {
+  background-color: #629B9E !important;
+  color: white !important;
+  opacity: 0.7; }
 
 .btn-load {
   margin: 40px auto; }
@@ -644,127 +630,5 @@ a {
 input.xs-input {
   border-radius: 0px !important;
   -webkit-appearance: none !important; }
-
-footer {
-  text-align: center;
-  margin: 0;
-  background: #272731;
-  position: relative; }
-
-.footer-container {
-  width: 100%;
-  max-width: 90%;
-  margin: 0 auto;
-  max-height: 300px;
-  display: inline-block; }
-
-@media screen and (max-width: 767px) {
-  .footer-container {
-    max-width: 100%; }
-
-  .subscr-sector {
-    padding-right: 0; }
-    .subscr-sector .subscription-header {
-      margin-bottom: 20px;
-      margin-top: 10px;
-      font-size: 16px; }
-    .subscr-sector .subscription {
-      margin-top: 0; }
-
-  .social-sector {
-    padding-left: 0; }
-    .social-sector .social-header {
-      font-size: 15px; }
-
-  .copyrights .list-inline {
-    text-align: center; }
-
-  .caption {
-    font-size: 35px !important; }
-
-  .contrast h4 {
-    font-size: 20px !important; }
-
-  .input-group-btn a.button {
-    padding: 0; } }
-.copyrights {
-  text-align: center;
-  margin: 40px auto 0px auto; }
-
-.copyright {
-  margin: 0;
-  margin-top: 20px; }
-
-.list-inline {
-  text-align: left;
-  margin-left: 10px; }
-  .list-inline li {
-    font-weight: 300; }
-
-.social_list {
-  display: inline-block;
-  vertical-align: middle; }
-  .social_list a {
-    text-decoration: none !important; }
-
-.social_btn {
-  display: inline;
-  color: white; }
-
-p, li {
-  text-decoration: none; }
-
-.social-header {
-  color: white;
-  text-align: left;
-  line-height: 3;
-  display: block;
-  width: 100%;
-  font-weight: 500;
-  font-size: 20px; }
-
-.icon, .social-icon {
-  display: block;
-  width: 35px;
-  padding: 10px;
-  margin-right: 10px;
-  margin-top: 3px;
-  float: left;
-  color: #FFF;
-  font-size: 16px;
-  text-align: center; }
-
-.social-icon {
-  height: 35px;
-  margin-top: 5px;
-  margin-right: 5px; }
-  .social-icon i {
-    line-height: 2px; }
-
-.social-icon.fb {
-  background: #3B5998; }
-
-.social-icon.google {
-  background: #DD4B39; }
-
-.social-icon.linkedIn {
-  background: #3E5065; }
-
-.footer-row {
-  margin: 0; }
-
-.subscription-header {
-  margin-top: 15px;
-  font-size: 20px;
-  font-weight: 500;
-  color: white;
-  text-align: right;
-  margin-bottom: 0; }
-
-.subscription-header:hover, .social-header:hover, .copyright:hover {
-  color: #D66360 !important; }
-
-.subscription {
-  margin-top: 20px; }
 
 /*# sourceMappingURL=index.css.map */

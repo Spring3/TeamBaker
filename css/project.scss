@@ -1,10 +1,16 @@
 @import 'common';
 
 $color-star-hover: #FFED5F;
-$color-eye-hover: #67A3C0;
+$color-star: #DBCB52;
+$color-eye-hover: #AED6E9;
+$color-eye: #86B7CF;
+$color-panel: #45676F;
+$color-heart: $color-active;
+$color-heart-hover: #D77C7A;
 
 body{
   width: 100% !important;
+  background-color: $color-panel !important;
 }
 
 #nav.affix{
@@ -14,9 +20,10 @@ body{
 .content-wrapper{
   overflow:hidden;
   margin:0 auto;
+  position: relative;
   .leftPart{
-
-    background-color: #546451;
+    font-size: 20px;
+    color: white !important;
       .profile-image{
         height:270px;
         min-width: 270px;
@@ -47,8 +54,10 @@ body{
       margin: 20px auto;
       font-size: 25px;
       text-align:center;
-      font-family: $font-family-main;
-      color: $color-main;
+      font-family: $font-geo;
+      a{
+        color: $color-background;
+      }
     }
     .user-action-buttons{
       margin: 0px auto 20px auto;
@@ -57,6 +66,7 @@ body{
         margin-bottom: 20px;
       }
       .action-buttons{
+        margin-top: 10px;
         list-style-type: none;
         text-align: center;
         font-size: 20px;
@@ -67,10 +77,19 @@ body{
           margin-left: 25px;
           margin-right: 25px;
           a{
-            color: $color-main;
+            display:inline-block;
+          }
+          .fa-heart{
+            color: $color-heart;
+          }
+          .fa-star{
+            color: $color-star;
+          }
+          .fa-eye{
+            color: $color-eye;
           }
           .fa-heart:hover{
-            color: $color-active;
+            color: $color-heart-hover;
           }
           .fa-star:hover{
             color: $color-star-hover;
@@ -79,7 +98,9 @@ body{
             color: $color-eye-hover;
           }
           p{
+            color: $color-background !important;
             margin: 0;
+            font-size: 30px;
           }
 
         }
@@ -88,10 +109,10 @@ body{
     }
     .team-header{
       text-align:center;
-      font-family: $font-family-main;
-      color: $color-main;
+      font-family: $font-geo;
+      color: $color-background;//$color-main;
       font-size: 22px;
-      margin: 50px auto 0px auto;
+      margin: 40px auto 0px auto;
     }
     .team-specs{
       margin-bottom: 20px;
@@ -109,36 +130,45 @@ body{
             margin: 0;
             display:inline-block;
             border-radius: 20px;
-            color: white;
+            font-size: 18px;
+            //color: $color-main;
             float: center;
+          }
+          .spec-name:hover{
+            color: white;
           }
           .btn-apply{
             display:inline-block;
             float: center;
             max-width:46px;
             margin-left: 10px;
-            color: white;
+            //color: $color-main;
             font-size: 20px;
             padding-left: 15px;
             padding-right: 15px;
             border-radius: 50%;
           }
+          .btn-apply:hover{
+            color:white;
+          }
         }
       }
     }
     .team-count{
-      font-size: 20px;
+      font-size: 30px;
+      color: $color-background !important;
       }
 
     }
 
   .rightPart{
-    background-color: #766162;
-
+    font-size: 18px;
+    background-color: $color-background;
     .project-name{
       margin: 85px 0px 0px 0px;
-      font-size: 24px;
+      font-size: 26px;
       font-family: $font-family-main;
+      font-weight: 300;
       text-align:center;
     }
     .project-info{
@@ -163,6 +193,11 @@ body{
       .additional-info{
         width: 50%;
         margin: 50px auto;
+        .progress-bar-header{
+          color: $color-main-hover !important;
+          text-align:center;
+          font-size: 20px;
+        }
         .progress{
             border-radius: 0;
         }
@@ -203,7 +238,8 @@ body{
                 max-width: 100%;
                 max-height: 100%;
               }
-              p{
+              .media-header{
+                margin-top:10px;
                 font-size: 16px;
                 text-align: center;
               }
@@ -223,11 +259,33 @@ body{
 hr{
   max-width: 250px;
   margin: 5px auto 15px 0px;
-  opacity: 0.7;
+  opacity: 0.4;
+  border-color: $color-main;
 }
 
-.footer{
-  display: inline-block;
-  background-color: #454753;
-  height: 70px;
+.input-group-btn{
+
+  a{
+    text-decoration: none;
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content-wrapper{
+    .rightPart{
+      .project-info{
+        .basic-info{
+          width: 90%;
+        }
+        .additional-info{
+          width: 90%;
+          text-align:center;
+          hr{
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,17 +1,6 @@
 @import 'common';
 
-$color-category-art: #FAC06B;
-$color-category-dance: #6F8398;
-$color-category-design: #87AEC8;
-$color-category-filmAndVideo: #FF8477;
-$color-category-games: #76CE85;
-$color-category-it: #806E8F;
-$color-category-journalism: #70C1A5;
-$color-category-music: #DDBD98;
-$color-category-photography: #D38383;
-$color-category-publishing: #518A77;
-$color-category-technology: #ACC471;
-$color-category-other: #676060;
+$color-panel: #629B9E;
 
 .carousel {
   max-height: 800px;
@@ -128,7 +117,7 @@ $color-category-other: #676060;
   p{
     color:white;
     font-weight:normal;
-    font-family:$font-family-main;
+    font-family:$font-geo;
   }
   a{
     color:white;
@@ -392,6 +381,7 @@ position: relative;
 }
 
 .panel{
+  border-color: $color-panel;
   vertical-align: top;
   min-width: 250px;
   max-width: 300px;
@@ -410,12 +400,13 @@ position: relative;
   .panel-heading{
     border-radius: 0;
     text-align: center;
+    background-color: $color-panel;
     .panel-title{
       a{
         color: white;
         text-decoration: none !important;
         font-weight: 300;
-        font-family: $font-family-main;
+        font-family: $font-geo;
       }
     }
   }
@@ -457,13 +448,21 @@ position: relative;
               font-family: $font-family-main;
               font-weight: 500;
               border-radius: 0;
+              background-color: $color-panel;
             }
           }
         }
       }
+      .progress-header{
+        text-align:center;
+
+      }
       .progress{
         border-radius: 0;
         margin: 0px 5px 20px 5px;
+        .progress-bar{
+          background-color: $color-panel;
+        }
       }
 
       .project-params{
@@ -483,7 +482,8 @@ position: relative;
         }
       }
       .description-header{
-        margin: 0 auto;
+        margin: 5px auto;
+        font-weight: bold;
         color: $color-main;
         text-align:center;
       }
@@ -493,318 +493,6 @@ position: relative;
 
       .description{
         text-align:both;
-      }
-    }
-  }
-}
-
-.panel-art{
-  border-color: $color-category-art;
-  .panel-heading{
-    background-color: $color-category-art;
-  }
-
-  .panel-body{
-    .info-container{
-      .project_hashtags{
-        .hashtag{
-          a{
-            span{
-              background-color: $color-category-art;
-            }
-          }
-        }
-      }
-      .progress{
-        .progress-bar{
-          background-color: $color-category-art;
-        }
-      }
-    }
-  }
-}
-
-.panel-dance{
-  border-color: $color-category-dance;
-  .panel-heading{
-    background-color: $color-category-dance;
-  }
-
-  .panel-body{
-    .info-container{
-      .project_hashtags{
-        .hashtag{
-          a{
-            span{
-              background-color: $color-category-dance;
-            }
-          }
-        }
-      }
-      .progress{
-        .progress-bar{
-          background-color: $color-category-dance;
-        }
-      }
-    }
-  }
-}
-
-.panel-design{
-  border-color: $color-category-design;
-  .panel-heading{
-    background-color: $color-category-design;
-  }
-
-  .panel-body{
-    .info-container{
-      .project_hashtags{
-        .hashtag{
-          a{
-            span{
-              background-color: $color-category-design;
-            }
-          }
-        }
-      }
-      .progress{
-        .progress-bar{
-          background-color: $color-category-design;
-        }
-      }
-    }
-  }
-}
-
-.panel-filmAndVideo{
-  border-color: $color-category-filmAndVideo;
-  .panel-heading{
-    background-color: $color-category-filmAndVideo;
-  }
-
-  .panel-body{
-    .info-container{
-      .project_hashtags{
-        .hashtag{
-          a{
-            span{
-              background-color: $color-category-filmAndVideo;
-            }
-          }
-        }
-      }
-      .progress{
-        .progress-bar{
-          background-color: $color-category-filmAndVideo;
-        }
-      }
-    }
-  }
-}
-
-.panel-games{
-  border-color: $color-category-games;
-  .panel-heading{
-    background-color: $color-category-games;
-  }
-
-  .panel-body{
-    .info-container{
-      .project_hashtags{
-        .hashtag{
-          a{
-            span{
-              background-color: $color-category-games;
-            }
-          }
-        }
-      }
-      .progress{
-        .progress-bar{
-          background-color: $color-category-games;
-        }
-      }
-    }
-  }
-}
-
-.panel-it{
-  border-color: $color-category-it;
-  .panel-heading{
-    background-color: $color-category-it;
-  }
-
-  .panel-body{
-    .info-container{
-      .project_hashtags{
-        .hashtag{
-          a{
-            span{
-              background-color: $color-category-it;
-            }
-          }
-        }
-      }
-      .progress{
-        .progress-bar{
-          background-color: $color-category-it;
-        }
-      }
-    }
-  }
-}
-
-.panel-journalism{
-  border-color: $color-category-journalism;
-  .panel-heading{
-    background-color: $color-category-journalism;
-  }
-
-  .panel-body{
-    .info-container{
-      .project_hashtags{
-        .hashtag{
-          a{
-            span{
-              background-color: $color-category-journalism;
-            }
-          }
-        }
-      }
-      .progress{
-        .progress-bar{
-          background-color: $color-category-journalism;
-        }
-      }
-    }
-  }
-}
-
-.panel-music{
-  border-color: $color-category-music;
-  .panel-heading{
-    background-color: $color-category-music;
-  }
-
-  .panel-body{
-    .info-container{
-      .project_hashtags{
-        .hashtag{
-          a{
-            span{
-              background-color: $color-category-music;
-            }
-          }
-        }
-      }
-      .progress{
-        .progress-bar{
-          background-color: $color-category-music;
-        }
-      }
-    }
-  }
-}
-
-.panel-photography{
-  border-color: $color-category-photography;
-  .panel-heading{
-    background-color: $color-category-photography;
-  }
-
-  .panel-body{
-    .info-container{
-      .project_hashtags{
-        .hashtag{
-          a{
-            span{
-              background-color: $color-category-photography;
-            }
-          }
-        }
-      }
-      .progress{
-        .progress-bar{
-          background-color: $color-category-photography;
-        }
-      }
-    }
-  }
-}
-
-.panel-publishing{
-  border-color: $color-category-publishing;
-  .panel-heading{
-    background-color: $color-category-publishing;
-  }
-
-  .panel-body{
-    .info-container{
-      .project_hashtags{
-        .hashtag{
-          a{
-            span{
-              background-color: $color-category-publishing;
-            }
-          }
-        }
-      }
-      .progress{
-        .progress-bar{
-          background-color: $color-category-publishing;
-        }
-      }
-    }
-  }
-}
-
-.panel-technology{
-  border-color: $color-category-technology;
-  .panel-heading{
-    background-color: $color-category-technology;
-  }
-
-  .panel-body{
-    .info-container{
-      .project_hashtags{
-        .hashtag{
-          a{
-            span{
-              background-color: $color-category-technology;
-            }
-          }
-        }
-      }
-      .progress{
-        .progress-bar{
-          background-color: $color-category-technology;
-        }
-      }
-    }
-  }
-}
-
-.panel-other{
-  border-color: $color-category-other;
-  .panel-heading{
-    background-color: $color-category-other;
-  }
-
-  .panel-body{
-    .info-container{
-      .project_hashtags{
-        .hashtag{
-          a{
-            span{
-              background-color: $color-category-other;
-            }
-          }
-        }
-      }
-      .progress{
-        .progress-bar{
-          background-color: $color-category-other;
-        }
       }
     }
   }
@@ -833,67 +521,11 @@ position: relative;
   }
 }
 
-#category-art:hover{
-  background-color: $color-category-art;
-  color: #FFF;
+.list-group-item:hover{
+  background-color: $color-panel !important;
+  color: white !important;
+  opacity: 0.7;
 }
-
-#category-dance:hover{
-  background-color: $color-category-dance;
-  color: #FFF;
-}
-
-#category-design:hover{
-  background-color: $color-category-design;
-  color: #FFF;
-}
-
-#category-filmAndVideo:hover{
-  background-color: $color-category-filmAndVideo;
-  color: #FFF;
-}
-
-#category-games:hover{
-  background-color: $color-category-games;
-  color: #FFF;
-}
-
-#category-it:hover{
-  background-color: $color-category-it;
-  color: #FFF;
-}
-
-#category-journalism:hover{
-  background-color: $color-category-journalism;
-  color: #FFF;
-}
-
-#category-music:hover{
-  background-color: $color-category-music;
-  color: #FFF;
-}
-
-#category-photography:hover{
-  background-color: $color-category-photography;
-  color: #FFF;
-}
-
-#category-publishing:hover{
-  background-color: $color-category-publishing;
-  color: #FFF;
-}
-
-#category-technology:hover{
-  background: $color-category-technology;
-  color: #FFF;
-}
-
-#category-other:hover{
-  background: $color-category-other;
-  color: #FFF;
-}
-
-
 
 .btn-load{
   margin: 40px auto;
@@ -921,164 +553,4 @@ position: relative;
 input.xs-input{
   border-radius: 0px !important;
   -webkit-appearance: none !important;
-}
-
-// Footer
-footer{
-  text-align:center;
-  margin: 0;
-  background: #272731;
-  position: relative;
-}
-
-.footer-container {
-    width: 100%;
-    max-width: 90%;
-    margin: 0 auto;
-    max-height: 300px;
-    display: inline-block;
-}
-
-@media screen and (max-width: 767px) {
-  .footer-container{
-    max-width: 100%;
-  }
-
-  .subscr-sector{
-    padding-right: 0;
-    .subscription-header{
-      margin-bottom: 20px;
-      margin-top: 10px;
-      font-size: 16px;
-    }
-    .subscription{
-      margin-top:0;
-    }
-  }
-
-  .social-sector{
-    padding-left: 0;
-    .social-header{
-      font-size: 15px;
-    }
-  }
-
-  .copyrights{
-    .list-inline{
-      text-align: center;
-    }
-  }
-
-  .caption{
-    font-size: 35px !important;
-  }
-
-  .contrast{
-    h4{
-      font-size: 20px !important;
-    }
-  }
-
-  .input-group-btn{
-    a.button{
-      padding: 0;
-    }
-  }
-}
-
-.copyrights{
-  text-align:center;
-  margin: 40px auto 0px auto;
-}
-
-.copyright{
-  margin: 0;
-  margin-top: 20px;
-}
-
-.list-inline{
-  text-align:left;
-  margin-left: 10px;
-  li{
-    font-weight: 300;
-  }
-}
-
-.social_list{
-  display:inline-block;
-  vertical-align:middle;
-  a{
-    text-decoration: none !important;
-  }
-}
-
-.social_btn{
-  display: inline;
-  color: white;
-}
-
-p, li{
-  text-decoration: none;
-}
-
-.social-header{
-  color: white;
-  text-align:left;
-  line-height:3;
-  display: block;
-  width: 100%;
-  font-weight: 500;
-  font-size: 20px;
-}
-
-.icon{
-  display: block;
-  width: 35px;
-  padding: 10px;
-  margin-right:  10px;
-  margin-top: 3px;
-  float: left;
-  color: #FFF;
-  font-size: 16px;
-  text-align: center;
-}
-
-.social-icon  {
-  @extend .icon;
-  height:35px;
-  margin-top:5px;
-  margin-right: 5px;
-  i{
-    line-height: 2px;
-  }
-}
-.social-icon.fb  {
-  background: #3B5998;
-}
-.social-icon.google  {
-    background: #DD4B39;
-}
-.social-icon.linkedIn  {
-    background: #3E5065;
-}
-
-.footer-row{
-  margin: 0;
-}
-
-.subscription-header{
-  margin-top: 15px;
-  font-size: 20px;
-  font-weight: 500;
-  color: white;
-  text-align: right;
-  margin-bottom:0;
-}
-
-.subscription-header:hover, .social-header:hover, .copyright:hover{
-  color: $color-active !important;
-}
-
-.subscription{
-  margin-top:20px;
 }
