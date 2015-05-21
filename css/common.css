@@ -120,10 +120,6 @@ footer {
 .list-inline li {
   font-weight: 300; }
 
-.social_list {
-  display: inline-block;
-  vertical-align: middle; }
-
 .social_list a {
   text-decoration: none !important; }
 
@@ -206,6 +202,8 @@ p, li {
     .social-sector .social-header {
       font-size: 15px;
       text-align: center; }
+    .social-sector .social_list {
+      display: inline-block; }
 
   .copyrights .list-inline {
     text-align: center; }
