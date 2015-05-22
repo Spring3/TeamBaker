@@ -21,7 +21,7 @@ body{
   overflow:hidden;
   margin:0 auto;
   position: relative;
-  .leftPart{
+  .author-section{
     font-size: 20px;
     color: white !important;
       .profile-image{
@@ -64,6 +64,9 @@ body{
       .btn-follow{
         text-align:center;
         margin-bottom: 20px;
+        a{
+          color: $color-background !important;
+        }
       }
       .action-buttons{
         margin-top: 10px;
@@ -132,6 +135,7 @@ body{
             border-radius: 20px;
             font-size: 18px;
             float: center;
+            color: $color-background;
           }
           .spec-name:hover{
             color: white;
@@ -145,6 +149,8 @@ body{
             padding-left: 15px;
             padding-right: 15px;
             border-radius: 50%;
+            color: $color-background;
+            text-align: center;
           }
           .btn-apply:hover{
             color:white;
@@ -159,7 +165,7 @@ body{
 
     }
 
-  .rightPart{
+  .project-section{
     font-size: 18px;
     background-color: $color-background;
     .project-name{

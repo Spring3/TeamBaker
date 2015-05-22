@@ -54,7 +54,7 @@ $(document).ready(function()
 });
 
 $('.panel').ready(function(){
-  $('.panel').addClass('animated fadeInUp');
+  $('.panel').addClass('animated zoomIn');
 });
 
 $('footer').ready(function(){

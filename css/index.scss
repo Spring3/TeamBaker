@@ -30,7 +30,7 @@ $color-panel: #629B9E;
 .slides-container{
   li{
     img{
-      position:fixed;
+      position:fixed !important;
     }
   }
 }

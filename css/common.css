@@ -32,7 +32,8 @@ a:hover {
     margin: 0;
     max-height: 50px;
     position: relative;
-    bottom: 15px; }
+    bottom: 15px;
+    right: 10px; }
   .navbar-default .container-fluid .navbar-header .navbar-brand .brand-name {
     display: inline-block;
     color: #F3F3F3 !important;

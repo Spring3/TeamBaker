@@ -32,7 +32,8 @@ a:hover {
     margin: 0;
     max-height: 50px;
     position: relative;
-    bottom: 15px; }
+    bottom: 15px;
+    right: 10px; }
   .navbar-default .container-fluid .navbar-header .navbar-brand .brand-name {
     display: inline-block;
     color: #F3F3F3 !important;
@@ -228,21 +229,21 @@ body {
   margin: 0 auto;
   position: relative;
   clear: both; }
-  .content-wrapper .leftPart {
+  .content-wrapper .author-section {
     font-size: 20px;
     color: white !important; }
-    .content-wrapper .leftPart .profile-image {
+    .content-wrapper .author-section .profile-image {
       height: 270px;
       min-width: 270px;
       width: 60%;
       margin: 0 auto;
       margin-top: 14%; }
-      .content-wrapper .leftPart .profile-image a {
+      .content-wrapper .author-section .profile-image a {
         display: block;
         height: 100%;
         max-width: 270px;
         margin: 0 auto; }
-        .content-wrapper .leftPart .profile-image a img {
+        .content-wrapper .author-section .profile-image a img {
           height: 100%;
           width: 80%;
           max-width: 270px;
@@ -251,73 +252,76 @@ body {
           min-height: 270px;
           display: block;
           margin: 0 auto; }
-    .content-wrapper .leftPart .author-name {
+    .content-wrapper .author-section .author-name {
       margin: 20px auto;
       font-size: 25px;
       text-align: center;
       font-family: Geomanist; }
-      .content-wrapper .leftPart .author-name a {
+      .content-wrapper .author-section .author-name a {
         color: #F3F3F3; }
-    .content-wrapper .leftPart .user-action-buttons {
+    .content-wrapper .author-section .user-action-buttons {
       margin: 0px auto 20px auto; }
-      .content-wrapper .leftPart .user-action-buttons .btn-follow {
+      .content-wrapper .author-section .user-action-buttons .btn-follow {
         text-align: center;
         margin-bottom: 20px; }
-      .content-wrapper .leftPart .user-action-buttons .action-buttons {
+        .content-wrapper .author-section .user-action-buttons .btn-follow a {
+          color: #F3F3F3 !important; }
+      .content-wrapper .author-section .user-action-buttons .action-buttons {
         margin-top: 10px;
         list-style-type: none;
         text-align: center;
         font-size: 20px;
         display: inline-block;
         width: 100%; }
-        .content-wrapper .leftPart .user-action-buttons .action-buttons li {
+        .content-wrapper .author-section .user-action-buttons .action-buttons li {
           display: inline-block;
           margin-left: 25px;
           margin-right: 25px; }
-          .content-wrapper .leftPart .user-action-buttons .action-buttons li a {
+          .content-wrapper .author-section .user-action-buttons .action-buttons li a {
             display: inline-block; }
-          .content-wrapper .leftPart .user-action-buttons .action-buttons li .fa-heart {
+          .content-wrapper .author-section .user-action-buttons .action-buttons li .fa-heart {
             color: #B8807F; }
-          .content-wrapper .leftPart .user-action-buttons .action-buttons li .fa-star {
+          .content-wrapper .author-section .user-action-buttons .action-buttons li .fa-star {
             color: #DBCB52; }
-          .content-wrapper .leftPart .user-action-buttons .action-buttons li .fa-eye {
+          .content-wrapper .author-section .user-action-buttons .action-buttons li .fa-eye {
             color: #86B7CF; }
-          .content-wrapper .leftPart .user-action-buttons .action-buttons li .fa-heart:hover {
+          .content-wrapper .author-section .user-action-buttons .action-buttons li .fa-heart:hover {
             color: #D77C7A; }
-          .content-wrapper .leftPart .user-action-buttons .action-buttons li .fa-star:hover {
+          .content-wrapper .author-section .user-action-buttons .action-buttons li .fa-star:hover {
             color: #FFED5F; }
-          .content-wrapper .leftPart .user-action-buttons .action-buttons li .fa-eye:hover {
+          .content-wrapper .author-section .user-action-buttons .action-buttons li .fa-eye:hover {
             color: #AED6E9; }
-          .content-wrapper .leftPart .user-action-buttons .action-buttons li p {
+          .content-wrapper .author-section .user-action-buttons .action-buttons li p {
             color: #F3F3F3 !important;
             margin: 0;
             font-size: 30px; }
-    .content-wrapper .leftPart .team-header {
+    .content-wrapper .author-section .team-header {
       text-align: center;
       font-family: Geomanist;
       color: #F3F3F3;
       font-size: 22px;
       margin: 40px auto 0px auto; }
-    .content-wrapper .leftPart .team-specs {
+    .content-wrapper .author-section .team-specs {
       margin-bottom: 20px;
       text-align: center; }
-      .content-wrapper .leftPart .team-specs .spec {
+      .content-wrapper .author-section .team-specs .spec {
         margin-top: 20px;
         margin-bottom: 20px; }
-        .content-wrapper .leftPart .team-specs .spec .spec-container {
+        .content-wrapper .author-section .team-specs .spec .spec-container {
           display: inline-block;
           width: 100%;
           text-align: center; }
-          .content-wrapper .leftPart .team-specs .spec .spec-container .spec-name {
+          .content-wrapper .author-section .team-specs .spec .spec-container .spec-name {
             max-width: 80%;
             margin: 0;
             display: inline-block;
             border-radius: 20px;
             font-size: 18px;
-            float: center; }
-          .content-wrapper .leftPart .team-specs .spec .spec-container .spec-name:hover {
+            float: center;
+            color: #F3F3F3; }
+          .content-wrapper .author-section .team-specs .spec .spec-container .spec-name:hover {
             color: white; }
-          .content-wrapper .leftPart .team-specs .spec .spec-container .btn-apply {
+          .content-wrapper .author-section .team-specs .spec .spec-container .btn-apply {
             display: inline-block;
             float: center;
             max-width: 46px;
@@ -325,65 +329,67 @@ body {
             font-size: 20px;
             padding-left: 15px;
             padding-right: 15px;
-            border-radius: 50%; }
-          .content-wrapper .leftPart .team-specs .spec .spec-container .btn-apply:hover {
+            border-radius: 50%;
+            color: #F3F3F3;
+            text-align: center; }
+          .content-wrapper .author-section .team-specs .spec .spec-container .btn-apply:hover {
             color: white; }
-    .content-wrapper .leftPart .team-count {
+    .content-wrapper .author-section .team-count {
       font-size: 30px;
       color: #F3F3F3 !important; }
-  .content-wrapper .rightPart {
+  .content-wrapper .project-section {
     font-size: 18px;
     background-color: #F3F3F3; }
-    .content-wrapper .rightPart .project-name {
+    .content-wrapper .project-section .project-name {
       margin: 85px 0px 0px 0px;
       font-size: 26px;
       font-family: "Raleway", sans-serif;
       font-weight: 300;
       text-align: center; }
-    .content-wrapper .rightPart .project-info .basic-info {
+    .content-wrapper .project-section .project-info .basic-info {
       width: 50%;
       margin: 25px auto 0px auto; }
-      .content-wrapper .rightPart .project-info .basic-info p {
+      .content-wrapper .project-section .project-info .basic-info p {
         margin-bottom: 10px;
         text-align: left;
         display: inline-block;
         min-width: 100px; }
-      .content-wrapper .rightPart .project-info .basic-info span {
+      .content-wrapper .project-section .project-info .basic-info span {
         display: inline; }
-    .content-wrapper .rightPart .project-info .additional-info {
+    .content-wrapper .project-section .project-info .additional-info {
       width: 50%;
       margin: 50px auto; }
-      .content-wrapper .rightPart .project-info .additional-info .progress-bar-header {
+      .content-wrapper .project-section .project-info .additional-info .progress-bar-header {
         color: #3F3F3F !important;
         text-align: center;
         font-size: 20px; }
-      .content-wrapper .rightPart .project-info .additional-info .progress {
+      .content-wrapper .project-section .project-info .additional-info .progress {
         border-radius: 0; }
-      .content-wrapper .rightPart .project-info .additional-info .attachments, .content-wrapper .rightPart .project-info .additional-info .links, .content-wrapper .rightPart .project-info .additional-info .media {
+      .content-wrapper .project-section .project-info .additional-info .attachments, .content-wrapper .project-section .project-info .additional-info .links, .content-wrapper .project-section .project-info .additional-info .media {
         font-size: 20px; }
-        .content-wrapper .rightPart .project-info .additional-info .attachments .attachments-list, .content-wrapper .rightPart .project-info .additional-info .links .attachments-list, .content-wrapper .rightPart .project-info .additional-info .media .attachments-list {
+        .content-wrapper .project-section .project-info .additional-info .attachments .attachments-list, .content-wrapper .project-section .project-info .additional-info .links .attachments-list, .content-wrapper .project-section .project-info .additional-info .media .attachments-list {
           font-size: 16px;
           list-style-type: none; }
-          .content-wrapper .rightPart .project-info .additional-info .attachments .attachments-list .attachment, .content-wrapper .rightPart .project-info .additional-info .links .attachments-list .attachment, .content-wrapper .rightPart .project-info .additional-info .media .attachments-list .attachment {
+          .content-wrapper .project-section .project-info .additional-info .attachments .attachments-list .attachment, .content-wrapper .project-section .project-info .additional-info .links .attachments-list .attachment, .content-wrapper .project-section .project-info .additional-info .media .attachments-list .attachment {
             display: block; }
-      .content-wrapper .rightPart .project-info .additional-info .links, .content-wrapper .rightPart .project-info .additional-info .media {
+      .content-wrapper .project-section .project-info .additional-info .links, .content-wrapper .project-section .project-info .additional-info .media {
         margin-top: 20px; }
-        .content-wrapper .rightPart .project-info .additional-info .links .links-list, .content-wrapper .rightPart .project-info .additional-info .media .links-list {
+        .content-wrapper .project-section .project-info .additional-info .links .links-list, .content-wrapper .project-section .project-info .additional-info .media .links-list {
           font-size: 16px;
           list-style-type: none; }
-          .content-wrapper .rightPart .project-info .additional-info .links .links-list .link, .content-wrapper .rightPart .project-info .additional-info .media .links-list .link {
+          .content-wrapper .project-section .project-info .additional-info .links .links-list .link, .content-wrapper .project-section .project-info .additional-info .media .links-list .link {
             display: block; }
-      .content-wrapper .rightPart .project-info .additional-info .media .media-list {
+      .content-wrapper .project-section .project-info .additional-info .media .media-list {
         font-size: 16px;
         list-style-type: none; }
-        .content-wrapper .rightPart .project-info .additional-info .media .media-list .media {
+        .content-wrapper .project-section .project-info .additional-info .media .media-list .media {
           display: inline-block;
           max-width: 200px;
           margin: auto 10px auto 0px; }
-          .content-wrapper .rightPart .project-info .additional-info .media .media-list .media img {
+          .content-wrapper .project-section .project-info .additional-info .media .media-list .media img {
             max-width: 100%;
             max-height: 100%; }
-          .content-wrapper .rightPart .project-info .additional-info .media .media-list .media .media-header {
+          .content-wrapper .project-section .project-info .additional-info .media .media-list .media .media-header {
             margin-top: 10px;
             font-size: 16px;
             text-align: center; }
