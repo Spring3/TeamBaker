@@ -4,13 +4,18 @@ $color-star-hover: #FFED5F;
 $color-star: #DBCB52;
 $color-eye-hover: #AED6E9;
 $color-eye: #86B7CF;
-$color-panel: #45676F;
+$color-panel: #336E7B;
 $color-heart: $color-active;
 $color-heart-hover: #D77C7A;
+$color-comment: #EAE8E8;
 
 body{
   width: 100% !important;
   background-color: $color-panel !important;
+}
+
+span{
+  color: $color-main;
 }
 
 #nav.affix{
@@ -36,25 +41,14 @@ body{
           height:100%;
           max-width: 270px;
           margin: 0 auto;
-
-          img{
-            height: 100%;
-            width: 80%;
-            max-width: 270px;
-            max-height: 270px;
-            min-width: 270px;
-            min-height: 270px;
-            display: block;
-            margin: 0 auto;
-          }
         }
-
       }
     .author-name{
       margin: 20px auto;
-      font-size: 25px;
+      font-size: 30px;
       text-align:center;
-      font-family: $font-geo;
+      font-family: $font-family-main;
+      font-weight: 400;
       a{
         color: $color-background;
       }
@@ -65,7 +59,7 @@ body{
         text-align:center;
         margin-bottom: 20px;
         a{
-          color: $color-background !important;
+          font-size: 20px;
         }
       }
       .action-buttons{
@@ -82,19 +76,19 @@ body{
           a{
             display:inline-block;
           }
-          .fa-heart{
+          .fa-heart-o{
             color: $color-heart;
           }
-          .fa-star{
+          .fa-star-o{
             color: $color-star;
           }
           .fa-eye{
             color: $color-eye;
           }
-          .fa-heart:hover{
+          .fa-heart-o:hover{
             color: $color-heart-hover;
           }
-          .fa-star:hover{
+          .fa-star-o:hover{
             color: $color-star-hover;
           }
           .fa-eye:hover{
@@ -112,7 +106,8 @@ body{
     }
     .team-header{
       text-align:center;
-      font-family: $font-geo;
+      font-family: $font-family-main;
+      font-weight: 400;
       color: $color-background;
       font-size: 22px;
       margin: 40px auto 0px auto;
@@ -132,9 +127,7 @@ body{
             max-width: 80%;
             margin: 0;
             display:inline-block;
-            border-radius: 20px;
             font-size: 18px;
-            float: center;
             color: $color-background;
           }
           .spec-name:hover{
@@ -148,7 +141,6 @@ body{
             font-size: 20px;
             padding-left: 15px;
             padding-right: 15px;
-            border-radius: 50%;
             color: $color-background;
             text-align: center;
           }
@@ -161,16 +153,20 @@ body{
     .team-count{
       font-size: 30px;
       color: $color-background !important;
+      font-weight: 100;
       }
 
     }
 
   .project-section{
+    border-left-color: #548894;
+    border-left-style: solid;
+    border-left-width: 2px;
     font-size: 18px;
     background-color: $color-background;
     .project-name{
       margin: 85px 0px 0px 0px;
-      font-size: 26px;
+      font-size: 35px;
       font-family: $font-family-main;
       font-weight: 300;
       text-align:center;
@@ -196,7 +192,7 @@ body{
 
       .additional-info{
         width: 50%;
-        margin: 50px auto;
+        margin: 50px auto 60px auto;
         .progress-bar-header{
           color: $color-main-hover !important;
           text-align:center;
@@ -254,7 +250,58 @@ body{
       }
     }
     .comments{
+      margin-bottom: 50px;
+      .comments-header{
+          text-align: center;
+          font-size: 35px;
+          margin-bottom: 40px;
+      }
+      .comment{
+        width: 90%;
+        margin:0 auto;
+        margin-bottom: 30px;
+        .avatar-container{
+          text-align:right;
+          .author-image{
+            margin-right:30px;
+            float:center;
+            display:inline-block;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
 
+          }
+        }
+        .comment-insides{
+          background: $color-comment;
+          .comment-info{
+            border-bottom-color: #D8D8D8;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            margin-left: 10px;
+            padding: 5px 10px 0px 10px;
+            a{
+              font-size: 25px;
+            }
+            .post-time{
+              float: right;
+              color: $color-unactive;
+            }
+          }
+          .comment-content{
+            font-size: 16px;
+            margin-left: 10px;
+            margin-bottom: 0;
+            margin-top: 10px;
+            padding: 5px 10px 10px 10px;
+            line-height: 1.5;
+            color: $color-main !important;
+          }
+          .comment-content:hover{
+            color: $color-main-hover !important;
+          }
+        }
+      }
     }
   }
   clear:both;
@@ -277,7 +324,7 @@ hr{
 
 @media screen and (max-width: 767px) {
   .content-wrapper{
-    .rightPart{
+    .project-section{
       .project-info{
         .basic-info{
           width: 90%;

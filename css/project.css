@@ -11,7 +11,7 @@ html, body, label {
   z-index: 2; }
 
 p, li {
-  color: #666B6E !important; }
+  color: #3F3F3F !important; }
 
 a {
   text-decoration: none !important;
@@ -83,15 +83,15 @@ a:hover {
 
 #nav.affix {
   position: fixed;
-  background-color: #373E53;
+  background-color: #34495E;
   -webkit-transition: all .6s ease-in-out; }
   #nav.affix .container-fluid #bs-example-navbar-collapse-1 .navbar-nav li.dropdown ul.dropdown-menu {
-    background-color: #373E53; }
+    background-color: #34495E; }
 
 footer {
   text-align: center;
   margin: 0;
-  background: #373E53;
+  background: #34495E;
   position: relative; }
 
 .footer-container {
@@ -107,7 +107,7 @@ footer {
 
 .copyrights {
   text-align: center;
-  margin: 40px auto 0px auto; }
+  margin: 0px auto 0px auto; }
 
 .copyright {
   margin: 0;
@@ -217,9 +217,22 @@ p, li {
 
   .input-group-btn a.button {
     padding: 0; } }
+.xs-input {
+  height: 30px; }
+
+.footer-content {
+  display: inline-block; }
+
+input.xs-input {
+  border-radius: 0px !important;
+  -webkit-appearance: none !important; }
+
 body {
   width: 100% !important;
-  background-color: #45676F !important; }
+  background-color: #336E7B !important; }
+
+span {
+  color: #747474; }
 
 #nav.affix {
   position: static; }
@@ -243,20 +256,12 @@ body {
         height: 100%;
         max-width: 270px;
         margin: 0 auto; }
-        .content-wrapper .author-section .profile-image a img {
-          height: 100%;
-          width: 80%;
-          max-width: 270px;
-          max-height: 270px;
-          min-width: 270px;
-          min-height: 270px;
-          display: block;
-          margin: 0 auto; }
     .content-wrapper .author-section .author-name {
       margin: 20px auto;
-      font-size: 25px;
+      font-size: 30px;
       text-align: center;
-      font-family: Geomanist; }
+      font-family: "Raleway", sans-serif;
+      font-weight: 400; }
       .content-wrapper .author-section .author-name a {
         color: #F3F3F3; }
     .content-wrapper .author-section .user-action-buttons {
@@ -265,7 +270,7 @@ body {
         text-align: center;
         margin-bottom: 20px; }
         .content-wrapper .author-section .user-action-buttons .btn-follow a {
-          color: #F3F3F3 !important; }
+          font-size: 20px; }
       .content-wrapper .author-section .user-action-buttons .action-buttons {
         margin-top: 10px;
         list-style-type: none;
@@ -279,15 +284,15 @@ body {
           margin-right: 25px; }
           .content-wrapper .author-section .user-action-buttons .action-buttons li a {
             display: inline-block; }
-          .content-wrapper .author-section .user-action-buttons .action-buttons li .fa-heart {
+          .content-wrapper .author-section .user-action-buttons .action-buttons li .fa-heart-o {
             color: #B8807F; }
-          .content-wrapper .author-section .user-action-buttons .action-buttons li .fa-star {
+          .content-wrapper .author-section .user-action-buttons .action-buttons li .fa-star-o {
             color: #DBCB52; }
           .content-wrapper .author-section .user-action-buttons .action-buttons li .fa-eye {
             color: #86B7CF; }
-          .content-wrapper .author-section .user-action-buttons .action-buttons li .fa-heart:hover {
+          .content-wrapper .author-section .user-action-buttons .action-buttons li .fa-heart-o:hover {
             color: #D77C7A; }
-          .content-wrapper .author-section .user-action-buttons .action-buttons li .fa-star:hover {
+          .content-wrapper .author-section .user-action-buttons .action-buttons li .fa-star-o:hover {
             color: #FFED5F; }
           .content-wrapper .author-section .user-action-buttons .action-buttons li .fa-eye:hover {
             color: #AED6E9; }
@@ -297,7 +302,8 @@ body {
             font-size: 30px; }
     .content-wrapper .author-section .team-header {
       text-align: center;
-      font-family: Geomanist;
+      font-family: "Raleway", sans-serif;
+      font-weight: 400;
       color: #F3F3F3;
       font-size: 22px;
       margin: 40px auto 0px auto; }
@@ -315,9 +321,7 @@ body {
             max-width: 80%;
             margin: 0;
             display: inline-block;
-            border-radius: 20px;
             font-size: 18px;
-            float: center;
             color: #F3F3F3; }
           .content-wrapper .author-section .team-specs .spec .spec-container .spec-name:hover {
             color: white; }
@@ -329,20 +333,23 @@ body {
             font-size: 20px;
             padding-left: 15px;
             padding-right: 15px;
-            border-radius: 50%;
             color: #F3F3F3;
             text-align: center; }
           .content-wrapper .author-section .team-specs .spec .spec-container .btn-apply:hover {
             color: white; }
     .content-wrapper .author-section .team-count {
       font-size: 30px;
-      color: #F3F3F3 !important; }
+      color: #F3F3F3 !important;
+      font-weight: 100; }
   .content-wrapper .project-section {
+    border-left-color: #548894;
+    border-left-style: solid;
+    border-left-width: 2px;
     font-size: 18px;
     background-color: #F3F3F3; }
     .content-wrapper .project-section .project-name {
       margin: 85px 0px 0px 0px;
-      font-size: 26px;
+      font-size: 35px;
       font-family: "Raleway", sans-serif;
       font-weight: 300;
       text-align: center; }
@@ -358,7 +365,7 @@ body {
         display: inline; }
     .content-wrapper .project-section .project-info .additional-info {
       width: 50%;
-      margin: 50px auto; }
+      margin: 50px auto 60px auto; }
       .content-wrapper .project-section .project-info .additional-info .progress-bar-header {
         color: #3F3F3F !important;
         text-align: center;
@@ -393,24 +400,66 @@ body {
             margin-top: 10px;
             font-size: 16px;
             text-align: center; }
+    .content-wrapper .project-section .comments {
+      margin-bottom: 50px; }
+      .content-wrapper .project-section .comments .comments-header {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 40px; }
+      .content-wrapper .project-section .comments .comment {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 30px; }
+        .content-wrapper .project-section .comments .comment .avatar-container {
+          text-align: right; }
+          .content-wrapper .project-section .comments .comment .avatar-container .author-image {
+            margin-right: 30px;
+            float: center;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; }
+        .content-wrapper .project-section .comments .comment .comment-insides {
+          background: #EAE8E8; }
+          .content-wrapper .project-section .comments .comment .comment-insides .comment-info {
+            border-bottom-color: #D8D8D8;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            margin-left: 10px;
+            padding: 5px 10px 0px 10px; }
+            .content-wrapper .project-section .comments .comment .comment-insides .comment-info a {
+              font-size: 25px; }
+            .content-wrapper .project-section .comments .comment .comment-insides .comment-info .post-time {
+              float: right;
+              color: #827878; }
+          .content-wrapper .project-section .comments .comment .comment-insides .comment-content {
+            font-size: 16px;
+            margin-left: 10px;
+            margin-bottom: 0;
+            margin-top: 10px;
+            padding: 5px 10px 10px 10px;
+            line-height: 1.5;
+            color: #747474 !important; }
+          .content-wrapper .project-section .comments .comment .comment-insides .comment-content:hover {
+            color: #3F3F3F !important; }
 
 hr {
   max-width: 250px;
   margin: 5px auto 15px 0px;
   opacity: 0.4;
-  border-color: #666B6E; }
+  border-color: #747474; }
 
 .input-group-btn a {
   text-decoration: none;
   margin-left: 5px; }
 
 @media screen and (max-width: 767px) {
-  .content-wrapper .rightPart .project-info .basic-info {
+  .content-wrapper .project-section .project-info .basic-info {
     width: 90%; }
-  .content-wrapper .rightPart .project-info .additional-info {
+  .content-wrapper .project-section .project-info .additional-info {
     width: 90%;
     text-align: center; }
-    .content-wrapper .rightPart .project-info .additional-info hr {
+    .content-wrapper .project-section .project-info .additional-info hr {
       max-width: 100%; } }
 
 /*# sourceMappingURL=project.css.map */

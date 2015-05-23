@@ -11,7 +11,7 @@ html, body, label {
   z-index: 2; }
 
 p, li {
-  color: #666B6E !important; }
+  color: #3F3F3F !important; }
 
 a {
   text-decoration: none !important;
@@ -83,15 +83,15 @@ a:hover {
 
 #nav.affix {
   position: fixed;
-  background-color: #373E53;
+  background-color: #34495E;
   -webkit-transition: all .6s ease-in-out; }
   #nav.affix .container-fluid #bs-example-navbar-collapse-1 .navbar-nav li.dropdown ul.dropdown-menu {
-    background-color: #373E53; }
+    background-color: #34495E; }
 
 footer {
   text-align: center;
   margin: 0;
-  background: #373E53;
+  background: #34495E;
   position: relative; }
 
 .footer-container {
@@ -107,7 +107,7 @@ footer {
 
 .copyrights {
   text-align: center;
-  margin: 40px auto 0px auto; }
+  margin: 0px auto 0px auto; }
 
 .copyright {
   margin: 0;
@@ -217,6 +217,16 @@ p, li {
 
   .input-group-btn a.button {
     padding: 0; } }
+.xs-input {
+  height: 30px; }
+
+.footer-content {
+  display: inline-block; }
+
+input.xs-input {
+  border-radius: 0px !important;
+  -webkit-appearance: none !important; }
+
 .carousel {
   max-height: 800px;
   z-index: 0; }
@@ -522,7 +532,7 @@ p, li {
   margin: 20px auto; }
 
 .panel {
-  border-color: #629B9E;
+  border-color: #336E7B;
   vertical-align: top;
   min-width: 250px;
   max-width: 300px;
@@ -541,7 +551,7 @@ p, li {
   .panel .panel-heading {
     border-radius: 0;
     text-align: center;
-    background-color: #629B9E; }
+    background-color: #336E7B; }
     .panel .panel-heading .panel-title a {
       color: white;
       text-decoration: none !important;
@@ -576,14 +586,14 @@ p, li {
           font-family: "Raleway", sans-serif;
           font-weight: 500;
           border-radius: 0;
-          background-color: #629B9E; }
+          background-color: #336E7B; }
     .panel .panel-body .info-container .progress-header {
       text-align: center; }
     .panel .panel-body .info-container .progress {
       border-radius: 0;
       margin: 0px 5px 20px 5px; }
       .panel .panel-body .info-container .progress .progress-bar {
-        background-color: #629B9E; }
+        background-color: #336E7B; }
     .panel .panel-body .info-container .project-params {
       text-align: center;
       list-style-type: none;
@@ -598,7 +608,7 @@ p, li {
     .panel .panel-body .info-container .description-header {
       margin: 5px auto;
       font-weight: bold;
-      color: #666B6E;
+      color: #747474;
       text-align: center; }
     .panel .panel-body .info-container .description-header:hover {
       color: #3F3F3F; }
@@ -623,7 +633,7 @@ p, li {
     border-radius: 0; }
 
 .list-group-item:hover {
-  background-color: #629B9E !important;
+  background-color: #336E7B !important;
   color: white !important;
   opacity: 0.7; }
 
@@ -635,15 +645,5 @@ p, li {
 .input-group-btn a {
   text-decoration: none;
   margin-left: 5px; }
-
-.xs-input {
-  height: 30px; }
-
-.footer-content {
-  display: inline-block; }
-
-input.xs-input {
-  border-radius: 0px !important;
-  -webkit-appearance: none !important; }
 
 /*# sourceMappingURL=index.css.map */

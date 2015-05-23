@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/animate.css" type="text/css">
     <link href="../css/project.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
   </head>
 
   <body>
@@ -44,22 +45,22 @@
       </div>
     </nav>
     <div class="row content-wrapper">
-      <div class="author-section col-xs-12 col-sm-5 col-md-4">
+      <div class="author-section col-xs-12 col-sm-5 col-md-4 col-lg-3">
         <div class="profile-image">
-          <a href="#image"><img src="../img/proj_img-3.jpg"/></a>
+          <a href="#image"><img class="img-responsive" src="../img/author-f.jpg"/></a>
         </div>
         <div class="author-name">
           <a href="#profile">John Doe</a>
         </div>
         <div class="user-action-buttons">
-          <div class="btn-follow"><a href="#" class="button line-blue">Follow</a></div>
+          <div class="btn-follow"><a href="#" class="button line-green">Follow</a></div>
           <ul class="action-buttons">
             <li>
-              <a href="#likes"><i class="fa fa-heart fa-2x"></i></a>
+              <a href="#likes"><i class="fa fa-heart-o fa-2x"></i></a>
               <p>20</p>
             </li>
             <li>
-              <a href="#favorite"><i class="fa fa-star fa-2x"></i></a>
+              <a href="#favorite"><i class="fa fa-star-o fa-2x"></i></a>
               <p>35</p>
             </li>
             <li>
@@ -74,26 +75,26 @@
         <div class="team-specs">
           <div class="spec">
             <div class="spec-container">
-              <a href="#" class="button line-aqua pill spec-name">Test Speciality 1</a>
-              <a href="#apply" class="button line-pink pill btn-apply"><i class="fa fa-plus"></i></a>
+              <a href="#" class="button line-aqua spec-name">Test Speciality 1</a>
+              <a href="#apply" class="button line-pink btn-apply"><i class="fa fa-plus"></i></a>
             </div>
           </div>
           <div class="spec">
             <div class="spec-container">
-              <a href="#" class="button line-aqua pill spec-name">Test Speciality 2</a>
-              <a href="#apply" class="button line-pink pill btn-apply"><i class="fa fa-plus"></i></a>
+              <a href="#" class="button line-aqua spec-name">Test Speciality 2</a>
+              <a href="#apply" class="button line-pink btn-apply"><i class="fa fa-plus"></i></a>
             </div>
           </div>
           <div class="spec">
             <div class="spec-container">
-              <a href="#" class="button line-aqua pill spec-name">Test Speciality 3</a>
-              <a href="#apply" class="button line-pink pill btn-apply"><i class="fa fa-plus"></i></a>
+              <a href="#" class="button line-aqua spec-name">Test Speciality 3</a>
+              <a href="#apply" class="button line-pink btn-apply"><i class="fa fa-plus"></i></a>
             </div>
           </div>
           <p class="team-count">0/3</p>
         </div>
       </div>
-      <div class="project-section col-xs-12 col-sm-7 col-md-8">
+      <div class="project-section col-xs-12 col-sm-7 col-md-8 col-lg-9">
         <div class="project-name">
           Project name
         </div>
@@ -119,6 +120,10 @@
             </div>
           </div>
           <div class="additional-info">
+            <p class="progress-bar-header">Project's progress</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" style="width: 40%"></div>
+            </div>
             <div class="attachments">
               Attachments
               <hr>
@@ -161,24 +166,77 @@
                 </li>
               </ul>
             </div>
-            <p class="progress-bar-header">Project's progress</p>
-            <div class="progress">
-              <div class="progress-bar progress-bar-success" style="width: 40%"></div>
+          </div>
+        </div>
+        <div class="comments">
+          <p class="comments-header">
+            Comments
+          </p>
+          <div class="comment row">
+            <div class="avatar-container span-3">
+              <a href="#image" class="author-image">
+                <img src="../img/author-m.jpg" class="img-responsive img-circle"/>
+              </a>
             </div>
+              <div class="comment-insides span-9">
+              <div class="comment-info">
+                <a href="#comment_author">John Doe</a>
+                <span class="post-time">23.05.2015</span>
+              </div>
+              <p class="comment-content">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
             </div>
           </div>
-          <div class="comments">
-            <div class="comment">
-              <div class="author-image">
-                <img src="../img/proj_img-2.jpg"/>
-              </div>
+
+          <div class="comment row">
+            <div class="avatar-container span-3">
+              <a href="#image" class="author-image">
+                <img src="../img/author-m.jpg" class="img-responsive img-circle"/>
+              </a>
+            </div>
+            <div class="comment-insides span-9">
               <div class="comment-info">
-                Hello world
+                <a href="#comment_author">John Doe</a>
+                <span class="post-time">23.05.2015</span>
               </div>
-              <div class="comment-content">
-                Content here
+              <p class="comment-content">
+                  Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.
+              </p>
+            </div>
+          </div>
+
+          <div class="comment row">
+            <div class="avatar-container span-3">
+              <a href="#image" class="author-image">
+                <img src="../img/author-m.jpg" class="img-responsive img-circle"/>
+              </a>
+            </div>
+            <div class="comment-insides span-9">
+              <div class="comment-info">
+                <a href="#comment_author">John Doe</a>
+                <span class="post-time">23.05.2015</span>
               </div>
-              <hr>
+              <p class="comment-content">
+                Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.
+              </p>
+            </div>
+          </div>
+
+          <div class="comment row">
+            <div class="avatar-container span-3">
+              <a href="#image" class="author-image">
+                <img src="../img/author-m.jpg" class="img-responsive img-circle"/>
+              </a>
+            </div>
+            <div class="comment-insides span-9">
+              <div class="comment-info">
+                <a href="#comment_author">John Doe</a>
+                <span class="post-time">23.05.2015</span>
+              </div>
+              <p class="comment-content">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
             </div>
           </div>
         </div>

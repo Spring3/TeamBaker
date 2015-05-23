@@ -1,10 +1,10 @@
 $(document).ready(function(){
   $('.author-section').ready(function(){
-    $('.author-section').addClass('animated fadeInLeft');
+    $('.author-section').addClass('animated slideInLeft');
   })
 
   $('.project-section').ready(function(){
-    $('.project-section').addClass('animated fadeInRight');
+    $('.project-section').addClass('animated slideInRight');
   })
 
   $('nav').ready(function(){

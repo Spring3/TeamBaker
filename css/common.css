@@ -11,7 +11,7 @@ html, body, label {
   z-index: 2; }
 
 p, li {
-  color: #666B6E !important; }
+  color: #3F3F3F !important; }
 
 a {
   text-decoration: none !important;
@@ -83,15 +83,15 @@ a:hover {
 
 #nav.affix {
   position: fixed;
-  background-color: #373E53;
+  background-color: #34495E;
   -webkit-transition: all .6s ease-in-out; }
   #nav.affix .container-fluid #bs-example-navbar-collapse-1 .navbar-nav li.dropdown ul.dropdown-menu {
-    background-color: #373E53; }
+    background-color: #34495E; }
 
 footer {
   text-align: center;
   margin: 0;
-  background: #373E53;
+  background: #34495E;
   position: relative; }
 
 .footer-container {
@@ -107,7 +107,7 @@ footer {
 
 .copyrights {
   text-align: center;
-  margin: 40px auto 0px auto; }
+  margin: 0px auto 0px auto; }
 
 .copyright {
   margin: 0;
@@ -217,5 +217,14 @@ p, li {
 
   .input-group-btn a.button {
     padding: 0; } }
+.xs-input {
+  height: 30px; }
+
+.footer-content {
+  display: inline-block; }
+
+input.xs-input {
+  border-radius: 0px !important;
+  -webkit-appearance: none !important; }
 
 /*# sourceMappingURL=common.css.map */

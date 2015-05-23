@@ -1,6 +1,6 @@
 @import 'common';
 
-$color-panel: #629B9E;
+$color-panel: #336E7B;
 
 .carousel {
   max-height: 800px;
@@ -540,17 +540,4 @@ position: relative;
     text-decoration: none;
     margin-left: 5px;
   }
-}
-
-.xs-input{
-  height: 30px;
-}
-
-.footer-content{
-  display:inline-block;
-}
-
-input.xs-input{
-  border-radius: 0px !important;
-  -webkit-appearance: none !important;
 }

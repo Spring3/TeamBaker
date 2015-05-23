@@ -6,10 +6,11 @@
 $color-background: #F3F3F3;
 $font-family-main: 'Raleway', sans-serif;
 $font-geo: Geomanist;
-$color-main:  #666B6E;
+$color-main:  #747474;
 $color-active: #B8807F;
 $color-main-hover: #3F3F3F;
-$color-navbar: #373E53;
+$color-unactive: #827878;
+$color-navbar: #34495E;
 
 html, body, label{
   font-family: $font-geo !important;
@@ -22,7 +23,7 @@ html, body, label{
 }
 
 p, li{
-  color: $color-main !important;
+  color: $color-main-hover !important;
 }
 
 a{
@@ -152,7 +153,7 @@ footer {
 
 .copyrights {
   text-align: center;
-  margin: 40px auto 0px auto; }
+  margin: 0px auto 0px auto; }
 
 .copyright {
   margin: 0;
@@ -269,3 +270,16 @@ p, li {
     .input-group-btn a.button {
       padding: 0; }
     }
+
+.xs-input{
+  height: 30px;
+}
+
+.footer-content{
+  display:inline-block;
+}
+
+input.xs-input{
+  border-radius: 0px !important;
+  -webkit-appearance: none !important;
+}
