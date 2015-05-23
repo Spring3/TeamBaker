@@ -348,11 +348,15 @@ span {
     font-size: 18px;
     background-color: #F3F3F3; }
     .content-wrapper .project-section .project-name {
-      margin: 85px 0px 0px 0px;
-      font-size: 35px;
-      font-family: "Raleway", sans-serif;
-      font-weight: 300;
-      text-align: center; }
+      padding: 65px 0px 60px 0px;
+      font-size: 40px;
+      font-family: Geomanist;
+      font-weight: 400;
+      text-align: center;
+      color: #3F3F3F;
+      border-bottom: #D8D8D8;
+      border-bottom-width: 2px;
+      border-bottom-style: solid; }
     .content-wrapper .project-section .project-info .basic-info {
       width: 50%;
       margin: 25px auto 0px auto; }
@@ -369,23 +373,27 @@ span {
       .content-wrapper .project-section .project-info .additional-info .progress-bar-header {
         color: #3F3F3F !important;
         text-align: center;
-        font-size: 20px; }
+        font-size: 25px;
+        margin-bottom: 20px; }
       .content-wrapper .project-section .project-info .additional-info .progress {
-        border-radius: 0; }
+        border-radius: 0;
+        margin-bottom: 60px; }
       .content-wrapper .project-section .project-info .additional-info .attachments, .content-wrapper .project-section .project-info .additional-info .links, .content-wrapper .project-section .project-info .additional-info .media {
-        font-size: 20px; }
+        font-size: 25px; }
         .content-wrapper .project-section .project-info .additional-info .attachments .attachments-list, .content-wrapper .project-section .project-info .additional-info .links .attachments-list, .content-wrapper .project-section .project-info .additional-info .media .attachments-list {
           font-size: 16px;
           list-style-type: none; }
           .content-wrapper .project-section .project-info .additional-info .attachments .attachments-list .attachment, .content-wrapper .project-section .project-info .additional-info .links .attachments-list .attachment, .content-wrapper .project-section .project-info .additional-info .media .attachments-list .attachment {
-            display: block; }
+            display: block;
+            font-size: 16px; }
       .content-wrapper .project-section .project-info .additional-info .links, .content-wrapper .project-section .project-info .additional-info .media {
         margin-top: 20px; }
         .content-wrapper .project-section .project-info .additional-info .links .links-list, .content-wrapper .project-section .project-info .additional-info .media .links-list {
           font-size: 16px;
           list-style-type: none; }
           .content-wrapper .project-section .project-info .additional-info .links .links-list .link, .content-wrapper .project-section .project-info .additional-info .media .links-list .link {
-            display: block; }
+            display: block;
+            font-size: 16px; }
       .content-wrapper .project-section .project-info .additional-info .media .media-list {
         font-size: 16px;
         list-style-type: none; }
@@ -398,14 +406,17 @@ span {
             max-height: 100%; }
           .content-wrapper .project-section .project-info .additional-info .media .media-list .media .media-header {
             margin-top: 10px;
-            font-size: 16px;
-            text-align: center; }
+            text-align: center;
+            font-size: 16px; }
     .content-wrapper .project-section .comments {
-      margin-bottom: 50px; }
+      border-top: #D8D8D8;
+      border-top-width: 2px;
+      border-top-style: solid; }
       .content-wrapper .project-section .comments .comments-header {
+        padding: 60px;
         text-align: center;
         font-size: 35px;
-        margin-bottom: 40px; }
+        margin: 0; }
       .content-wrapper .project-section .comments .comment {
         width: 90%;
         margin: 0 auto;
