@@ -20,7 +20,7 @@ span{
 }
 
 #nav.affix{
-  position: static;
+  position: relative;
 }
 
 .content-wrapper{
@@ -382,7 +382,7 @@ hr{
          .spec{
            .spec-container{
              .spec-name {
-               
+
              }
              .btn-apply{
                margin: 0;

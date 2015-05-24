@@ -236,7 +236,7 @@ span {
   color: #747474; }
 
 #nav.affix {
-  position: static; }
+  position: relative; }
 
 .content-wrapper {
   overflow: hidden;
