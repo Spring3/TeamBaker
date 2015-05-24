@@ -41,6 +41,7 @@ a:hover {
     bottom: 14px; }
 
 .dropdown-menu {
+  z-index: 10;
   left: -35%;
   text-align: center;
   border-width: 0px;
@@ -638,6 +639,7 @@ input.xs-input {
   opacity: 0.7; }
 
 .btn-load {
+  display: inline-block;
   margin: 40px auto; }
   .btn-load a {
     text-decoration: none; }

@@ -41,6 +41,7 @@ a:hover {
     bottom: 14px; }
 
 .dropdown-menu {
+  z-index: 10;
   left: -35%;
   text-align: center;
   border-width: 0px;
@@ -465,12 +466,30 @@ hr {
   margin-left: 5px; }
 
 @media screen and (max-width: 767px) {
+  .content-wrapper .project-section .project-name {
+    font-size: 30px; }
   .content-wrapper .project-section .project-info .basic-info {
     width: 90%; }
   .content-wrapper .project-section .project-info .additional-info {
     width: 90%;
     text-align: center; }
     .content-wrapper .project-section .project-info .additional-info hr {
-      max-width: 100%; } }
+      max-width: 100%; }
+  .content-wrapper .project-section .comments .comments-header {
+    font-size: 30px; }
+  .content-wrapper .project-section .comments .comment {
+    margin: auto 0 30px 0;
+    width: 100%; }
+    .content-wrapper .project-section .comments .comment .avatar-container .author-image {
+      width: 60px;
+      height: 60px; }
+    .content-wrapper .project-section .comments .comment .comment-insides .comment-info a {
+      font-size: 16px; }
+    .content-wrapper .project-section .comments .comment .comment-insides .comment-info span {
+      font-size: 16px; }
+    .content-wrapper .project-section .comments .comment .comment-insides .comment-content {
+      font-size: 14px; }
+  .content-wrapper .author-section .team-specs .spec .spec-container .btn-apply {
+    margin: 0; } }
 
 /*# sourceMappingURL=project.css.map */

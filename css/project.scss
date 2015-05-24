@@ -189,10 +189,6 @@ span{
         span{
           display: inline;
         }
-
-
-
-
       }
 
       .additional-info{
@@ -337,6 +333,9 @@ hr{
 @media screen and (max-width: 767px) {
   .content-wrapper{
     .project-section{
+      .project-name{
+        font-size: 30px;
+      }
       .project-info{
         .basic-info{
           width: 90%;
@@ -349,6 +348,48 @@ hr{
           }
         }
       }
+      .comments{
+        .comments-header{
+          font-size: 30px;
+        }
+        .comment{
+          margin: auto 0 30px 0;
+          width: 100%;
+          .avatar-container{
+            .author-image{
+              width: 60px;
+              height: 60px;
+            }
+          }
+          .comment-insides{
+            .comment-info{
+              a{
+                font-size: 16px;
+              }
+              span{
+                font-size: 16px;
+              }
+            }
+            .comment-content{
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .author-section{
+       .team-specs{
+         .spec{
+           .spec-container{
+             .spec-name {
+               
+             }
+             .btn-apply{
+               margin: 0;
+             }
+           }
+         }
+       }
     }
   }
 }
