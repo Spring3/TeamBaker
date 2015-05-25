@@ -476,14 +476,14 @@ input.xs-input {
   color: #ED6347; }
 
 /* User Register Form */
-.user_register {
+.user_register, .user_update {
   display: none; }
 
-.user_register label {
+.user_register label, .user_update label {
   display: block;
   margin-bottom: 5px; }
 
-.user_register input[type="text"], .user_register input[type="email"], .user_register input[type="password"] {
+.user_register input[type="text"], .user_update input[type="text"], .user_register input[type="email"], .user_update input[type="email"], .user_register input[type="password"], .user_update input[type="password"] {
   display: block;
   width: 90%;
   padding: 10px;
@@ -491,14 +491,14 @@ input.xs-input {
   border: 1px solid #DDD;
   color: #666; }
 
-.user_register input[type="checkbox"] {
+.user_register input[type="checkbox"], .user_update input[type="checkbox"] {
   float: left;
   margin-right: 5px; }
 
-.user_register input[type="checkbox"] + label {
+.user_register input[type="checkbox"] + label, .user_update input[type="checkbox"] + label {
   float: left; }
 
-.user_register .checkbox {
+.user_register .checkbox, .user_update .checkbox {
   margin-bottom: 10px;
   clear: both;
   overflow: hidden; }

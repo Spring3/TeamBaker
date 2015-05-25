@@ -182,11 +182,11 @@
 
           <div class="action_btns">
               <div class="one_half">
-                  <a href="#" id="login_form" style="text-decoration:none;" name="login_form" class="button square aqua">Login</a>
+                  <a href="#" id="login_form" name="login_form" class="button square aqua">Login</a>
               </div>
 
               <div class="one_half last">
-                <a href="#" id="register_form" style="text-decoration:none;" name="register_form" class="button square red">Sign up</a>
+                <a href="#" id="register_form" name="register_form" class="button square red">Sign up</a>
               </div>
           </div>
       </div>
@@ -202,36 +202,54 @@
 
               <div class="action_btns">
                   <div class="one_half">
-                      <a href="#" style="text-decoration:none;" class="back_btn button square black">Back</a>
+                      <a href="#" class="back_btn button square black">Back</a>
                   </div>
 
                   <div class="one_half last">
-                      <a href="#" style="text-decoration:none;" class="button square pink">Login</a>
+                      <a href="#" class="button square pink">Login</a>
                   </div>
               </div>
           </form>
 
-          <a class="forgot_password" style="text-decoration:none;" href="#">Forgot password?</a>
-      </div>
-        <div class="user_register">
+          <a class="forgot_password" id="update_form" href="#">Forgot password?</a>
+        </div>
+          <div class="user_register">
+            <form>
+                <label>Username</label> <input type="text"><br>
+                <label>Email Address</label> <input type="email"><br>
+                <label>Password</label> <input type="password"><br>
+                <input type="password"><br>
+
+                <div class="formplate checkbox">
+                    <input type="checkbox" name="checkbox" value="checkbox" id="check_send_updates">
+                    <p>Send me updates news</p>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half">
+                        <a href="#" class="back_btn button square black">Back</a>
+                    </div>
+
+                    <div class="one_half last">
+                        <a href="#" class="button square pink">Sign up</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="user_update">
           <form>
-              <label>Username</label> <input type="text"><br>
               <label>Email Address</label> <input type="email"><br>
+              <label>Secret</label> <input type="text"><br>
               <label>Password</label> <input type="password"><br>
               <input type="password"><br>
 
-              <div class="formplate checkbox">
-                  <input type="checkbox" name="checkbox" value="checkbox" id="check_send_updates">
-                  <p>Send me updates news</p>
-              </div>
-
               <div class="action_btns">
                   <div class="one_half">
-                      <a href="#" style="text-decoration:none;" class="back_btn button square black">Back</a>
+                      <a href="#" class="back_btn button square black">Back</a>
                   </div>
 
                   <div class="one_half last">
-                      <a href="#" style="text-decoration:none;" class="button square pink">Sign up</a>
+                      <a href="#" class="button square pink">Refresh</a>
                   </div>
               </div>
           </form>

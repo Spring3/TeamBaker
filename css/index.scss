@@ -310,6 +310,10 @@ $color-panel: #336E7B;
     display:  none;
 }
 
+.user_update{
+  @extend .user_register;
+}
+
 .user_register label  {
     display:  block;
      margin-bottom: 5px;
