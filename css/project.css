@@ -365,7 +365,7 @@ span {
         margin-bottom: 10px;
         text-align: left;
         display: inline-block;
-        min-width: 100px; }
+        min-width: 110px; }
       .content-wrapper .project-section .project-info .basic-info span {
         display: inline; }
     .content-wrapper .project-section .project-info .additional-info {
@@ -418,6 +418,12 @@ span {
         text-align: center;
         font-size: 35px;
         margin: 0; }
+      .content-wrapper .project-section .comments .comment-form {
+        max-width: 60%;
+        margin: 0 auto 60px auto; }
+        .content-wrapper .project-section .comments .comment-form form .input-container {
+          max-width: 50%;
+          margin: 0 auto; }
       .content-wrapper .project-section .comments .comment {
         width: 90%;
         margin: 0 auto;
@@ -426,10 +432,9 @@ span {
           text-align: right; }
           .content-wrapper .project-section .comments .comment .avatar-container .author-image {
             margin-right: 30px;
-            float: center;
             display: inline-block;
-            width: 100px;
-            height: 100px;
+            width: 90px;
+            height: 90px;
             border-radius: 50%; }
         .content-wrapper .project-section .comments .comment .comment-insides {
           background: #EAE8E8; }
@@ -477,6 +482,8 @@ hr {
       max-width: 100%; }
   .content-wrapper .project-section .comments .comments-header {
     font-size: 30px; }
+  .content-wrapper .project-section .comments .comment-form {
+    max-width: 80%; }
   .content-wrapper .project-section .comments .comment {
     margin: auto 0 30px 0;
     width: 100%; }
@@ -491,5 +498,9 @@ hr {
       font-size: 14px; }
   .content-wrapper .author-section .team-specs .spec .spec-container .btn-apply {
     margin: 0; } }
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .comments .comment-form {
+    max-width: 60%; } }
 
 /*# sourceMappingURL=project.css.map */

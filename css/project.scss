@@ -184,7 +184,7 @@ span{
           margin-bottom: 10px;
           text-align: left;
           display: inline-block;
-          min-width: 100px;
+          min-width: 110px;
         }
         span{
           display: inline;
@@ -264,6 +264,22 @@ span{
           font-size: 35px;
           margin: 0;
       }
+      .comment-form{
+        max-width: 60%;
+        margin: 0 auto 60px auto;
+          form{
+            textarea{
+
+            }
+            .input-container{
+              max-width: 50%;
+              margin: 0 auto;
+              input{
+
+              }
+            }
+          }
+      }
       .comment{
         width: 90%;
         margin:0 auto;
@@ -272,10 +288,9 @@ span{
           text-align:right;
           .author-image{
             margin-right:30px;
-            float:center;
             display:inline-block;
-            width: 100px;
-            height: 100px;
+            width: 90px;
+            height: 90px;
             border-radius: 50%;
 
           }
@@ -352,6 +367,9 @@ hr{
         .comments-header{
           font-size: 30px;
         }
+        .comment-form{
+          max-width:80%;
+        }
         .comment{
           margin: auto 0 30px 0;
           width: 100%;
@@ -392,4 +410,18 @@ hr{
        }
     }
   }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .comments{
+      .comment-form{
+        max-width:60%;
+      }
+    }
+
 }
