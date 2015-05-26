@@ -595,16 +595,16 @@ hr {
       margin: 0px 5px 20px 5px; }
       .panel .panel-body .info-container .progress .progress-bar {
         background-color: #336E7B; }
-    .panel .panel-body .info-container .project-params {
+    .panel .panel-body .info-container .project-params, .panel .panel-body .info-container .hashtag-params {
       text-align: center;
       list-style-type: none;
       margin: 0px 5px 20px 5px; }
-      .panel .panel-body .info-container .project-params .param {
+      .panel .panel-body .info-container .project-params .param, .panel .panel-body .info-container .hashtag-params .param {
         display: inline-block;
         margin: 0 5px; }
-      .panel .panel-body .info-container .project-params .param:hover {
+      .panel .panel-body .info-container .project-params .param:hover, .panel .panel-body .info-container .hashtag-params .param:hover {
         color: #B8807F !important; }
-      .panel .panel-body .info-container .project-params a {
+      .panel .panel-body .info-container .project-params a, .panel .panel-body .info-container .hashtag-params a {
         text-decoration: none; }
     .panel .panel-body .info-container .description-header {
       margin: 5px auto;
@@ -664,7 +664,7 @@ hr {
 
 .menu {
   list-style-type: none;
-  margin-top: 40px; }
+  margin-top: 105px; }
   .menu .menu-item {
     font-size: 20px;
     font-family: Geomanist;
@@ -714,6 +714,9 @@ hr {
 .btn-load {
   display: block;
   text-align: center; }
+
+.hashtag-params {
+  margin: 20px auto !important; }
 
 @media screen and (max-width: 767px) {
   .project-section {
