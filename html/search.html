@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/animate.css" rel="stylesheet"/>
+    <link href="../css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../css/search.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default affix" id="nav">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand vt-p" href="../index.html">
+            <img src="../img/emblem.png"/>
+            <span class="brand-name">TeamBaker</span>
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle vt-p" data-toggle="dropdown" role="button" aria-expanded="false">Projects <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#" class="vt-p"><i class="fa fa-plus-circle"></i> Add project</a></li>
+                <li class="divider"></li>
+                <li><a href="#" class="vt-p"><i class="fa fa-check-circle"></i> Apply for a project</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about" class="vt-p">About</a></li>
+            <li><a class="auth" href="#signin" class="vt-p">Sign in</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row content-wrapper">
+      <div class="author-section col-xs-12 col-sm-5 col-md-4 col-lg-2">
+        <ul class="menu">
+          <li class="menu-item menu-item-header">Search items</li>
+          <li class="menu-item"><a href="#projects">Projects</a></li>
+          <li class="menu-item"><a href="#people">People</a></li>
+          <li class="menu-item"><a href="#hashtags">Hashtags</a></li>
+        </ul>
+      </div>
+      <div class="project-section col-xs-12 col-sm-7 col-md-8 col-lg-10">
+        <div class="menu-top">
+          <div class="list-group">
+            <div class="form-group search-group">
+              <p class="search-header">Search</p>
+              <form>
+                <div class="input-group">
+                  <input class="form-control input-sm xs-input" type="text" id="inputSmall">
+                  <span class="input-group-btn">
+                    <a href="#" class="button line-black small square"><i class="fa fa-search"></i></a>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="panels">
+            <div class="panel col-sm-3 col-md-3 col-lg-2 col-lg-offset-1">
+              <div class="panel-heading">
+                <h3 class="panel-title"><a href="project.html">Sample art panel</a></h3>
+              </div>
+              <div class="panel-body">
+                <div class="image-container">
+                  <a href="#"><img src="../img/proj_img-1.jpg"></img></a>
+                </div>
+                <div class="info-container">
+                  <p><b>by <a href="#" class="author">John Doe</a></b></p>
+                  <p class="project-category">Category: <a href="#">Art</a></p>
+                  <hr>
+                  <ul class="project_hashtags">
+                    <li class="hashtag">
+                      <a href="#"><span class="label label-success">#Photoshop</span></a>
+                    </li>
+                    <li class="hashtag">
+                      <a href="#"><span class="label label-success">#Illustrator</span></a>
+                    </li>
+                    <li class="hashtag">
+                      <a href="#"><span class="label label-success">#Lightroom</span></a>
+                    </li>
+                  </ul>
+                  <p class="progress-header">Progress</p>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 100%"></div>
+                  </div>
+                  <hr>
+                  <ul class="project-params">
+                    <li class="param">
+                      <span>40 <i class="fa fa-heart"></i></span>
+                    </li>
+                    <li class="param">
+                      <span>25 <i class="fa fa-eye"></i></span>
+                    </li>
+                    <li class="param">
+                      <span>0/3 <i class="fa fa-child"></i></span>
+                    </li>
+                  </ul>
+                  <div class="description-sector">
+                    <p class="description-header"><b>Description</b></p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et finibus felis. Aliquam ante nunc, venenatis vitae tristique convallis, ultrices a nunc. Duis at nibh.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-profile col-sm-3 col-md-3 col-lg-2 col-lg-offset-1">
+              <div class="panel-body">
+                <div class="image-container profile-img">
+                  <a href="#profile"><img class="img-circle img-responsive" src="../img/author-m.jpg"></img></a>
+                </div>
+                <div class="info-container">
+                  <p class="author"><a href="#" class="author">John Doe</a></p>
+                  <p class="author-email">johnDoe@gmail.com</p>
+                  <hr>
+                    <ul class="project_hashtags">
+                      <li class="hashtag">
+                        <a href="#"><span class="label label-success">#CSS3</span></a>
+                      </li>
+                      <li class="hashtag">
+                        <a href="#"><span class="label label-success">#HTML5</span></a>
+                      </li>
+                      <li class="hashtag">
+                        <a href="#"><span class="label label-success">#JS</span></a>
+                      </li>
+                    </ul>
+                  <hr>
+                  <ul class="project-params">
+                    <li class="param">
+                      <span>2 <i class="fa fa-star-o"></i></span>
+                    </li>
+                    <li class="param">
+                      <span>25 <i class="fa fa-comment-o"></i></span>
+                    </li>
+                    <li class="param">
+                      <span>1 <i class="fa fa-file-code-o"></i></span>
+                    </li>
+                  </ul>
+                  <p class="status status-available">Looking for a project</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-hashtag col-sm-3 col-md-3 col-lg-2 col-lg-offset-1">
+              <div class="panel-heading">
+                <h3 class="panel-title"><a href="project.html">Sample art panel</a></h3>
+              </div>
+              <div class="panel-body">
+                <div class="image-container">
+                  <a href="#"><img src="../img/proj_img-1.jpg"></img></a>
+                </div>
+                <div class="info-container">
+                  <p><b>by <a href="#" class="author">John Doe</a></b></p>
+                  <p class="project-category">Category: <a href="#">Art</a></p>
+                  <hr>
+                  <ul class="project_hashtags">
+                    <li class="hashtag">
+                      <a href="#"><span class="label label-success">#Photoshop</span></a>
+                    </li>
+                    <li class="hashtag">
+                      <a href="#"><span class="label label-success">#Illustrator</span></a>
+                    </li>
+                    <li class="hashtag">
+                      <a href="#"><span class="label label-success">#Lightroom</span></a>
+                    </li>
+                  </ul>
+                  <p class="progress-header">Progress</p>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 100%"></div>
+                  </div>
+                  <hr>
+                  <ul class="project-params">
+                    <li class="param">
+                      <span>40 <i class="fa fa-heart"></i></span>
+                    </li>
+                    <li class="param">
+                      <span>25 <i class="fa fa-eye"></i></span>
+                    </li>
+                    <li class="param">
+                      <span>0/3 <i class="fa fa-child"></i></span>
+                    </li>
+                  </ul>
+                  <div class="description-sector">
+                    <p class="description-header"><b>Description</b></p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et finibus felis. Aliquam ante nunc, venenatis vitae tristique convallis, ultrices a nunc. Duis at nibh.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-load">
+            <a href="#" class="button line-green square large">Load more <i class="fa fa-arrow-down"></i></a>
+          </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="footer-container">
+          <div class="row footer-row">
+              <div class="col-lg-12 footer-content">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 social-sector">
+                  <ul class="social_list">
+                    <li class="social-header">Follow us on:</li>
+                    <li class="social_btn"><a href="#"><span class="social-icon fb"><i class="fa fa-facebook fa-lg"></i></span></a></li>
+                    <li class="social_btn"><a href="#"><span class="social-icon google"><i class="fa fa-google-plus"></i></span></a></li>
+                    <li class="social_btn"><a href="#"><span class="social-icon linkedIn"><i class="fa fa-linkedin"></i></span></a></li>
+                  </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-6 logo-sector">
+                  <img src="../img/logo.png"/>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 subscr-sector">
+                  <p class="subscription-header">Let's get in touch</p>
+                  <div class="form-group subscription">
+                    <div class="input-group">
+                      <input class="form-control input-sm xs-input" type="text" id="inputSmall">
+                      <span class="input-group-btn">
+                        <a href="#" class="subscr button line-green small square">Subscribe</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 copyrights">
+                <ul class="list-inline">
+                    <li>
+                        <a href="#add"><i class="fa fa-plus-circle"></i> Add Project</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#apply"><i class="fa fa-check-circle"></i> Apply for a project</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                      <a href="#about">About</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a class="auth" href="#signin" class="vt-p">Sign in</a>
+                    </li>
+
+                </ul>
+                <p class="copyright text-muted small">Copyright &copy; Daniel Vasylenko 2015. All Rights Reserved</p>
+              </div>
+          </div>
+      </div>
+    </footer>
+
+    <script src="../js/jquery-1.11.2.min.js"></script>
+    <script src="../js/readmore.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script id="webplate-stack" src="../webplate/stack.js"></script>
+    <script src="../js/search.js"></script>
+  </body>
+</html>

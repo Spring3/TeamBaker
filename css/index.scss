@@ -384,11 +384,16 @@ position: relative;
   margin: 20px auto;
 }
 
+hr{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 .panel{
   border-color: $color-panel;
   vertical-align: top;
   min-width: 250px;
-  max-width: 300px;
+  max-width: 240px;
   margin: 0 auto;
   padding: 0;
   float: none;
@@ -421,7 +426,6 @@ position: relative;
     .image-container{
       margin-bottom:10px;
       width: 100%;
-      opacity: 50%;
       a{
         width: 100%;
         display:block;
@@ -512,7 +516,6 @@ position: relative;
   }
 }
 
-
 .list-group-item{
   border: 0px;
   margin: 3px auto;
@@ -540,7 +543,6 @@ position: relative;
 }
 
 .input-group-btn{
-
   a{
     text-decoration: none;
     margin-left: 5px;

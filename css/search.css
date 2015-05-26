@@ -648,4 +648,75 @@ hr {
   text-decoration: none;
   margin-left: 5px; }
 
-/*# sourceMappingURL=index.css.map */
+#nav.affix {
+  position: relative; }
+
+.content-wrapper {
+  margin: 0 auto; }
+  .content-wrapper .project-section {
+    margin-top: 40px; }
+
+.menu-top {
+  width: 100%; }
+
+.panels {
+  text-align: center; }
+
+.menu {
+  list-style-type: none;
+  margin-top: 40px; }
+  .menu .menu-item {
+    font-size: 20px;
+    font-family: Geomanist;
+    text-align: center; }
+    .menu .menu-item a {
+      display: block;
+      padding: 20px;
+      color: #747474; }
+  .menu .menu-item-header {
+    font-size: 30px;
+    padding: 20px 5px; }
+  .menu .menu-item:hover {
+    background-color: #ECEAEA; }
+
+.search-header {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  margin: 0 auto;
+  padding-bottom: 30px; }
+
+.profile-img {
+  margin: 10px auto;
+  width: auto; }
+  .profile-img a {
+    width: auto;
+    display: block;
+    text-align: center; }
+    .profile-img a img {
+      max-width: 100%;
+      max-height: 150px;
+      margin: 0 auto; }
+
+.author-email {
+  text-align: center; }
+
+.status {
+  text-align: center;
+  margin-bottom: 20px !important; }
+
+.author {
+  text-align: center; }
+
+.search-group {
+  max-width: 65%; }
+
+.btn-load {
+  display: block;
+  text-align: center; }
+
+@media screen and (max-width: 767px) {
+  .project-section {
+    margin-top: 0px; } }
+
+/*# sourceMappingURL=search.css.map */
