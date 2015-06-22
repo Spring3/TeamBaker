@@ -534,17 +534,18 @@ hr {
   margin-bottom: 15px; }
 
 .panel {
-  border-color: #336E7B;
+  z-index: 30;
+  border-width: 0;
   vertical-align: top;
-  min-width: 250px;
-  max-width: 240px;
+  min-width: 300px;
+  max-width: 300px;
   margin: 0 auto;
   padding: 0;
   float: none;
-  display: inline-block;
+  display: block;
   text-align: left;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-right: 10px;
   border-radius: 0;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) !important;
@@ -553,7 +554,7 @@ hr {
   .panel .panel-heading {
     border-radius: 0;
     text-align: center;
-    background-color: #336E7B; }
+    background-color: #6895A0; }
     .panel .panel-heading .panel-title a {
       color: white;
       text-decoration: none !important;
@@ -561,7 +562,8 @@ hr {
       font-family: Geomanist; }
   .panel .panel-body {
     padding: 0;
-    width: 100%; }
+    width: 100%;
+    text-align: center; }
     .panel .panel-body .image-container {
       margin-bottom: 10px;
       width: 100%; }
@@ -587,14 +589,14 @@ hr {
           font-family: "Raleway", sans-serif;
           font-weight: 500;
           border-radius: 0;
-          background-color: #336E7B; }
+          background-color: #6895A0; }
     .panel .panel-body .info-container .progress-header {
       text-align: center; }
     .panel .panel-body .info-container .progress {
       border-radius: 0;
       margin: 0px 5px 20px 5px; }
       .panel .panel-body .info-container .progress .progress-bar {
-        background-color: #336E7B; }
+        background-color: #6895A0; }
     .panel .panel-body .info-container .project-params {
       text-align: center;
       list-style-type: none;
@@ -634,7 +636,7 @@ hr {
     border-radius: 0; }
 
 .list-group-item:hover {
-  background-color: #336E7B !important;
+  background-color: #6895A0 !important;
   color: white !important;
   opacity: 0.7; }
 

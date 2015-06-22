@@ -17,6 +17,14 @@
 
 .panels{
   text-align: center;
+
+  .panel-profile{
+    z-index: 29;
+  }
+
+  .panel-hashtag{
+    @extend .panel-profile;
+  }
 }
 
 .menu{
