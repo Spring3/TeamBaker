@@ -5,7 +5,7 @@ $('.description-sector').readmore({
   collapsedHeight:0
 });
 
-$(document).ready(function(){
+function init(){
 
   $('#nav').affix({
     offset: {
@@ -13,6 +13,11 @@ $(document).ready(function(){
     }
   });
 
+  refreshIndexes();
+  initMasonry();
+}
+
+function initMasonry(){
   var $grid = $('.panels');
   $grid.masonry({
     // set itemSelector so .grid-sizer is not used in layout
@@ -24,10 +29,13 @@ $(document).ready(function(){
     isOriginTop: true,
     isResizeBound: true,
     isFitWidth: true,
-    animated: true
+    isAnimated: true,
+    animationOptions: {
+      duration: 600,
+      easing: 'linear',
+      queue: false
+    }
   });
-
-  refreshIndexes();
 
   $(window).resize(function(){
     $grid.masonry('reloadItems');
@@ -40,7 +48,7 @@ $(document).ready(function(){
        $grid.resize();
     }, 600);
 
-  })
+  });
 
   $(document).on('click', '.lessbtn', function(){
     setTimeout(function(){
@@ -48,12 +56,13 @@ $(document).ready(function(){
       $grid.resize();
     }, 600);
 
-  })
+  });
 
-  $grid.masonry('reloadItems');
-  $grid.masonry('layout');
+  $(window).trigger('resize');
+}
 
-});
+$(document).ready(init);
+$(window).load(initMasonry);
 
 function refreshIndexes(){
   $('.panel').each(function(index){

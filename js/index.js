@@ -45,7 +45,7 @@
       return false;
     });
 
-$(document).ready(function(){
+function init(){
   refreshIndexes();
   $('.carousel').css('height', $(window).height());
 
@@ -77,7 +77,10 @@ $(document).ready(function(){
   $('.list-group-item').ready(function(){
     $('.list-group-item').addClass('animated zoomIn');
   });
+  initMasonry();
+}
 
+function initMasonry(){
   var $grid = $('.panels');
   $grid.masonry({
     // set itemSelector so .grid-sizer is not used in layout
@@ -108,7 +111,7 @@ $(document).ready(function(){
        $grid.resize();
     }, 600);
 
-  })
+  });
 
   $(document).on('click', '.lessbtn', function(){
     setTimeout(function(){
@@ -116,9 +119,13 @@ $(document).ready(function(){
       $grid.resize();
     }, 600);
 
-  })
+  });
 
-});
+  $(window).trigger('resize');
+}
+
+$(document).ready(init);
+$(window).load(initMasonry);
 
 function refreshIndexes(){
   $('.panel').each(function(index){
