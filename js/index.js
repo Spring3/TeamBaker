@@ -79,14 +79,12 @@ $(document).ready(function(){
   });
 
   var $grid = $('.panels');
-  var tallestPanelHeight = getTallestPanelHeight();
   $grid.masonry({
     // set itemSelector so .grid-sizer is not used in layout
     itemSelector: '.panel',
     // use element for option
     columnWidth: '.panel',
-    columnHeight: tallestPanelHeight,
-    gutter: 15,
+    gutter: 20,
     percentPosition: false,
     isOriginTop: true,
     isResizeBound: true,
@@ -98,9 +96,6 @@ $(document).ready(function(){
       queue: false
     }
   });
-
-  $(window).trigger('resize');
-  $grid.resize();
 
   $(window).resize(function(){
     $grid.masonry('reloadItems');
@@ -129,19 +124,4 @@ function refreshIndexes(){
   $('.panel').each(function(index){
     $(this).css('z-index', 999-index);
   });
-}
-
-function getTallestPanelHeight(){
-  var result;
-  $('.panel').each(function(){
-    if (!result){
-      result = $(this).height();
-    }
-    else{
-      if ($(this).height() > result){
-        result = $(this).height();
-      }
-    }
-  });
-  return result;
 }

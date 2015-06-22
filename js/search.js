@@ -19,8 +19,7 @@ $(document).ready(function(){
     itemSelector: '.panel',
     // use element for option
     columnWidth: '.panel',
-    columnHeight: '.panel' + 25,
-    gutter: 15,
+    gutter: 20,
     percentPosition: false,
     isOriginTop: true,
     isResizeBound: true,
