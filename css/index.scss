@@ -408,13 +408,14 @@ hr{
   .panel-heading{
     border-radius: 0;
     text-align: center;
-    background-color: $color-panel;
     .panel-title{
       a{
-        color: white;
+        color: $color-main-hover;
         text-decoration: none !important;
-        font-weight: 300;
-        font-family: $font-geo;
+        font-weight: 500;
+        font-size: 18px;
+        display:block;
+        font-family: 'Helvetica';
       }
     }
   }
