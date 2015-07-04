@@ -117,15 +117,26 @@ a:hover{
 }
 
 #nav.affix{
+
   position:fixed;
-  background-color: $color-navbar;
+  background-color: white;
+  //background-color: $color-navbar;
   -webkit-transition: all .6s ease-in-out;
   .container-fluid{
+    .navbar-brand{
+      .brand-name{
+        color:$color-main-hover !important;
+      }
+    }
     #bs-example-navbar-collapse-1{
       .navbar-nav{
-          li.dropdown{
+          li{
+            a{
+              color: $color-main-hover !important;
+            }
             ul.dropdown-menu{
-              background-color:$color-navbar;
+              background-color: white;
+              //background-color:$color-navbar;
             }
           }
       }
@@ -284,4 +295,16 @@ p, li {
 input.xs-input{
   border-radius: 0px !important;
   -webkit-appearance: none !important;
+}
+
+.centered{
+  text-align:center;
+}
+
+.margined{
+  margin: 10px 0px 10px 0px;
+}
+
+.paddinged{
+  padding: 20px 0px 20px 0px;
 }

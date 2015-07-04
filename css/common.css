@@ -84,10 +84,14 @@ a:hover {
 
 #nav.affix {
   position: fixed;
-  background-color: #34495E;
+  background-color: white;
   -webkit-transition: all .6s ease-in-out; }
-  #nav.affix .container-fluid #bs-example-navbar-collapse-1 .navbar-nav li.dropdown ul.dropdown-menu {
-    background-color: #34495E; }
+  #nav.affix .container-fluid .navbar-brand .brand-name {
+    color: #3F3F3F !important; }
+  #nav.affix .container-fluid #bs-example-navbar-collapse-1 .navbar-nav li a {
+    color: #3F3F3F !important; }
+  #nav.affix .container-fluid #bs-example-navbar-collapse-1 .navbar-nav li ul.dropdown-menu {
+    background-color: white; }
 
 footer {
   text-align: center;
@@ -224,5 +228,14 @@ p, li {
 input.xs-input {
   border-radius: 0px !important;
   -webkit-appearance: none !important; }
+
+.centered {
+  text-align: center; }
+
+.margined {
+  margin: 10px 0px 10px 0px; }
+
+.paddinged {
+  padding: 20px 0px 20px 0px; }
 
 /*# sourceMappingURL=common.css.map */

@@ -64,6 +64,29 @@ function init(){
     offset: {
       top: $('header').height()-$('#nav').height()
     }
+
+  });
+
+  $('nav').on('affix.bs.affix', function(){
+    $('#emblem').attr('src', "img/emblem_dark.png");
+    $('nav').css(
+      {
+        '-webkit-box-shadow': '0px 3px 5px 2px rgba(0,0,0,0.15)',
+        '-moz-box-shadow': '0px 3px 5px 2px rgba(0,0,0,0.15)',
+        'box-shadow': '0px 3px 5px 2px rgba(0,0,0,0.15)'
+      }
+    );
+  });
+
+  $('nav').on( 'affixed-top.bs.affix', function () {
+    $('#emblem').attr('src', "img/emblem.png");
+    $('nav').css(
+      {
+        '-webkit-box-shadow': '0px 3px 5px 2px rgba(0,0,0,0)',
+        '-moz-box-shadow': '0px 3px 5px 2px rgba(0,0,0,0)',
+        'box-shadow': '0px 3px 5px 2px rgba(0,0,0,0)'
+      }
+    );
   });
 
   $('footer').ready(function(){

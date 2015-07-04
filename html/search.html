@@ -22,7 +22,7 @@
           </button>
 
           <a class="navbar-brand vt-p" href="../index.html">
-            <img src="../img/emblem.png"/>
+            <img id="emblem" src="../img/emblem_dark.png"/>
             <span class="brand-name">TeamBaker</span>
           </a>
         </div>
@@ -53,6 +53,14 @@
           <li class="menu-item"><a href="#projects">Projects</a></li>
           <li class="menu-item"><a href="#people">People</a></li>
           <li class="menu-item"><a href="#hashtags">Hashtags</a></li>
+          <li class="menu-item paddinged">
+            Sort by:
+            <select>
+              <option value="1">Progress <i class="fa fa-arrow-down"></i></option>
+              <option value="2">Name <i class="fa fa-arrow-down"></i></option>
+              <option value="3">Date <i class="fa fa-arrow-down"></i></option>
+            </select>
+          </li>
         </ul>
       </div>
       <div class="project-section col-xs-12 col-sm-7 col-md-8 col-lg-10">
@@ -60,21 +68,6 @@
           <div class="list-group">
             <div class="form-group search-group">
               <p class="search-header">Search</p>
-              <div class="filters">
-                <ul>
-                  <li><a href="#" class="button line-black">Progress <i class="fa fa-arrow-down"></i></a></li>
-                  <li><a href="#" class="button line-black">Name <i class="fa fa-arrow-down"></i></a></li>
-                  <li><a href="#" class="button line-black">Date <i class="fa fa-arrow-down"></i></a></li>
-                  <div class="formplate">
-                      <input type="checkbox" name="checkbox-1" value="checkbox-1" id="checkbox-1">
-                      <label for="checkbox-1">Free</label>
-                  </div>
-                  <div class="formplate">
-                      <input type="checkbox" name="checkbox-2" value="checkbox-2" id="checkbox-2">
-                      <label for="checkbox-2">PM</label>
-                  </div>
-                </ul>
-              </div>
               <form>
                 <div class="input-group">
                   <input class="form-control input-sm xs-input" type="text" id="inputSmall">

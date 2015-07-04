@@ -408,9 +408,10 @@ hr{
   .panel-heading{
     border-radius: 0;
     text-align: center;
+    background-color: $color-panel;
     .panel-title{
       a{
-        color: $color-main-hover;
+        color: white;
         text-decoration: none !important;
         font-weight: 500;
         font-size: 18px;
