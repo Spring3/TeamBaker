@@ -220,7 +220,8 @@ p, li {
   .contrast h4 {
     font-size: 20px !important; } }
 .xs-input {
-  height: 30px; }
+  height: 30px;
+  font-size: 16px; }
 
 .footer-content {
   display: inline-block; }
@@ -565,7 +566,14 @@ hr {
   .panel .panel-heading {
     border-radius: 0;
     text-align: center;
-    background-color: #6895A0; }
+    background-color: #6895A0;
+    position: absolute;
+    z-index: 40;
+    width: 100%;
+    opacity: 0.95;
+    -webkit-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.15); }
     .panel .panel-heading .panel-title a {
       color: white;
       text-decoration: none !important;
@@ -586,7 +594,12 @@ hr {
         text-align: center; }
         .panel .panel-body .image-container a img {
           max-width: 100%;
-          max-height: 180px; }
+          max-height: 180px;
+          -webkit-filter: opacity(0.7);
+          filter: opacity(0.7); }
+        .panel .panel-body .image-container a img:hover {
+          -webkit-filter: opacity(1);
+          filter: opacity(1); }
     .panel .panel-body .info-container p {
       margin: 0px 5px 10px 5px; }
       .panel .panel-body .info-container p b {
@@ -604,7 +617,8 @@ hr {
           border-radius: 0;
           background-color: #6895A0; }
     .panel .panel-body .info-container .progress-header {
-      text-align: center; }
+      text-align: center;
+      margin: 0; }
     .panel .panel-body .info-container .progress {
       border-radius: 0;
       margin: 0px 5px 20px 5px; }

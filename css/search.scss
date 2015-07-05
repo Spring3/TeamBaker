@@ -27,6 +27,9 @@
 
   .panel-hashtag{
     @extend .panel-profile;
+    .panel-heading{
+      position: relative;
+    }
   }
 }
 
