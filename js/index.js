@@ -1,4 +1,3 @@
-  $(".auth").leanModal({top : 100, overlay : 0.6, closeButton: ".modal_close" });
 
   $('.description-sector').readmore({
     moreLink: '<a href="#" class="morebtn button grey square">More</a>',
@@ -7,6 +6,8 @@
     collapsedHeight:0
 
   });
+
+  $(".auth").leanModal({top : 100, overlay : 0.6, closeButton: ".modal_close" });
 
     //Auth
     $("#login_form").click(function () {

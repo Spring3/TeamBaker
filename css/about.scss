@@ -7,15 +7,24 @@
   box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.15);
 }
 
+h4{
+  font-family: $font-geo;
+}
+
 body{
   color: $color-smoothe;
   font-family: $font-family-main;
   .tagline{
     margin: 60px;
+    color: $color-main-hover;
+    font-family: $font-family-main;
+    font-weight: 200;
   }
 
   .container{
     margin-top: 50px;
+    font-family: $font-family-main;
+    font-weight: 200;
   }
 
   .img-responsive{
@@ -26,4 +35,48 @@ body{
   footer{
     margin-top: 110px;
   }
+}
+
+.image-vd{
+  display:block;
+  text-align: center;
+  background: url("../img/vd.jpg") no-repeat;
+  background-size: cover;
+  background-position: 31%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.image-ostap{
+  display:block;
+  text-align: center;
+  background: url("../img/ostap.jpg") no-repeat;
+  background-size: cover;
+  background-position-y: 11%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.image-muse{
+  display:block;
+  text-align: center;
+  background: url("../img/muse.jpg") no-repeat;
+  background-size: cover;
+  background-position-y: 1%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.info{
+  font-weight: 500;
+}
+
+.teammate{
+  margin: 50px auto;
 }

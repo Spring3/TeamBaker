@@ -3,7 +3,6 @@
   <head>
     <title>About us</title>
     <link href='http://fonts.googleapis.com/css?family=Raleway:200,300,500' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Anonymous+Pro:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/about.css">
@@ -41,12 +40,118 @@
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about" class="vt-p">About</a></li>
+            <li><a href="about.html" class="vt-p">About</a></li>
             <li><a class="auth" href="#signin" class="vt-p">Sign in</a></li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <!-- Auth -->
+    <div id="signin" class="popupContainer" style="display:none;">
+      <header class="popupHeader">
+        <span class="header_title">Login</span>
+        <span class="modal_close"><i class="fa fa-times"></i></span>
+      </header>
+
+      <section class="popupBody">
+        <!-- Here Goes all the Login and signup Forms -->
+        <div class="social_login">
+          <div class="clearfix">
+            <a class="social_box fb" href="#">
+              <span class="icon"><i class="fa fa-facebook fa-lg"></i></span>
+              <span class="icon_title">Connect with Facebook</span>
+            </a>
+            <a class="social_box google" href="#">
+              <span class="icon"><i class="fa fa-google-plus"></i></span>
+              <span class="icon_title">Connect with Google</span>
+            </a>
+            <a class="social_box linkedIn" href="#">
+              <span class="icon"><i class="fa fa-linkedin"></i></span>
+              <span class="icon_title">Connect with LinkedIn</span>
+            </a>
+          </div>
+
+          <div class="centeredText">
+            <span>Or use your email </span>
+          </div>
+
+          <div class="action_btns">
+            <div class="one_half">
+              <a href="#" id="login_form" name="login_form" class="button square aqua">Login</a>
+            </div>
+
+            <div class="one_half last">
+              <a href="#" id="register_form" name="register_form" class="button square red">Sign up</a>
+            </div>
+          </div>
+        </div>
+        <div class="user_login">
+          <form>
+            <label>Email / Username</label> <input type="text" placeholder="Email or username"><br>
+            <label>Password</label> <input type="password" placeholder="Password"><br>
+
+            <div class="formplate checkbox">
+              <input type="checkbox" name="checkbox" value="checkbox" id="check_remember">
+              <p>Remember me</p>
+            </div>
+
+            <div class="action_btns">
+              <div class="one_half">
+                <a href="#" class="back_btn button square black">Back</a>
+              </div>
+
+              <div class="one_half last">
+                <a href="#" class="button square pink">Login</a>
+              </div>
+            </div>
+          </form>
+
+          <a class="forgot_password" id="update_form" href="#">Forgot password?</a>
+        </div>
+        <div class="user_register">
+          <form>
+            <label>Username</label> <input type="text" placeholder="Username"><br>
+            <label>Email</label> <input type="email" placeholder="Email"><br>
+            <label>Password</label> <input type="password" placeholder="Password"><br>
+            <input type="password" placeholder="Password repeat"><br>
+
+            <div class="formplate checkbox">
+              <input type="checkbox" name="checkbox" value="checkbox" id="check_send_updates">
+              <p>Send me updates news</p>
+            </div>
+
+            <div class="action_btns">
+              <div class="one_half">
+                <a href="#" class="back_btn button square black">Back</a>
+              </div>
+
+              <div class="one_half last">
+                <a href="#" class="button square pink">Sign up</a>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="user_update">
+          <form>
+            <label>Email</label> <input type="email" placeholder="Email"><br>
+            <label>Secret</label> <input type="text" placeholder="Secret"><br>
+            <label>Password</label> <input type="password" placeholder="New password"><br>
+            <input type="password" placeholder="Password repeat"><br>
+
+            <div class="action_btns">
+              <div class="one_half">
+                <a href="#" class="back_btn button square black">Back</a>
+              </div>
+
+              <div class="one_half last">
+                <a href="#" class="button square pink">Refresh</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div> <!-- Auth end -->
 
     <!-- Image Background Page Header -->
     <!-- Note: The background image is set within the business-casual.css file. -->
@@ -64,15 +169,20 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-sm-4">
-
+            <div class="col-sm-4 teammate">
+              <a class="image-ostap" href="#link"></a>
+              <h4 class="centered margined">Ostap Smolynets</h4>
+              <p class="centered margined info">4th course Student at NTUU "KPI"</p>
             </div>
-            <div class="col-sm-4">
-                <img class="img-responsive" src="../img/vd.jpg" alt="">
-                <h4 class="centered margined"><a href="#myBlog">Daniyil Vasylenko</a></h4>
-                <p class="centered margined">3rd course Student at NTUU "KPI"</p>
+            <div class="col-sm-4 teammate">
+                <a class="image-vd" href="#link"></a>
+                <h4 class="centered margined">Daniyil Vasylenko</h4>
+                <p class="centered margined info">4th course Student at NTUU "KPI"</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 teammate">
+              <a class="image-muse" href="#link"></a>
+              <h4 class="centered margined">Muse</h4>
+              <p class="centered margined info">Motivating picture</p>
             </div>
         </div>
         <!-- /.row -->
@@ -133,7 +243,9 @@
     </footer>
 <!-- /.container -->
     <script src="../js/jquery-1.11.2.min.js"></script>
+    <script src="../js/jquery.leanModal.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script id="webplate-stack" src="../webplate/stack.js"></script>
+    <script src="../js/about.js"></script>
   </body>
 </html>

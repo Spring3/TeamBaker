@@ -1,8 +1,8 @@
 @font-face {
   font-family: Geomanist;
   src: url("../fonts/Geomanist-Regular.otf"); }
-html, body, label {
-  font-family: Geomanist !important;
+html, body {
+  font-family: "Lato", sans-serif !important;
   font-size: 16px;
   font-weight: 300 !important;
   text-decoration: none !important;
@@ -10,10 +10,19 @@ html, body, label {
   background-color: #F3F3F3;
   z-index: 2; }
 
+label {
+  font-family: "Lato", sans-serif !important;
+  font-size: 16px;
+  font-weight: 300 !important;
+  text-decoration: none !important;
+  -webkit-font-smoothing: antialiased !important;
+  z-index: 2; }
+
 p, li {
   color: #3F3F3F !important; }
 
 a {
+  font-family: "Lato", sans-serif;
   text-decoration: none !important;
   color: #B8807F; }
 
@@ -27,6 +36,14 @@ a:hover {
   top: 0;
   left: 0;
   right: 0; }
+  .navbar-default .container-fluid .navbar-header .navbar-toggle {
+    border-color: #5f5f5f; }
+    .navbar-default .container-fluid .navbar-header .navbar-toggle .icon-bar {
+      background-color: #5f5f5f !important; }
+  .navbar-default .container-fluid .navbar-header .navbar-toggle:hover, .navbar-default .container-fluid .navbar-header .navbar-toggle:focus {
+    background-color: #5f5f5f !important; }
+    .navbar-default .container-fluid .navbar-header .navbar-toggle:hover .icon-bar, .navbar-default .container-fluid .navbar-header .navbar-toggle:focus .icon-bar {
+      background-color: white !important; }
   .navbar-default .container-fluid .navbar-header .navbar-brand img {
     display: inline-block;
     margin: 0;
@@ -53,7 +70,6 @@ a:hover {
     background: transparent; }
     .dropdown-menu li a {
       color: white;
-      font-family: Geomanist;
       font-weight: 300; }
   .dropdown-menu li:hover {
     background: transparent; }
@@ -228,7 +244,8 @@ p, li {
 
 input.xs-input {
   border-radius: 0px !important;
-  -webkit-appearance: none !important; }
+  -webkit-appearance: none !important;
+  font-family: "Lato", sans-serif; }
 
 .centered {
   text-align: center; }
@@ -238,5 +255,200 @@ input.xs-input {
 
 .paddinged {
   padding: 20px 0px 20px 0px; }
+
+/* Color Schemes */
+.love {
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  font-size: 11px;
+  font-weight: normal; }
+  .love p {
+    color: white;
+    font-weight: normal;
+    font-family: Geomanist; }
+  .love a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none; }
+  .love img {
+    position: relative;
+    top: 3px;
+    margin: 0px 4px;
+    width: 10px; }
+
+#lean_overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: none; }
+
+/* Modal box or Popup box */
+.popupContainer {
+  position: absolute;
+  width: 330px;
+  height: auto;
+  left: 45%;
+  top: 80px;
+  background: #FFF; }
+
+#modal_trigger {
+  margin: 100px auto;
+  width: 100px;
+  display: block; }
+
+.one_half {
+  width: 50%;
+  display: block;
+  float: left; }
+
+.one_half.last {
+  width: 45%;
+  margin-left: 5%; }
+
+/* Popup Styles*/
+.popupHeader {
+  font-size: 16px;
+  text-transform: uppercase; }
+
+.popupHeader {
+  background: #F4F4F2;
+  position: relative;
+  padding: 10px 20px;
+  border-bottom: 1px solid #DDD;
+  font-weight: bold; }
+
+.popupHeader .modal_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 15px;
+  background: #E4E4E2;
+  cursor: pointer;
+  color: #aaa;
+  font-size: 16px; }
+
+.popupBody {
+  padding: 20px;
+  text-decoration: none; }
+
+/* Social Login Form */
+.social_login .social_box {
+  display: block;
+  clear: both;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #F4F4F2;
+  overflow: hidden; }
+.social_login .icon {
+  display: block;
+  width: 35px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-top: 3px;
+  float: left;
+  color: #FFF;
+  font-size: 16px;
+  text-align: center; }
+.social_login .fb .icon {
+  background: #3B5998; }
+.social_login .google .icon {
+  background: #DD4B39; }
+.social_login .linkedIn .icon {
+  background: #3E5065; }
+.social_login .icon_title {
+  display: block;
+  padding: 10px 0;
+  margin-top: 3px;
+  float: left;
+  font-weight: bold;
+  font-size: 16px;
+  color: #777; }
+.social_login .social_box:hover {
+  background: #E4E4E2; }
+
+.centeredText {
+  text-align: center;
+  margin: 20px 0;
+  clear: both;
+  overflow: hidden;
+  text-transform: uppercase; }
+
+.action_btns {
+  clear: both;
+  overflow: hidden; }
+  .action_btns a {
+    display: block; }
+
+/* User Login Form */
+.user_login {
+  display: none; }
+
+.user_login label {
+  display: block;
+  margin-bottom: 5px; }
+
+.user_login input[type="text"], .user_login input[type="email"], .user_login input[type="password"] {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #DDD;
+  color: #666;
+  margin: 0; }
+
+.user_login input[type="checkbox"] {
+  float: left;
+  margin-right: 5px; }
+
+.user_login input[type="checkbox"] + label {
+  float: left; }
+
+.user_login .checkbox {
+  margin-bottom: 10px;
+  clear: both;
+  overflow: hidden; }
+
+.forgot_password {
+  display: block;
+  margin: 20px 0 10px;
+  clear: both;
+  overflow: hidden;
+  text-decoration: none;
+  color: #ED6347; }
+
+/* User Register Form */
+.user_register, .user_update {
+  display: none; }
+
+.user_register label, .user_update label {
+  display: block;
+  margin-bottom: 5px; }
+
+.user_register input[type="text"], .user_update input[type="text"], .user_register input[type="email"], .user_update input[type="email"], .user_register input[type="password"], .user_update input[type="password"] {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #DDD;
+  color: #666; }
+
+.user_register input[type="checkbox"], .user_update input[type="checkbox"] {
+  float: left;
+  margin-right: 5px; }
+
+.user_register input[type="checkbox"] + label, .user_update input[type="checkbox"] + label {
+  float: left; }
+
+.user_register .checkbox, .user_update .checkbox {
+  margin-bottom: 10px;
+  clear: both;
+  overflow: hidden; }
+
+.checkbox p {
+  display: inline; }
 
 /*# sourceMappingURL=common.css.map */

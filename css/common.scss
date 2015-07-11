@@ -6,6 +6,7 @@
 $color-background: #F3F3F3;
 $font-family-main: 'Raleway', sans-serif;
 $font-geo: Geomanist;
+$font-lato: 'Lato', sans-serif;
 $color-main:  #747474;
 $color-active: #B8807F;
 $color-main-hover: #3F3F3F;
@@ -13,8 +14,8 @@ $color-unactive: #827878;
 $color-navbar: #34495E;
 $color-smoothe: #5f5f5f;
 
-html, body, label{
-  font-family: $font-geo !important;
+html, body{
+  font-family: $font-lato !important;
   font-size: 16px;
   font-weight: 300 !important;
   text-decoration: none !important;
@@ -23,11 +24,21 @@ html, body, label{
   z-index: 2;
 }
 
+label{
+  font-family: $font-lato !important;
+  font-size: 16px;
+  font-weight: 300 !important;
+  text-decoration: none !important;
+  -webkit-font-smoothing: antialiased !important;
+  z-index: 2;
+}
+
 p, li{
   color: $color-main-hover !important;
 }
 
 a{
+  font-family: $font-lato;
   text-decoration: none !important;
   color: $color-active;
 }
@@ -44,6 +55,21 @@ a:hover{
   right:0;
   .container-fluid{
     .navbar-header{
+      .navbar-toggle{
+        border-color: $color-smoothe;
+        .icon-bar{
+          background-color: $color-smoothe !important;
+        }
+      }
+      .navbar-toggle:hover{
+        background-color: $color-smoothe !important;
+        .icon-bar{
+          background-color: white !important;
+        }
+      }
+      .navbar-toggle:focus{
+        @extend .navbar-toggle:hover;
+      }
       .navbar-brand{
         img{
           display:inline-block;
@@ -77,7 +103,6 @@ a:hover{
     background: transparent;
     a{
       color: white;
-      font-family: $font-geo;
       font-weight:300;
     }
   }
@@ -297,6 +322,7 @@ p, li {
 input.xs-input{
   border-radius: 0px !important;
   -webkit-appearance: none !important;
+  font-family: $font-lato;
 }
 
 .centered{
@@ -309,4 +335,252 @@ input.xs-input{
 
 .paddinged{
   padding: 20px 0px 20px 0px;
+}
+
+//Auth view
+/* Color Schemes */
+
+.love{
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  font-size: 11px;
+  font-weight: normal;
+  p{
+    color:white;
+    font-weight:normal;
+    font-family:$font-geo;
+  }
+  a{
+    color:white;
+    font-weight:700;
+    text-decoration:none;
+  }
+  img{
+    position:relative;
+    top:3px;
+    margin:0px 4px;
+    width:10px;
+  }
+}
+
+//popup
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+/* Modal box or Popup box */
+.popupContainer{
+ position:absolute;
+ width:330px;
+ height: auto;
+ left:45%;
+ top:80px;
+ background: #FFF;
+}
+
+#modal_trigger  {
+    margin: 100px auto;
+     width: 100px;
+     display: block;
+}
+
+.one_half  {
+    width: 50%;
+     display:  block;
+     float: left;
+}
+
+.one_half.last  {
+    width: 45%;
+     margin-left: 5%;
+}
+/* Popup Styles*/
+.popupHeader  {
+    font-size: 16px;
+    text-transform:  uppercase;
+}
+
+.popupHeader  {
+    background: #F4F4F2;
+     position: relative;
+     padding: 10px 20px;
+     border-bottom: 1px solid #DDD;
+     font-weight: bold;
+}
+
+.popupHeader .modal_close  {
+    position:  absolute;
+     right:  0;
+     top: 0;
+     padding: 10px 15px;
+     background: #E4E4E2;
+     cursor:  pointer;
+     color: #aaa;
+     font-size: 16px;
+}
+
+.popupBody  {
+    padding: 20px;
+    text-decoration: none;
+}
+
+/* Social Login Form */
+
+.social_login {
+  .social_box  {
+      display: block;
+       clear: both;
+       padding: 10px;
+       margin-bottom:  10px;
+       background:  #F4F4F2;
+       overflow:  hidden;
+    }
+    .icon  {
+      display: block;
+      width: 35px;
+      padding: 10px;
+      margin-right:  10px;
+      margin-top: 3px;
+      float: left;
+      color: #FFF;
+      font-size: 16px;
+      text-align:  center;
+    }
+    .fb .icon  {
+      background: #3B5998;
+    }
+    .google .icon  {
+        background: #DD4B39;
+    }
+    .linkedIn .icon  {
+        background: #3E5065;
+    }
+    .icon_title  {
+        display: block;
+        padding: 10px 0;
+        margin-top:3px;
+        float: left;
+        font-weight:  bold;
+        font-size:  16px;
+        color: #777;
+    }
+    .social_box:hover  {
+        background:  #E4E4E2;
+    }
+}
+
+.centeredText  {
+    text-align:  center;
+     margin:  20px 0;
+     clear:  both;
+     overflow:  hidden;
+     text-transform:  uppercase;
+}
+
+.action_btns  {
+    clear: both;
+    overflow:  hidden;
+    a  {
+        display:  block;
+    }
+}
+
+/* User Login Form */
+.user_login  {
+    display:  none;
+}
+
+.user_login label  {
+    display:  block;
+     margin-bottom: 5px;
+}
+
+.user_login input[type="text"],  .user_login input[type="email"],  .user_login input[type="password"]  {
+    display:  block;
+     width: 90%;
+     padding:  10px;
+     border: 1px solid #DDD;
+     color: #666;
+     margin:0;
+}
+
+.user_login input[type="checkbox"]  {
+    float: left;
+     margin-right: 5px;
+}
+
+.user_login input[type="checkbox"]+label  {
+    float: left;
+}
+
+
+.user_login .checkbox  {
+    margin-bottom:  10px;
+     clear:  both;
+     overflow:  hidden;
+}
+
+.forgot_password  {
+    display: block;
+     margin:  20px 0 10px;
+     clear:  both;
+     overflow:  hidden;
+     text-decoration:  none;
+     color: #ED6347;
+}
+
+/* User Register Form */
+.user_register  {
+    display:  none;
+}
+
+.user_update{
+  @extend .user_register;
+}
+
+.user_register label  {
+    display:  block;
+     margin-bottom: 5px;
+}
+
+.user_register input[type="text"],  .user_register input[type="email"],  .user_register input[type="password"]  {
+    display:  block;
+     width: 90%;
+     padding:  10px;
+     margin:0;
+     border: 1px solid #DDD;
+     color: #666;
+}
+
+.user_register input[type="checkbox"]  {
+    float: left;
+     margin-right: 5px;
+}
+
+.user_register input[type="checkbox"]+label  {
+    float: left;
+}
+
+
+.user_register {
+  .checkbox  {
+    margin-bottom:  10px;
+    clear:  both;
+    overflow:  hidden;
+
+  }
+}
+
+.checkbox{
+  p{
+    display:inline;
+  }
 }

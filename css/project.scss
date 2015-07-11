@@ -31,6 +31,8 @@ span{
   margin:0 auto;
   position: relative;
   .author-section{
+    font-family: $font-family-main;
+    font-weight: 300;
     font-size: 20px;
     color: white !important;
       .profile-image{
@@ -51,9 +53,9 @@ span{
       margin: 20px auto;
       font-size: 30px;
       text-align:center;
-      font-family: $font-family-main;
-      font-weight: 400;
       a{
+        font-family: $font-family-main;
+        font-weight: 300;
         color: $color-background;
       }
     }
@@ -110,8 +112,7 @@ span{
     }
     .team-header{
       text-align:center;
-      font-family: $font-family-main;
-      font-weight: 400;
+      font-weight: 300;
       color: $color-background;
       font-size: 22px;
       margin: 40px auto 0px auto;
@@ -128,6 +129,8 @@ span{
           text-align:center;
 
           .spec-name{
+            font-family:$font-family-main;
+            font-weight:300;
             max-width: 80%;
             margin: 0;
             display:inline-block;
@@ -138,6 +141,8 @@ span{
             color: white;
           }
           .btn-apply{
+            font-weight: 300;
+            font-family: $font-family-main;
             display:inline-block;
             float: center;
             max-width:46px;
@@ -171,8 +176,8 @@ span{
     .project-name{
       padding: 65px 0px 60px 0px;
       font-size: 40px;
-      font-family: $font-geo;
-      font-weight: 400;
+      font-family: $font-family-main;
+      font-weight: 300;
       text-align:center;
       color: $color-main-hover;
       border-bottom: $color-border;
@@ -201,6 +206,8 @@ span{
           color: $color-main-hover !important;
           text-align:center;
           font-size: 25px;
+          font-family: $font-family-main;
+          font-weight: 300;
           margin-bottom: 20px;
         }
         .progress{
@@ -209,8 +216,11 @@ span{
         }
         .attachments{
           font-size: 25px;
+          font-family: $font-family-main;
+          font-weight: 300;
 
           .attachments-list{
+            font-family: $font-lato;
             font-size: 16px;
             list-style-type: none;
             .attachment{
@@ -224,8 +234,7 @@ span{
           margin-top: 20px;
 
           .links-list{
-            font-size: 16px;
-            list-style-type: none;
+            @extend .attachments-list;
             .link{
               display: block;
               font-size: 16px;
@@ -236,8 +245,7 @@ span{
         .media{
           @extend .links;
           .media-list{
-            font-size: 16px;
-            list-style-type: none;
+            @extend .links-list;
             .media{
               display: inline-block;
               max-width: 200px;
@@ -262,6 +270,8 @@ span{
       border-top-width: 2px;
       border-top-style: solid;
       .comments-header{
+          font-family: $font-family-main;
+          font-weight: 300;
           padding: 60px;
           text-align: center;
           font-size: 35px;
@@ -272,7 +282,7 @@ span{
         margin: 0 auto 60px auto;
           form{
             textarea{
-
+              font-family: $font-lato;
             }
             .input-container{
               max-width: 50%;
@@ -315,6 +325,7 @@ span{
             }
           }
           .comment-content{
+            font-family: "Lato", "Raleway", "Helvetica New", "Helvetica", sans-serif;
             font-size: 16px;
             margin-left: 10px;
             margin-bottom: 0;

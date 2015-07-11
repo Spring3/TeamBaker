@@ -5,7 +5,6 @@
     <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Raleway:200,300,500' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Anonymous+Pro:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../css/animate.css" type="text/css">
     <link href="../css/project.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -40,12 +39,119 @@
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about" class="vt-p">About</a></li>
+            <li><a href="about.html" class="vt-p">About</a></li>
             <li><a class="auth" href="#signin" class="vt-p">Sign in</a></li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <!-- Auth -->
+    <div id="signin" class="popupContainer" style="display:none;">
+      <header class="popupHeader">
+        <span class="header_title">Login</span>
+        <span class="modal_close"><i class="fa fa-times"></i></span>
+      </header>
+
+      <section class="popupBody">
+        <!-- Here Goes all the Login and signup Forms -->
+        <div class="social_login">
+          <div class="clearfix">
+            <a class="social_box fb" href="#">
+              <span class="icon"><i class="fa fa-facebook fa-lg"></i></span>
+              <span class="icon_title">Connect with Facebook</span>
+            </a>
+            <a class="social_box google" href="#">
+              <span class="icon"><i class="fa fa-google-plus"></i></span>
+              <span class="icon_title">Connect with Google</span>
+            </a>
+            <a class="social_box linkedIn" href="#">
+              <span class="icon"><i class="fa fa-linkedin"></i></span>
+              <span class="icon_title">Connect with LinkedIn</span>
+            </a>
+          </div>
+
+          <div class="centeredText">
+            <span>Or use your email </span>
+          </div>
+
+          <div class="action_btns">
+            <div class="one_half">
+              <a href="#" id="login_form" name="login_form" class="button square aqua">Login</a>
+            </div>
+
+            <div class="one_half last">
+              <a href="#" id="register_form" name="register_form" class="button square red">Sign up</a>
+            </div>
+          </div>
+        </div>
+        <div class="user_login">
+          <form>
+            <label>Email / Username</label> <input type="text" placeholder="Email or username"><br>
+            <label>Password</label> <input type="password" placeholder="Password"><br>
+
+            <div class="formplate checkbox">
+              <input type="checkbox" name="checkbox" value="checkbox" id="check_remember">
+              <p>Remember me</p>
+            </div>
+
+            <div class="action_btns">
+              <div class="one_half">
+                <a href="#" class="back_btn button square black">Back</a>
+              </div>
+
+              <div class="one_half last">
+                <a href="#" class="button square pink">Login</a>
+              </div>
+            </div>
+          </form>
+
+          <a class="forgot_password" id="update_form" href="#">Forgot password?</a>
+        </div>
+        <div class="user_register">
+          <form>
+            <label>Username</label> <input type="text" placeholder="Username"><br>
+            <label>Email</label> <input type="email" placehodler="Email"><br>
+            <label>Password</label> <input type="password" placeholder="Password"><br>
+            <input type="password" placeholder="Password repeat"><br>
+
+            <div class="formplate checkbox">
+              <input type="checkbox" name="checkbox" value="checkbox" id="check_send_updates">
+              <p>Send me updates news</p>
+            </div>
+
+            <div class="action_btns">
+              <div class="one_half">
+                <a href="#" class="back_btn button square black">Back</a>
+              </div>
+
+              <div class="one_half last">
+                <a href="#" class="button square pink">Sign up</a>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="user_update">
+          <form>
+            <label>Email</label> <input type="email" placeholder="Email"><br>
+            <label>Secret</label> <input type="text" placeholder="Secret"><br>
+            <label>Password</label> <input type="password" placeholder="New password"><br>
+            <input type="password" placeholder="Password repeat"><br>
+
+            <div class="action_btns">
+              <div class="one_half">
+                <a href="#" class="back_btn button square black">Back</a>
+              </div>
+
+              <div class="one_half last">
+                <a href="#" class="button square pink">Refresh</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div> <!-- Auth end -->
+
     <div class="row content-wrapper">
       <div class="author-section col-xs-12 col-sm-5 col-md-4 col-lg-3">
         <div class="profile-image">
@@ -178,7 +284,7 @@
               <form>
                 <textarea placeholder="Comment text"></textarea>
                 <div class="input-container">
-                  <input class="button aqua" type="submit"/>
+                  <input class="button aqua" type="submit" value="Send"/>
                 </div>
               </form>
           </div>
@@ -306,6 +412,7 @@
 
 
     <script src="../js/jquery-1.11.2.min.js"></script>
+    <script src="../js/jquery.leanModal.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script id="webplate-stack" src="../webplate/stack.js"></script>
     <script src="../js/project.js"></script>
