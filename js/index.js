@@ -118,7 +118,7 @@ function initMasonry(){
     isFitWidth: true,
     isAnimated: true,
     animationOptions: {
-      duration: 600,
+      duration: 800,
       easing: 'linear',
       queue: false
     }
@@ -133,7 +133,7 @@ function initMasonry(){
     setTimeout(function(){
        $(window).trigger('resize');
        $grid.resize();
-    }, 600);
+    }, 800);
 
   });
 
@@ -141,7 +141,7 @@ function initMasonry(){
     setTimeout(function(){
       $(window).trigger('resize');
       $grid.resize();
-    }, 600);
+    }, 800);
 
   });
 

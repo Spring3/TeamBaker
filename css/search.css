@@ -562,7 +562,7 @@ input.xs-input {
 
 hr {
   margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-bottom: 0px; }
 
 .panel {
   font-family: "Lato", sans-serif;
@@ -570,13 +570,13 @@ hr {
   border-width: 0;
   vertical-align: top;
   min-width: 300px;
-  max-width: 300px;
+  max-width: 400px;
   margin: 0 auto;
   padding: 0;
   float: none;
   display: block;
   text-align: left;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   border-radius: 0;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) !important;
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) !important;
@@ -585,8 +585,6 @@ hr {
     border-radius: 0;
     text-align: center;
     background-color: #6895A0;
-    position: absolute;
-    z-index: 40;
     width: 100%;
     opacity: 0.95;
     -webkit-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.15);
@@ -611,7 +609,6 @@ hr {
         text-align: center; }
         .panel .panel-body .image-container a img {
           max-width: 100%;
-          max-height: 180px;
           -webkit-filter: opacity(0.7);
           filter: opacity(0.7); }
         .panel .panel-body .image-container a img:hover {
@@ -631,14 +628,6 @@ hr {
           font-weight: 500;
           border-radius: 0;
           background-color: #6895A0; }
-    .panel .panel-body .info-container .progress-header {
-      text-align: center;
-      margin: 0; }
-    .panel .panel-body .info-container .progress {
-      border-radius: 0;
-      margin: 0px 5px 20px 5px; }
-      .panel .panel-body .info-container .progress .progress-bar {
-        background-color: #6895A0; }
     .panel .panel-body .info-container .project-params, .panel .panel-body .info-container .hashtag-params {
       text-align: center;
       list-style-type: none;
@@ -710,10 +699,6 @@ hr {
 
 .panels {
   text-align: center; }
-  .panels .panel-profile, .panels .panel-hashtag {
-    z-index: 29; }
-  .panels .panel-hashtag .panel-heading {
-    position: relative; }
 
 .menu {
   list-style-type: none;
