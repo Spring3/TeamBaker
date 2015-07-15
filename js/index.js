@@ -146,7 +146,7 @@ function initMasonry(){
   });
 
   $('.morebtn').last().trigger('click');
-  $('.lessbtn').trigger('click');
+  $('.lessbtn').last().trigger('click');
   $(window).trigger('resize');
 }
 
