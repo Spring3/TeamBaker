@@ -1,1 +1,1 @@
-sass --watch about.scss:about.css common.scss:common.css index.scss:index.css project.scss:project.css search.scss:search.css
+sass --watch about.scss:about.css common.scss:common.css index.scss:index.css project.scss:project.css search.scss:search.css profile.sass:profile.css
