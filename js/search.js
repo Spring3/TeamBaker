@@ -75,30 +75,6 @@ function initMasonry(){
       queue: false
     }
   });
-
-  $(window).resize(function(){
-    $grid.masonry('layout');
-  });
-
-  $(document).on('click', '.morebtn', function(){
-    setTimeout(function(){
-       $(window).trigger('resize');
-       $grid.resize();
-    }, 600);
-
-  });
-
-  $(document).on('click', '.lessbtn', function(){
-    setTimeout(function(){
-      $(window).trigger('resize');
-      $grid.resize();
-    }, 600);
-
-  });
-
-  $('.morebtn').last().trigger('click');
-  $('.lessbtn').last().trigger('click');
-  $(window).trigger('resize');
 }
 
 $(document).ready(init);

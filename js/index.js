@@ -102,6 +102,7 @@ function init(){
     $('.list-group-item').addClass('animated zoomIn');
   });
   initMasonry();
+  $(window).trigger('resize');
 }
 
 function initMasonry(){
@@ -123,30 +124,6 @@ function initMasonry(){
       queue: false
     }
   });
-
-  $(window).resize(function(){
-    $grid.masonry('layout');
-  });
-
-  $(document).on('click', '.morebtn', function(){
-    setTimeout(function(){
-       $(window).trigger('resize');
-       $grid.resize();
-    }, 800);
-
-  });
-
-  $(document).on('click', '.lessbtn', function(){
-    setTimeout(function(){
-      $(window).trigger('resize');
-      $grid.resize();
-    }, 800);
-
-  });
-
-  $('.morebtn').last().trigger('click');
-  $('.lessbtn').last().trigger('click');
-  $(window).trigger('resize');
 }
 
 $(document).ready(init);
