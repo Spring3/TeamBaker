@@ -77,7 +77,6 @@ function initMasonry(){
   });
 
   $(window).resize(function(){
-    $grid.masonry('reloadItems');
     $grid.masonry('layout');
   });
 

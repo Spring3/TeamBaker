@@ -111,7 +111,7 @@ function initMasonry(){
     itemSelector: '.panel',
     // use element for option
     columnWidth: '.panel',
-    gutter: 20,
+    gutter: 30,
     percentPosition: false,
     isOriginTop: true,
     isResizeBound: true,
@@ -125,7 +125,6 @@ function initMasonry(){
   });
 
   $(window).resize(function(){
-    $grid.masonry('reloadItems');
     $grid.masonry('layout');
   });
 

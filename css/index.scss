@@ -1,6 +1,6 @@
 @import 'common';
 
-$color-panel: #6895A0;
+$color-panel: #4db6ac;
 
 .carousel {
   max-height: 800px;
@@ -160,15 +160,12 @@ hr{
   .panel-heading{
     border-radius: 0;
     text-align: center;
-    background-color: $color-panel;
+    background-color: #ebebeb;
     width:100%;
     opacity: 0.95;
-    -webkit-box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.15);
-    -moz-box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.15);
-    box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.15);
     .panel-title{
       a{
-        color: white;
+        font-family: $font-family-main;
         text-decoration: none !important;
         font-weight: 500;
         font-size: 18px;
@@ -214,8 +211,14 @@ hr{
             span{
               font-family: $font-family-main;
               font-weight: 500;
-              border-radius: 0;
-              background-color: $color-panel;
+              border: 1px solid #6895A0;
+              background-color: transparent;
+              color: $color-smoothe;
+              border-radius: 30px;
+            }
+            span:hover{
+                background-color: $color-panel;
+                color: white;
             }
           }
         }
