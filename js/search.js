@@ -6,6 +6,7 @@ $('.description-sector').readmore({
 });
 
 function init(){
+  refreshIndexes();
 
   $(".auth").leanModal({top : 100, overlay : 0.6, closeButton: ".modal_close" });
 
@@ -52,7 +53,6 @@ function init(){
     }
   });
 
-  refreshIndexes();
   initMasonry();
 }
 
