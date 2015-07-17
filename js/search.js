@@ -75,6 +75,7 @@ function initMasonry(){
       queue: false
     }
   });
+
 }
 
 $(document).ready(init);
