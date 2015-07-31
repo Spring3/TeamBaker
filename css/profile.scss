@@ -1,0 +1,28 @@
+@import 'index';
+
+.page-content{
+  width: 100%;
+  display: inline-block;
+  .top{
+    .profile-avatar{
+      max-width:200px;
+    }
+  }
+
+  .middle{
+
+  }
+
+  .bottom{
+    .comments{
+      .comment-form{
+        max-width: 650px;
+        margin: 0 auto;
+      }
+      .comment{
+        max-width: 80%;
+        margin:0 auto;
+      }
+    }
+  }
+}

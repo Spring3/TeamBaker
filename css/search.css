@@ -573,7 +573,7 @@ hr {
   border-width: 0;
   vertical-align: top;
   min-width: 300px;
-  max-width: 350px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0;
   float: none;
@@ -587,9 +587,7 @@ hr {
   .panel .panel-heading {
     border-radius: 0;
     text-align: center;
-    background-color: #ebebeb;
-    width: 100%;
-    opacity: 0.95; }
+    width: 100%; }
     .panel .panel-heading .panel-title a {
       font-family: "Raleway", sans-serif;
       text-decoration: none !important;
@@ -609,8 +607,8 @@ hr {
         text-align: center; }
         .panel .panel-body .image-container a img {
           max-width: 100%;
-          -webkit-filter: opacity(0.7);
-          filter: opacity(0.7); }
+          -webkit-filter: opacity(0.8);
+          filter: opacity(0.8); }
         .panel .panel-body .image-container a img:hover {
           -webkit-filter: opacity(1);
           filter: opacity(1); }

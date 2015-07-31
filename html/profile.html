@@ -1,11 +1,298 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/profile.css" rel="stylesheet">
   </head>
 
   <body>
 
+    <nav class="navbar navbar-default affix" id="nav">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand vt-p" href="index.html">
+            <img id="emblem" src="../img/emblem_dark.png"/>
+            <span class="brand-name">TeamBaker</span>
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle vt-p" data-toggle="dropdown" role="button" aria-expanded="false">Projects <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#" class="vt-p"><i class="fa fa-plus-circle"></i> Add project</a></li>
+                <li class="divider"></li>
+                <li><a href="#" class="vt-p"><i class="fa fa-check-circle"></i> Apply for a project</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="html/about.html" class="vt-p">About</a></li>
+            <li><a class="auth" href="#signin" class="vt-p">Sign in</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="page-content">
+      <div class="row top col-xs-12">
+        <img class="profile-avatar" src="../img/profile_avatar.jpg">
+        <p>From: 10 May 2015</p>
+        <p>Name: John</p>
+        <p>Last name: Doe</p>
+        <p>Email: jdoe@gmail.com</p>
+        <p>Country: Great Britain</p>
+        <p>Age: 23</p>
+        <a href="#">Facebook Link here</a>
+        <a href="#">Twitter Link here</a>
+        <a href="#">Google Plus Link here</a>
+        <a href="#">Github Link here</a>
+        <a href="#">Add new link button here</a>
+        <ul>Interests:
+          <li>Football</li>
+          <li>Programming</li>
+          <li>Web design</li>
+          <li>Poker</li>
+        </ul>
+        <ul>Skills:
+          <li>Programming</li>
+          <li>English</li>
+          <li>Team management</li>
+        </ul>
+
+        <p>Rating here</p>
+        <ul>Projects:
+          <li>
+            <div class="project">
+              <p>Project #1</p>
+              <p>Status: active</p>
+            </div>
+          </li>
+          <li>
+            <div class="project">
+              <p>Project #2</p>
+              <p>Status: complete</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row middle col-xs-12">
+        <ul>
+          <li>
+            <div clas="portfolio">
+              <p>Name</p>
+              <p>Aim</p>
+              <p>Role</p>
+              <p>Skills</p>
+              <p>Experience</p>
+              <p><a href="#">Link</a></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row bottom col-xs-12">
+        <div class="comments">
+          <div class="comment-form">
+              <form>
+                <textarea placeholder="Comment text"></textarea>
+                <div class="input-container">
+                  <input class="button aqua" type="submit" value="Send"/>
+                </div>
+              </form>
+          </div>
+          <div class="comment row">
+            <div class="avatar-container col-xs-3">
+              <a href="#image" class="author-image">
+                <img src="../img/author-m.jpg" class="img-responsive img-circle"/>
+              </a>
+            </div>
+            <div class="comment-insides col-xs-9">
+              <div class="comment-info">
+                <a href="#comment_author">John Doe</a>
+                <span class="post-time">23.05.2015</span>
+              </div>
+              <p class="comment-content">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Auth -->
+    <div id="signin" class="popupContainer" style="display:none;">
+      <header class="popupHeader">
+        <span class="header_title">Login</span>
+        <span class="modal_close"><i class="fa fa-times"></i></span>
+      </header>
+
+      <section class="popupBody">
+        <!-- Here Goes all the Login and signup Forms -->
+        <div class="social_login">
+          <div class="clearfix">
+            <a class="social_box fb" href="#">
+              <span class="icon"><i class="fa fa-facebook fa-lg"></i></span>
+              <span class="icon_title">Connect with Facebook</span>
+            </a>
+            <a class="social_box google" href="#">
+              <span class="icon"><i class="fa fa-google-plus"></i></span>
+              <span class="icon_title">Connect with Google</span>
+            </a>
+            <a class="social_box linkedIn" href="#">
+              <span class="icon"><i class="fa fa-linkedin"></i></span>
+              <span class="icon_title">Connect with LinkedIn</span>
+            </a>
+          </div>
+
+          <div class="centeredText">
+            <span>Or use your email </span>
+          </div>
+
+          <div class="action_btns">
+            <div class="one_half">
+              <a href="#" id="login_form" name="login_form" class="button square aqua">Login</a>
+            </div>
+
+            <div class="one_half last">
+              <a href="#" id="register_form" name="register_form" class="button square red">Sign up</a>
+            </div>
+          </div>
+        </div>
+        <div class="user_login">
+          <form>
+            <label>Email / Username</label> <input type="text" placeholder="Email or username"><br>
+            <label>Password</label> <input type="password" placeholder="Password"><br>
+
+            <div class="formplate checkbox">
+              <input type="checkbox" name="checkbox" value="checkbox" id="check_remember">
+              <p>Remember me</p>
+            </div>
+
+            <div class="action_btns">
+              <div class="one_half">
+                <a href="#" class="back_btn button square black">Back</a>
+              </div>
+
+              <div class="one_half last">
+                <a href="#" class="button square pink">Login</a>
+              </div>
+            </div>
+          </form>
+
+          <a class="forgot_password" id="update_form" href="#">Forgot password?</a>
+        </div>
+        <div class="user_register">
+          <form>
+            <label>Username</label> <input type="text" placeholder="Username"><br>
+            <label>Email</label> <input type="email" placeholder="Email"><br>
+            <label>Password</label> <input type="password" placeholder="Password"><br>
+            <input type="password" placeholder="Password repeat"><br>
+
+            <div class="formplate checkbox">
+              <input type="checkbox" name="checkbox" value="checkbox" id="check_send_updates">
+              <p>Send me updates news</p>
+            </div>
+
+            <div class="action_btns">
+              <div class="one_half">
+                <a href="#" class="back_btn button square black">Back</a>
+              </div>
+
+              <div class="one_half last">
+                <a href="#" class="button square pink">Sign up</a>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="user_update">
+          <form>
+            <label>Email</label> <input type="email" placeholder="Email"><br>
+            <label>Secret</label> <input type="text" placeholder="Secret"><br>
+            <label>Password</label> <input type="password" placeholder="New password"><br>
+            <input type="password" placeholder="Password repeat"><br>
+
+            <div class="action_btns">
+              <div class="one_half">
+                <a href="#" class="back_btn button square black">Back</a>
+              </div>
+
+              <div class="one_half last">
+                <a href="#" class="button square pink">Refresh</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div> <!-- Auth end -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="row footer-row">
+          <div class="col-lg-12 footer-content">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 social-sector">
+              <ul class="social_list">
+                <li class="social-header">Follow us on:</li>
+                <li class="social_btn"><a href="#"><span class="social-icon fb"><i class="fa fa-facebook fa-lg"></i></span></a></li>
+                <li class="social_btn"><a href="#"><span class="social-icon google"><i class="fa fa-google-plus"></i></span></a></li>
+                <li class="social_btn"><a href="#"><span class="social-icon linkedIn"><i class="fa fa-linkedin"></i></span></a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-6 logo-sector">
+              <img src="../img/logo.png"/>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 subscr-sector">
+              <p class="subscription-header">Let's get in touch</p>
+              <div class="form-group subscription">
+                <div class="input-group">
+                  <input class="form-control input-sm xs-input" type="text" id="inputSmall">
+                  <span class="input-group-btn">
+                    <a href="#" class="subscr button line-green small square">Subscribe</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 copyrights">
+            <ul class="list-inline">
+              <li>
+                <a href="#add"><i class="fa fa-plus-circle"></i> Add Project</a>
+              </li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li>
+                <a href="#apply"><i class="fa fa-check-circle"></i> Apply for a project</a>
+              </li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li>
+                <a class="auth" href="#signin" class="vt-p">Sign in</a>
+              </li>
+
+            </ul>
+              <p class="copyright text-muted small">Copyright &copy; Daniel Vasylenko 2015. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/jquery-1.11.2.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <script src="../js/modernizr-custom-v2.8.3.min.js"></script>
     <script src="../js/buttonplate.min.js"></script>
     <link href="../css/buttonplate.css" rel="stylesheet">
