@@ -1,11 +1,23 @@
 @import 'index';
 
 .page-content{
+  margin-top: 70px;
   width: 100%;
   display: inline-block;
   .top{
-    .profile-avatar{
-      max-width:200px;
+    .content{
+      .left{
+        float:left;
+        .profile-avatar{
+          float:left;
+          display:block;
+          width:100%;
+        }
+      }
+      .right{
+        float:right;
+        margin-left:20px;
+      }
     }
   }
 

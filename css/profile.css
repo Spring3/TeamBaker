@@ -687,10 +687,18 @@ hr {
   margin-left: 5px; }
 
 .page-content {
+  margin-top: 70px;
   width: 100%;
   display: inline-block; }
-  .page-content .top .profile-avatar {
-    max-width: 200px; }
+  .page-content .top .content .left {
+    float: left; }
+    .page-content .top .content .left .profile-avatar {
+      float: left;
+      display: block;
+      width: 100%; }
+  .page-content .top .content .right {
+    float: right;
+    margin-left: 20px; }
   .page-content .bottom .comments .comment-form {
     max-width: 650px;
     margin: 0 auto; }
