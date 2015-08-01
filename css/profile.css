@@ -717,6 +717,6 @@ hr {
           float: left;
           display: inline-block; }
       .page-content .bottom .comments .comment .content {
-        overflow: visible; }
+        overflow: hidden; }
 
 /*# sourceMappingURL=profile.css.map */
