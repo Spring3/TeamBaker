@@ -698,12 +698,25 @@ hr {
       width: 100%; }
   .page-content .top .content .right {
     float: right;
-    margin-left: 20px; }
-  .page-content .bottom .comments .comment-form {
-    max-width: 650px;
-    margin: 0 auto; }
-  .page-content .bottom .comments .comment {
-    max-width: 80%;
-    margin: 0 auto; }
+    padding-left: 30px; }
+  .page-content .bottom .comments {
+    display: inline-block; }
+    .page-content .bottom .comments .comment-form {
+      max-width: 650px;
+      margin: 0 auto; }
+    .page-content .bottom .comments .comment {
+      margin: 0 auto;
+      display: inline-block; }
+      .page-content .bottom .comments .comment .author-image {
+        display: inline-block;
+        float: left;
+        margin: 0 15px; }
+        .page-content .bottom .comments .comment .author-image .img-circle {
+          min-width: 100px;
+          max-width: 150px;
+          float: left;
+          display: inline-block; }
+      .page-content .bottom .comments .comment .content {
+        overflow: visible; }
 
 /*# sourceMappingURL=profile.css.map */

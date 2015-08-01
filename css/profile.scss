@@ -16,7 +16,7 @@
       }
       .right{
         float:right;
-        margin-left:20px;
+        padding-left:30px;
       }
     }
   }
@@ -27,13 +27,28 @@
 
   .bottom{
     .comments{
+      display:inline-block;
       .comment-form{
         max-width: 650px;
         margin: 0 auto;
       }
       .comment{
-        max-width: 80%;
         margin:0 auto;
+        display:inline-block;
+        .author-image{
+          display:inline-block;
+          float:left;
+          margin:0 15px;
+          .img-circle{
+            min-width:100px;
+            max-width:150px;
+            float:left;
+            display:inline-block;
+          }
+        }
+        .content{
+          overflow:visible;
+        }
       }
     }
   }
