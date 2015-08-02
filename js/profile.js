@@ -36,3 +36,7 @@ $('#update_form').click(function(){
   $(".header_title").text("Refresh");
   return false;
 });
+
+$(document).ready(function(){
+
+});

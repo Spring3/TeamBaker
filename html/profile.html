@@ -48,20 +48,29 @@
       <div class="row top col-xs-12 col-sm-10 col-sm-offset-1">
         <div class="content">
           <div class="left col-xs-6 col-sm-5">
-            <img class="profile-avatar" src="../img/profile_avatar.jpg">
+            <div class="avatar-container">
+              <img class="profile-avatar" src="../img/profile_avatar.jpg">
+              <ul class="edit-buttons">
+                <li><a href="#"><i class="fa fa-plus-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-trash"></i></a></li>
+                <li><a href="#"><i class="fa fa-eye"></i></a></li>
+              </ul>
+            </div>
+            <p class="full-name">Daniyil Vasylenko</p>
             <ul class="links">
-              <li class="link"><a href="#">Facebook Link here</a></li>
-              <li class="link"><a href="#">Twitter Link here</a></li>
-              <li class="link"><a href="#">Google Plus Link here</a></li>
-              <li class="link"><a href="#">Github Link here</a></li>
-              <li class="link"><a href="#">Add new link button here</a></li>
+              <li class="link"><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+              <li class="link"><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+              <li class="link"><a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
+              <li class="link"><a href="#"><i class="fa fa-github-square fa-2x"></i></a></li>
+              <li class="link"><a href="#"><i class="fa fa-plus-square fa-2x"></i></a></li>
             </ul>
-            <p>Rating here</p>
+            <div class="rating-container">
+              <span>Rating:</span>
+              <input type="number" name="your_awesome_parameter" id="profile-rating" class="rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o" />
+            </div>
           </div>
           <div class="right col-xs-6 col-sm-6">
             <p>From: 10 May 2015</p>
-            <p>Name: John</p>
-            <p>Last name: Doe</p>
             <p>Email: jdoe@gmail.com</p>
             <p>Country: Great Britain</p>
             <p>Age: 23</p>
@@ -306,6 +315,7 @@
     <link href="../css/buttonplate.css" rel="stylesheet">
     <script src="../js/formplate.min.js"></script>
     <link href="../css/formplate.css" rel="stylesheet">
+    <script src="../js/bootstrap-rating-input.min.js"></script>
     <script src="../js/profile.js"></script>
   </body>
 </html>

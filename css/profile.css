@@ -24,13 +24,16 @@ label {
 p, li {
   color: #3F3F3F !important; }
 
+p:hover, li:hover {
+  opacity: 1; }
+
 a {
   font-family: "Lato", sans-serif;
   text-decoration: none !important;
-  color: #B8807F; }
+  color: #2A5DB0; }
 
 a:hover {
-  color: #985C5A; }
+  color: #2200CC; }
 
 .navbar-default {
   text-align: center;
@@ -59,6 +62,8 @@ a:hover {
     color: #F3F3F3 !important;
     position: relative;
     bottom: 14px; }
+  .navbar-default .container-fluid #bs-example-navbar-collapse-1 .navbar-nav li a:hover, .navbar-default .container-fluid #bs-example-navbar-collapse-1 .navbar-nav li a:focus {
+    color: white !important; }
 
 .dropdown-menu {
   z-index: 10;
@@ -77,7 +82,7 @@ a:hover {
   .dropdown-menu li:hover {
     background: transparent; }
     .dropdown-menu li:hover a {
-      color: #B8807F;
+      color: #2A5DB0;
       background: transparent; }
 
 .navbar-default .navbar-nav > .open > a,
@@ -639,7 +644,7 @@ hr {
         display: inline-block;
         margin: 0 5px; }
       .panel .panel-body .info-container .project-params .param:hover {
-        color: #B8807F !important; }
+        color: #2A5DB0 !important; }
       .panel .panel-body .info-container .project-params a {
         text-decoration: none; }
     .panel .panel-body .info-container .description-header {
@@ -692,10 +697,39 @@ hr {
   display: inline-block; }
   .page-content .top .content .left {
     float: left; }
-    .page-content .top .content .left .profile-avatar {
-      float: left;
+    .page-content .top .content .left .avatar-container .profile-avatar {
       display: block;
-      width: 100%; }
+      margin: 0 auto;
+      max-width: 100%;
+      max-height: 300px; }
+    .page-content .top .content .left .avatar-container .edit-buttons {
+      list-style: none;
+      text-align: center;
+      position: relative;
+      bottom: 30px;
+      margin: 0; }
+      .page-content .top .content .left .avatar-container .edit-buttons li {
+        display: inline;
+        margin-left: 15px; }
+    .page-content .top .content .left .full-name {
+      text-align: center;
+      font-size: 24px; }
+    .page-content .top .content .left .links {
+      list-style: none;
+      text-align: center;
+      margin-top: 10px; }
+      .page-content .top .content .left .links .link {
+        display: inline;
+        margin-left: 10px; }
+    .page-content .top .content .left .rating-container {
+      text-align: center; }
+      .page-content .top .content .left .rating-container .rating-input {
+        text-align: center;
+        display: inline-block; }
+        .page-content .top .content .left .rating-container .rating-input i {
+          font-size: 24px; }
+        .page-content .top .content .left .rating-container .rating-input i:hover {
+          cursor: pointer; }
   .page-content .top .content .right {
     float: right;
     padding-left: 30px; }

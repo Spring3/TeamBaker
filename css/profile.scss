@@ -8,10 +8,52 @@
     .content{
       .left{
         float:left;
-        .profile-avatar{
-          float:left;
-          display:block;
-          width:100%;
+        .avatar-container{
+          .profile-avatar{
+            display:block;
+            margin: 0 auto;
+            max-width:100%;
+            max-height:300px;
+          }
+          .edit-buttons{
+            list-style: none;
+            text-align:center;
+            position:relative;
+            bottom: 30px;
+            margin:0;
+            li{
+              display:inline;
+              margin-left:15px;
+            }
+
+          }
+        }
+        .full-name{
+          text-align:center;
+          font-size:24px;
+        }
+        .links{
+          list-style:none;
+          text-align:center;
+          margin-top:10px;
+          .link{
+            display:inline;
+            margin-left:10px;
+          }
+        }
+        .rating-container{
+          text-align:center;
+          .rating-input{
+            text-align:center;
+            display:inline-block;
+            i{
+              font-size: 24px;
+
+            }
+            i:hover{
+              cursor: pointer;
+            }
+          }
         }
       }
       .right{

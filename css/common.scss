@@ -8,7 +8,7 @@ $font-family-main: 'Raleway', sans-serif;
 $font-geo: Geomanist;
 $font-lato: 'Lato', sans-serif;
 $color-main:  #747474;
-$color-active: #B8807F;
+$color-active: #2A5DB0;
 $color-main-hover: #3F3F3F;
 $color-unactive: #827878;
 $color-navbar: #34495E;
@@ -41,13 +41,17 @@ p, li{
   color: $color-main-hover !important;
 }
 
+p:hover, li:hover{
+  opacity: 1;
+}
+
 a{
   font-family: $font-lato;
   text-decoration: none !important;
   color: $color-active;
 }
 a:hover{
-  color: #985C5A;
+  color: #2200CC;
 }
 
 .navbar-default{
@@ -88,6 +92,15 @@ a:hover{
           color: $color-background !important;
           position:relative;
           bottom: 14px;
+        }
+      }
+    }
+    #bs-example-navbar-collapse-1{
+      .navbar-nav{
+        li{
+          a:hover, a:focus{
+            color: white !important;
+          }
         }
       }
     }
