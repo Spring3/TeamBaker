@@ -5,7 +5,7 @@ $color-star: #DBCB52;
 $color-eye-hover: #AED6E9;
 $color-eye: #86B7CF;
 $color-panel: #336E7B;
-$color-heart: $color-active;
+$color-heart: #EE8E8B;
 $color-heart-hover: #D77C7A;
 $color-comment: #EAE8E8;
 $color-border: #D8D8D8;
@@ -318,10 +318,14 @@ span{
             padding: 5px 10px 0px 10px;
             a{
               font-size: 25px;
+              color: $color-main-hover;
+            }
+            a:hover{
+              color: $color-main-hover;
             }
             .post-time{
               float: right;
-              color: $color-unactive;
+              color: $color-main-hover;
             }
           }
           .comment-content{

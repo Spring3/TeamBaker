@@ -8,7 +8,9 @@
     .content{
       .left{
         float:left;
+        text-align:center;
         .avatar-container{
+          display:inline-block;
           .profile-avatar{
             display:block;
             margin: 0 auto;
@@ -19,11 +21,19 @@
             list-style: none;
             text-align:center;
             position:relative;
-            bottom: 30px;
+            bottom: 32px;
             margin:0;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 5px;
             li{
               display:inline;
               margin-left:15px;
+              a{
+                color: white;
+              }
+              a:hover{
+                color: white;
+              }
             }
 
           }

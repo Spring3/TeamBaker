@@ -107,6 +107,16 @@
 .hashtag-params{
   @extend .project-params;
   margin: 20px auto !important;
+  .param{
+    span{
+      a{
+        color: $color-main;
+      }
+      a:hover{
+        color: $color-main-hover;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {

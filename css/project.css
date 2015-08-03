@@ -528,7 +528,7 @@ span {
           .content-wrapper .author-section .user-action-buttons .action-buttons li a {
             display: inline-block; }
           .content-wrapper .author-section .user-action-buttons .action-buttons li .fa-heart-o {
-            color: #2A5DB0; }
+            color: #EE8E8B; }
           .content-wrapper .author-section .user-action-buttons .action-buttons li .fa-star-o {
             color: #DBCB52; }
           .content-wrapper .author-section .user-action-buttons .action-buttons li .fa-eye {
@@ -693,10 +693,13 @@ span {
             margin-left: 10px;
             padding: 5px 10px 0px 10px; }
             .content-wrapper .project-section .comments .comment .comment-insides .comment-info a {
-              font-size: 25px; }
+              font-size: 25px;
+              color: #3F3F3F; }
+            .content-wrapper .project-section .comments .comment .comment-insides .comment-info a:hover {
+              color: #3F3F3F; }
             .content-wrapper .project-section .comments .comment .comment-insides .comment-info .post-time {
               float: right;
-              color: #827878; }
+              color: #3F3F3F; }
           .content-wrapper .project-section .comments .comment .comment-insides .comment-content {
             font-family: "Lato", "Raleway", "Helvetica New", "Helvetica", sans-serif;
             font-size: 16px;

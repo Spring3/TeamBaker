@@ -779,6 +779,10 @@ hr {
 
 .hashtag-params {
   margin: 20px auto !important; }
+  .hashtag-params .param span a {
+    color: #747474; }
+  .hashtag-params .param span a:hover {
+    color: #3F3F3F; }
 
 @media screen and (max-width: 767px) {
   .result-section {
