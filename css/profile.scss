@@ -1,5 +1,31 @@
 @import 'index';
 
+$color-add: #00b488;
+
+#fb, #fb:hover{
+  color: $color-fb;
+}
+
+#twitter, #twitter:hover{
+  color: $color-twitter;
+}
+
+#google, #google:hover{
+  color: $color-google;
+}
+
+#github, #github:hover{
+  color: $color-github;
+}
+
+#add, #add:hover{
+  color: $color-add;
+}
+
+#linkedIn, #linkedIn:hover{
+  color: $color-linkedIn;
+}
+
 .page-content{
   margin-top: 70px;
   width: 100%;
@@ -105,6 +131,8 @@
     }
   }
 }
+
+
 
 #nav.affix{
   position:relative;

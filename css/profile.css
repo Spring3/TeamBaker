@@ -366,11 +366,11 @@ input.xs-input {
   font-size: 16px;
   text-align: center; }
 .social_login .fb .icon {
-  background: #3B5998; }
+  background: #3b5998; }
 .social_login .google .icon {
-  background: #DD4B39; }
+  background: #dd4b39; }
 .social_login .linkedIn .icon {
-  background: #3E5065; }
+  background: #0077b5; }
 .social_login .icon_title {
   display: block;
   padding: 10px 0;
@@ -696,6 +696,24 @@ hr {
 .input-group-btn a {
   text-decoration: none;
   margin-left: 5px; }
+
+#fb, #fb:hover {
+  color: #3b5998; }
+
+#twitter, #twitter:hover {
+  color: #55acee; }
+
+#google, #google:hover {
+  color: #dd4b39; }
+
+#github, #github:hover {
+  color: #333333; }
+
+#add, #add:hover {
+  color: #00b488; }
+
+#linkedIn, #linkedIn:hover {
+  color: #0077b5; }
 
 .page-content {
   margin-top: 70px;
