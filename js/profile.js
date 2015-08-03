@@ -39,4 +39,6 @@ $('#update_form').click(function(){
 
 $(document).ready(function(){
 
+  $('body').formplate();
+
 });

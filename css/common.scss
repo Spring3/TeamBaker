@@ -219,7 +219,12 @@ footer {
   text-align: left;
   margin-left: 10px; }
   .list-inline li {
-    font-weight: 300; }
+    font-weight: 300;
+    color: white !important;
+    a{
+      color: white !important;
+    }
+  }
   .social_list a {
     text-decoration: none !important; }
 
@@ -527,6 +532,10 @@ input.xs-input{
      border: 1px solid #DDD;
      color: #666;
      margin:0;
+}
+
+.checkbox_header{
+  display:inline-block;
 }
 
 .user_login input[type="checkbox"]  {

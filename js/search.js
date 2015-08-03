@@ -53,6 +53,7 @@ function init(){
     }
   });
 
+  $('body').formplate();
   initMasonry();
 }
 

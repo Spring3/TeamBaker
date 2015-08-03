@@ -101,6 +101,9 @@ function init(){
   $('.list-group-item').ready(function(){
     $('.list-group-item').addClass('animated zoomIn');
   });
+
+  $('body').formplate();
+
   initMasonry();
   $(window).trigger('resize');
 }

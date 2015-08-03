@@ -148,7 +148,10 @@ footer {
   margin-left: 10px; }
 
 .list-inline li {
-  font-weight: 300; }
+  font-weight: 300;
+  color: white !important; }
+  .list-inline li a {
+    color: white !important; }
 
 .social_list a {
   text-decoration: none !important; }
@@ -408,6 +411,9 @@ input.xs-input {
   color: #666;
   margin: 0; }
 
+.checkbox_header {
+  display: inline-block; }
+
 .user_login input[type="checkbox"] {
   float: left;
   margin-right: 5px; }
@@ -599,6 +605,8 @@ hr {
       font-weight: 500;
       font-size: 18px;
       display: block; }
+    .panel .panel-heading .panel-title a:hover {
+      color: #3F3F3F; }
   .panel .panel-body {
     padding: 0;
     width: 100%;
@@ -643,8 +651,6 @@ hr {
       .panel .panel-body .info-container .project-params .param, .panel .panel-body .info-container .hashtag-params .param {
         display: inline-block;
         margin: 0 5px; }
-      .panel .panel-body .info-container .project-params .param:hover, .panel .panel-body .info-container .hashtag-params .param:hover {
-        color: #2A5DB0 !important; }
       .panel .panel-body .info-container .project-params a, .panel .panel-body .info-container .hashtag-params a {
         text-decoration: none; }
     .panel .panel-body .info-container .description-header {
