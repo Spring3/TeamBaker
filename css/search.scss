@@ -11,6 +11,7 @@
   margin: 0 auto;
   .result-section{
     margin-top: 40px;
+    border-left: solid 2px rgba(200, 200, 200, 0.3);
   }
 }
 
@@ -25,7 +26,7 @@
 
 .menu{
   list-style-type: none;
-  margin-top: 105px;
+  margin-top: 160px;
   .menu-item{
     font-family: $font-family-main;
     font-weight: 300;
@@ -45,8 +46,8 @@
     padding: 20px 5px;
   }
 
-  .menu-item:hover{
-    background-color: #ECEAEA;
+  .menu-item-header:hover{
+    background-color: $color-background;
   }
 }
 
@@ -122,5 +123,9 @@
 @media screen and (max-width: 767px) {
   .result-section{
     margin-top: 0px;
+  }
+
+  aside{
+    margin-top:50px;
   }
 }

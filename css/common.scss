@@ -59,6 +59,31 @@ a:hover{
   color: #2200CC;
 }
 
+.underlined{
+  position: relative;
+  color:$color-smoothe;
+
+}
+
+.underlined:after{
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: $color-smoothe;
+  content: "";
+  transition: width 0.3s;
+}
+
+.underlined:hover{
+  color:$color-smoothe;
+}
+
+.underlined:hover:after{
+  width:100%;
+}
+
 .navbar-default{
   text-align:center;
   background: transparent;
