@@ -3,6 +3,7 @@
   <head>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/animate.css" rel="stylesheet">
     <link href="../css/profile.css" rel="stylesheet">
   </head>
 
@@ -47,7 +48,7 @@
     <div class="page-content">
       <div class="row top col-xs-12 col-sm-10 col-sm-offset-1">
         <div class="content">
-          <div class="left col-xs-6 col-sm-5">
+          <div class="left col-xs-12 col-sm-3">
             <div class="avatar-container">
               <img class="profile-avatar" src="../img/profile_avatar.jpg">
               <ul class="edit-buttons">
@@ -69,96 +70,162 @@
               <span>Rating:</span>
               <input type="number" name="your_awesome_parameter" id="profile-rating" class="rating" data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o" />
             </div>
-          </div>
-          <div class="right col-xs-6 col-sm-6">
-            <p>From: 10 May 2015</p>
-            <p>Email: jdoe@gmail.com</p>
-            <p>Country: Great Britain</p>
-            <p>Age: 23</p>
-            <ul>Interests:
-              <li>Football</li>
-              <li>Programming</li>
-              <li>Web design</li>
-              <li>Poker</li>
-            </ul>
-            <ul>Skills:
-              <li>Programming</li>
-              <li>English</li>
-              <li>Team management</li>
-            </ul>
-            <ul>Projects:
-              <li>
-                <div class="project">
-                  <p>Project #1</p>
-                  <p>Status: active</p>
-                </div>
-              </li>
-              <li>
-                <div class="project">
-                  <p>Project #2</p>
-                  <p>Status: complete</p>
-                </div>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <div clas="portfolio">
-                  <p>Name</p>
-                  <p>Aim</p>
-                  <p>Role</p>
-                  <p>Skills</p>
-                  <p>Experience</p>
-                  <p><a href="#">Link</a></p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
 
-      <div class="bottom">
-        <div class="comments">
-          <div id="disqus_thread"></div>
-            <script type="text/javascript">
-                /* * * CONFIGURATION VARIABLES * * */
-                var disqus_shortname = 'teambaker';
-
-                /* * * DON'T EDIT BELOW THIS LINE * * */
-                (function() {
-                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-          <!--<div class="comment-form">
-              <form>
-                <textarea placeholder="Comment text"></textarea>
-                <div class="input-container">
-                  <input class="button aqua" type="submit" value="Send"/>
-                </div>
-              </form>
           </div>
-          <div class="comment">-->
-            <!--<div class="avatar-container col-xs-4">-->
-              <!--<a href="#image" class="author-image">
-                <img src="../img/author-m.jpg" class="img-responsive img-circle"/>
-              </a>-->
-            <!--</div>-->
-            <!--<div class="comment-insides col-xs-8">-->
-            <!--<div class="content">
-              <div class="comment-info">
-                <a href="#comment_author">John Doe</a>
-                <span class="post-time">23.05.2015</span>
+          <div class="mid col-xs-8 col-xs-offset-2 col-sm-offset-1 col-sm-4">
+
+            <div class="block centered">
+              <h4>Basic info</h4>
+              <div class="info row">
+                <div class="key col-xs-4">
+                  <p>From:</p>
+                </div>
+                <div class="value col-xs-8">
+                  <p> 10 May 2015</p>
+                </div>
               </div>
-              <p class="comment-content">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
-            </div>-->
+              <div class="info row">
+                <div class="key col-xs-4">
+                  <p>Email:</p>
+                </div>
+                <div class="value col-xs-8">
+                  <p> jdoe@gmail.com</p>
+                </div>
+              </div>
+              <div class="info row">
+                <div class="key col-xs-4">
+                  <p>Country:</p>
+                </div>
+                <div class="value col-xs-8">
+                  <p> Great Britain</p>
+                </div>
+              </div>
+              <div class="info row">
+                <div class="key col-xs-4">
+                  <p>Age:</p>
+                </div>
+                <div class="value col-xs-8">
+                  <p> 23</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="block centered">
+              <h4>Interests</h4>
+              <ul class="interests">
+                <li>Football</li>
+                <li>Programming</li>
+                <li>Web design</li>
+                <li>Poker</li>
+              </ul>
+            </div>
+
+
+            <div class="block centered">
+              <h4>Skills</h4>
+              <ul class="skills">
+                <li><a href="#">Programming</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Team management</a></li>
+              </ul>
+            </div>
+            <!--<div class="comment-form">
+                <form>
+                  <textarea placeholder="Comment text"></textarea>
+                  <div class="input-container">
+                    <input class="button aqua" type="submit" value="Send"/>
+                  </div>
+                </form>
+            </div>
+            <div class="comment">-->
+              <!--<div class="avatar-container col-xs-4">-->
+                <!--<a href="#image" class="author-image">
+                  <img src="../img/author-m.jpg" class="img-responsive img-circle"/>
+                </a>-->
+              <!--</div>-->
+              <!--<div class="comment-insides col-xs-8">-->
+              <!--<div class="content">
+                <div class="comment-info">
+                  <a href="#comment_author">John Doe</a>
+                  <span class="post-time">23.05.2015</span>
+                </div>
+                <p class="comment-content">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+              </div>-->
+              <!--</div>-->
             <!--</div>-->
-          <!--</div>-->
+          </div>
+          <div class="right col-sm-4">
+            <h4 class="centered">Notifications</h4>
+            <div class="panel panel-hashtag col-xs-12 col-sm-12 col-lg-4 col-lg-offset-1">
+              <div class="panel-heading">
+                <h3 class="panel-title">Notification</h3>
+              </div>
+              <div class="panel-body">
+                <div class="info-container">
+                  <ul class="hashtag-params">
+                    <li class="param">
+                      <span>Notification message here.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clear"></div>
+          <section class="showoff-section col-xs-12 col-sm-6 col-sm-offset-3">
+            <div class="block centered">
+              <h4>Projects</h4>
+              <ul class="projects">
+                <li>
+                  <div class="project">
+                    <p class="name">Project #1</p>
+                    <p class="status">Status: active</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="project">
+                    <p class="name">Project #2</p>
+                    <p class="status">Status: complete</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="block centered">
+              <h4>Portfolio</h4>
+              <ul class="portfolio">
+                <li>
+                  <div clas="portfolio-item">
+                    <p class="name">Name</p>
+                    <p class="aim">Aim</p>
+                    <p class="role">Role</p>
+                    <p class="skills">Skills</p>
+                    <p class="exp">Experience</p>
+                    <p class="link"><a href="#">Link</a></p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="comments-section col-xs-12 col-sm-6 col-sm-offset-3">
+            <div id="disqus_thread"></div>
+              <script type="text/javascript">
+                  /* * * CONFIGURATION VARIABLES * * */
+                  var disqus_shortname = 'teambaker';
+
+                  /* * * DON'T EDIT BELOW THIS LINE * * */
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+          </section>
         </div>
       </div>
+
     </div>
 
 

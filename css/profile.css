@@ -192,13 +192,13 @@ p, li {
   line-height: 2px; }
 
 .social-icon.fb {
-  background: #3B5998; }
+  background: #3b5998; }
 
 .social-icon.google {
-  background: #DD4B39; }
+  background: #dd4b39; }
 
 .social-icon.linkedIn {
-  background: #3E5065; }
+  background: #0077b5; }
 
 .footer-row {
   margin: 0; }
@@ -721,7 +721,8 @@ hr {
   display: inline-block; }
   .page-content .top .content .left {
     float: left;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 20px; }
     .page-content .top .content .left .avatar-container {
       display: inline-block; }
       .page-content .top .content .left .avatar-container .profile-avatar {
@@ -763,9 +764,19 @@ hr {
           font-size: 24px; }
         .page-content .top .content .left .rating-container .rating-input i:hover {
           cursor: pointer; }
-  .page-content .top .content .right {
-    float: right;
+  .page-content .top .content .mid {
     padding-left: 30px; }
+    .page-content .top .content .mid .block h4 {
+      margin-top: 0; }
+    .page-content .top .content .mid .block .info .key p {
+      text-align: right; }
+    .page-content .top .content .mid .block .interests, .page-content .top .content .mid .block .skills {
+      list-style: none; }
+      .page-content .top .content .mid .block .interests li, .page-content .top .content .mid .block .skills li {
+        display: inline-block;
+        margin-right: 10px; }
+  .page-content .top .content .right {
+    float: right; }
   .page-content .bottom .comments {
     display: inline-block; }
     .page-content .bottom .comments .comment-form {
@@ -791,5 +802,11 @@ hr {
   -webkit-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.15); }
+
+.hashtag-params {
+  list-style: none; }
+
+.clear {
+  clear: both; }
 
 /*# sourceMappingURL=profile.css.map */
