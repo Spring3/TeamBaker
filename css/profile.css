@@ -722,7 +722,7 @@ hr {
   .page-content .top .content .left {
     float: left;
     text-align: center;
-    margin-bottom: 20px; }
+    margin-bottom: 40px; }
     .page-content .top .content .left .avatar-container {
       display: inline-block; }
       .page-content .top .content .left .avatar-container .profile-avatar {
@@ -764,8 +764,8 @@ hr {
           font-size: 24px; }
         .page-content .top .content .left .rating-container .rating-input i:hover {
           cursor: pointer; }
-  .page-content .top .content .mid {
-    padding-left: 30px; }
+  .page-content .top .content .mid .block {
+    margin-bottom: 20px; }
     .page-content .top .content .mid .block h4 {
       margin-top: 0; }
     .page-content .top .content .mid .block .info .key p {
@@ -777,6 +777,8 @@ hr {
         margin-right: 10px; }
   .page-content .top .content .right {
     float: right; }
+    .page-content .top .content .right h4 {
+      margin-top: 0; }
   .page-content .bottom .comments {
     display: inline-block; }
     .page-content .bottom .comments .comment-form {

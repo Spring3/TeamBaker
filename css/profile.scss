@@ -35,7 +35,7 @@ $color-add: #00b488;
       .left{
         float:left;
         text-align:center;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         .avatar-container{
           display:inline-block;
           .profile-avatar{
@@ -94,9 +94,8 @@ $color-add: #00b488;
         }
       }
       .mid{
-        padding-left:30px;
         .block{
-
+          margin-bottom: 20px;
           h4{
             margin-top: 0;
           }
@@ -124,6 +123,9 @@ $color-add: #00b488;
       }
       .right{
         float:right;
+        h4{
+          margin-top:0;
+        }
       }
     }
   }
