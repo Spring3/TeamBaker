@@ -95,29 +95,33 @@ $color-add: #00b488;
       }
       .mid{
         .block{
-          margin-bottom: 20px;
+          margin-bottom: 30px;
           h4{
             margin-top: 0;
           }
-          .info{
-            .key{
-              p{
-                text-align:right;
-              }
-            }
-            .value{
-              p{
+          .wrapper{
+            display:inline-block;
+            .info{
+              display: block;
+              width:100%;
+              height:30px;
+              margin: 0 auto;
 
+              .key{
+                float:left;
+                width: 80px;
+                display: inline-block;
+              }
+              .value{
+                float:left;
+                display:inline-block;
+                word-break: break-all;
               }
             }
           }
-          .interests, .skills{
+          .skills{
             list-style:none;
-            li{
-              display:inline-block;
-              margin-right: 10px;
-
-            }
+            text-align: center;
           }
         }
       }
@@ -172,4 +176,9 @@ $color-add: #00b488;
 
 .clear{
   clear:both;
+}
+
+@media screen and (max-width: 767px) {
+  .left{
+  }
 }

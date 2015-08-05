@@ -730,8 +730,7 @@ hr {
 .content-wrapper {
   margin: 0 auto; }
   .content-wrapper .result-section {
-    margin-top: 40px;
-    border-left: solid 2px rgba(200, 200, 200, 0.3); }
+    margin-top: 40px; }
 
 .menu-top {
   width: 100%; }
