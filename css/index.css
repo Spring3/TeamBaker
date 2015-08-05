@@ -618,7 +618,10 @@ hr {
   .panel .panel-heading {
     border-radius: 0;
     text-align: center;
-    width: 100%; }
+    width: 100%;
+    position: absolute;
+    z-index: 40;
+    background-color: rgba(255, 255, 255, 0.6); }
     .panel .panel-heading .panel-title a {
       font-family: "Raleway", sans-serif;
       text-decoration: none !important;
@@ -685,6 +688,13 @@ hr {
       color: #3F3F3F; }
     .panel .panel-body .info-container .description {
       text-align: both; }
+
+.panel-hashtag .panel-heading {
+  border-radius: 0;
+  text-align: center;
+  width: 100%;
+  position: static;
+  background-color: transparent; }
 
 .list-group {
   margin: 10px 0px 10px 10px;
