@@ -32,12 +32,16 @@ $color-add: #00b488;
   display: inline-block;
   .top{
     .content{
+      display:inline-block;
       .left{
         float:left;
         text-align:center;
         margin-bottom: 40px;
         .avatar-container{
           display:inline-block;
+          #image-trigger{
+            display:inline-block;
+          }
           .profile-avatar{
             display:block;
             margin: 0 auto;
@@ -95,6 +99,8 @@ $color-add: #00b488;
       }
       .mid{
         .block{
+          padding:5px;
+          border: solid 1px #cacaca;
           margin-bottom: 30px;
           h4{
             margin-top: 0;
@@ -102,18 +108,31 @@ $color-add: #00b488;
           .skills{
             list-style:none;
             text-align: center;
+            .skill{
+              margin-top: 10px;
+            }
           }
         }
       }
 
       .right{
         .block{
-          h4{
-            margin-top:0;
+          padding:5px;
+          border: solid 1px #cacaca;
+          margin-bottom: 20px;
+          a{
+            height: 100%;
+            width: 100%;
+            display:inline-block;
+            h4{
+              margin-top:0;
+            }
           }
           .wrapper{
+            width:100%;
             .followers, .following{
               list-style:none;
+              margin:0;
               .follower, .who-following{
                 display:inline-block;
                 margin:5px;
@@ -246,6 +265,10 @@ $color-add: #00b488;
 
 .clear{
   clear:both;
+}
+
+hr{
+  color:#cacaca;
 }
 
 @media screen and (max-width: 767px) {

@@ -753,74 +753,93 @@ hr {
   margin-top: 70px;
   width: 100%;
   display: inline-block; }
-  .page-content .top .content .left {
-    float: left;
-    text-align: center;
-    margin-bottom: 40px; }
-    .page-content .top .content .left .avatar-container {
-      display: inline-block; }
-      .page-content .top .content .left .avatar-container .profile-avatar {
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-        max-height: 300px; }
-      .page-content .top .content .left .avatar-container .edit-buttons {
+  .page-content .top .content {
+    display: inline-block; }
+    .page-content .top .content .left {
+      float: left;
+      text-align: center;
+      margin-bottom: 40px; }
+      .page-content .top .content .left .avatar-container {
+        display: inline-block; }
+        .page-content .top .content .left .avatar-container #image-trigger {
+          display: inline-block; }
+        .page-content .top .content .left .avatar-container .profile-avatar {
+          display: block;
+          margin: 0 auto;
+          max-width: 100%;
+          max-height: 300px; }
+        .page-content .top .content .left .avatar-container .edit-buttons {
+          list-style: none;
+          text-align: center;
+          position: relative;
+          bottom: 32px;
+          margin: 0;
+          background: rgba(255, 255, 255, 0.7);
+          padding: 5px; }
+          .page-content .top .content .left .avatar-container .edit-buttons li {
+            display: inline;
+            margin-left: 15px; }
+            .page-content .top .content .left .avatar-container .edit-buttons li a {
+              color: #3F3F3F; }
+            .page-content .top .content .left .avatar-container .edit-buttons li a:hover {
+              color: #747474; }
+      .page-content .top .content .left .full-name {
+        text-align: center;
+        font-size: 24px; }
+      .page-content .top .content .left .links {
         list-style: none;
         text-align: center;
-        position: relative;
-        bottom: 32px;
-        margin: 0;
-        background: rgba(255, 255, 255, 0.7);
-        padding: 5px; }
-        .page-content .top .content .left .avatar-container .edit-buttons li {
+        margin-top: 10px; }
+        .page-content .top .content .left .links .link {
           display: inline;
-          margin-left: 15px; }
-          .page-content .top .content .left .avatar-container .edit-buttons li a {
-            color: #3F3F3F; }
-          .page-content .top .content .left .avatar-container .edit-buttons li a:hover {
-            color: #747474; }
-    .page-content .top .content .left .full-name {
-      text-align: center;
-      font-size: 24px; }
-    .page-content .top .content .left .links {
-      list-style: none;
-      text-align: center;
-      margin-top: 10px; }
-      .page-content .top .content .left .links .link {
-        display: inline;
-        margin-left: 10px; }
-    .page-content .top .content .left .rating-container {
-      text-align: center; }
-      .page-content .top .content .left .rating-container .rating-input {
-        text-align: center;
+          margin-left: 10px; }
+      .page-content .top .content .left .rating-container {
+        text-align: center; }
+        .page-content .top .content .left .rating-container .rating-input {
+          text-align: center;
+          display: inline-block; }
+          .page-content .top .content .left .rating-container .rating-input i {
+            font-size: 24px; }
+          .page-content .top .content .left .rating-container .rating-input i:hover {
+            cursor: pointer; }
+    .page-content .top .content .mid .block {
+      padding: 5px;
+      border: solid 1px #cacaca;
+      margin-bottom: 30px; }
+      .page-content .top .content .mid .block h4 {
+        margin-top: 0; }
+      .page-content .top .content .mid .block .skills {
+        list-style: none;
+        text-align: center; }
+        .page-content .top .content .mid .block .skills .skill {
+          margin-top: 10px; }
+    .page-content .top .content .right .block {
+      padding: 5px;
+      border: solid 1px #cacaca;
+      margin-bottom: 20px; }
+      .page-content .top .content .right .block a {
+        height: 100%;
+        width: 100%;
         display: inline-block; }
-        .page-content .top .content .left .rating-container .rating-input i {
-          font-size: 24px; }
-        .page-content .top .content .left .rating-container .rating-input i:hover {
-          cursor: pointer; }
-  .page-content .top .content .mid .block {
-    margin-bottom: 30px; }
-    .page-content .top .content .mid .block h4 {
-      margin-top: 0; }
-    .page-content .top .content .mid .block .skills {
-      list-style: none;
-      text-align: center; }
-  .page-content .top .content .right .block h4 {
-    margin-top: 0; }
-  .page-content .top .content .right .block .wrapper .followers, .page-content .top .content .right .block .wrapper .following {
-    list-style: none; }
-    .page-content .top .content .right .block .wrapper .followers .follower, .page-content .top .content .right .block .wrapper .followers .who-following, .page-content .top .content .right .block .wrapper .following .follower, .page-content .top .content .right .block .wrapper .following .who-following {
-      display: inline-block;
-      margin: 5px; }
-      .page-content .top .content .right .block .wrapper .followers .follower .avatar, .page-content .top .content .right .block .wrapper .followers .who-following .avatar, .page-content .top .content .right .block .wrapper .following .follower .avatar, .page-content .top .content .right .block .wrapper .following .who-following .avatar {
-        display: inline-block;
-        background-size: cover;
-        background-position-x: center;
-        background-position-y: center;
-        width: 40px;
-        height: 40px;
-        max-width: 40px;
-        max-height: 40px; }
+        .page-content .top .content .right .block a h4 {
+          margin-top: 0; }
+      .page-content .top .content .right .block .wrapper {
+        width: 100%; }
+        .page-content .top .content .right .block .wrapper .followers, .page-content .top .content .right .block .wrapper .following {
+          list-style: none;
+          margin: 0; }
+          .page-content .top .content .right .block .wrapper .followers .follower, .page-content .top .content .right .block .wrapper .followers .who-following, .page-content .top .content .right .block .wrapper .following .follower, .page-content .top .content .right .block .wrapper .following .who-following {
+            display: inline-block;
+            margin: 5px; }
+            .page-content .top .content .right .block .wrapper .followers .follower .avatar, .page-content .top .content .right .block .wrapper .followers .who-following .avatar, .page-content .top .content .right .block .wrapper .following .follower .avatar, .page-content .top .content .right .block .wrapper .following .who-following .avatar {
+              display: inline-block;
+              background-size: cover;
+              background-position-x: center;
+              background-position-y: center;
+              width: 40px;
+              height: 40px;
+              max-width: 40px;
+              max-height: 40px; }
   .page-content .top .showoff-section .block .projects, .page-content .top .showoff-section .block .portfolio {
     list-style: none; }
     .page-content .top .showoff-section .block .projects li, .page-content .top .showoff-section .block .portfolio li {
@@ -902,6 +921,9 @@ hr {
 
 .clear {
   clear: both; }
+
+hr {
+  color: #cacaca; }
 
 @media screen and (max-width: 767px) {
   .block {

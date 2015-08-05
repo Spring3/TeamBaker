@@ -49,7 +49,7 @@
         <div class="content">
           <div class="left col-xs-12 col-sm-4">
             <div class="avatar-container">
-              <img class="profile-avatar" src="../img/profile_avatar.jpg">
+              <a id="image-trigger" href="#"><img class="profile-avatar" src="../img/profile_avatar.jpg"></a>
               <ul class="edit-buttons">
                 <li><a href="#"><i class="fa fa-plus-square"></i></a></li>
                 <li><a href="#"><i class="fa fa-trash"></i></a></li>
@@ -106,19 +106,19 @@
             <div class="block">
               <h4 class="centered">Skills</h4>
               <ul class="skills">
-                <li><a href="#">Programming</a></li>
-                <li><a href="#">English</a></li>
-                <li><a href="#">Team management</a></li>
+                <li class="skill"><a href="#">Programming</a></li>
+                <li class="skill"><a href="#">English</a></li>
+                <li class="skill"><a href="#">Team management</a></li>
               </ul>
             </div>
 
           </div>
 
-          <div class="right col-xs-12 col-sm-3">
+          <div class="right col-xs-6 col-xs-offset-3 col-sm-offset-0 col-sm-3">
             <div class="block">
-              <h4>85 Followers</h4>
+              <a href="../html/search.html"><h4 class="centered">85 Followers</h4></a>
               <div class="wrapper">
-                <ul class="followers">
+                <ul class="followers centered">
                   <li class="follower">
                     <a class="avatar" href="profile.html" style="background-image: url('../img/smokey.gif');"></a>
                   </li>
@@ -131,15 +131,27 @@
                   <li class="follower">
                     <a class="avatar" href="profile.html" style="background-image: url('../img/dust.gif');"></a>
                   </li>
+                  <li class="follower">
+                    <a class="avatar" href="profile.html" style="background-image: url('../img/smokey.gif');"></a>
+                  </li>
+                  <li class="follower">
+                    <a class="avatar" href="profile.html" style="background-image: url('../img/emblem_dark.png');"></a>
+                  </li>
                 </ul>
               </div>
             </div>
             <div class="block">
-              <h4> 25 Following</h4>
+              <a href="../html/search.html"><h4 class="centered"> 25 Following</h4></a> <!-- search query should be some kind of %following: @username -->
               <div class="wrapper">
-                <ul class="following">
+                <ul class="following centered">
                   <li class="who-following">
-                    <a class="avatar" href="profile.html"></a>
+                    <a class="avatar" href="profile.html" style="background-image: url('../img/smokey.gif');"></a>
+                  </li>
+                  <li class="who-following">
+                    <a class="avatar" href="profile.html" style="background-image: url('../img/author-m.jpg');"></a>
+                  </li>
+                  <li class="who-following">
+                    <a class="avatar" href="profile.html" style="background-image: url('../img/muse.jpg');"></a>
                   </li>
                 </ul>
               </div>
