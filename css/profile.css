@@ -760,15 +760,15 @@ hr {
         position: relative;
         bottom: 32px;
         margin: 0;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(255, 255, 255, 0.7);
         padding: 5px; }
         .page-content .top .content .left .avatar-container .edit-buttons li {
           display: inline;
           margin-left: 15px; }
           .page-content .top .content .left .avatar-container .edit-buttons li a {
-            color: white; }
+            color: #3F3F3F; }
           .page-content .top .content .left .avatar-container .edit-buttons li a:hover {
-            color: white; }
+            color: #747474; }
     .page-content .top .content .left .full-name {
       text-align: center;
       font-size: 24px; }
@@ -814,25 +814,40 @@ hr {
     float: right; }
     .page-content .top .content .right h4 {
       margin-top: 0; }
-  .page-content .bottom .comments {
-    display: inline-block; }
-    .page-content .bottom .comments .comment-form {
-      max-width: 650px;
-      margin: 0 auto; }
-    .page-content .bottom .comments .comment {
-      margin: 0 auto;
+  .page-content .top .showoff-section .block .projects, .page-content .top .showoff-section .block .portfolio {
+    list-style: none; }
+    .page-content .top .showoff-section .block .projects li, .page-content .top .showoff-section .block .portfolio li {
       display: inline-block; }
-      .page-content .bottom .comments .comment .author-image {
+      .page-content .top .showoff-section .block .projects li .project, .page-content .top .showoff-section .block .portfolio li .project {
+        display: inline-block; }
+        .page-content .top .showoff-section .block .projects li .project img, .page-content .top .showoff-section .block .portfolio li .project img {
+          max-width: 300px; }
+        .page-content .top .showoff-section .block .projects li .project .name, .page-content .top .showoff-section .block .portfolio li .project .name {
+          position: relative;
+          bottom: 32px;
+          background: rgba(255, 255, 255, 0.7);
+          padding: 5px; }
+      .page-content .top .showoff-section .block .projects li .portfolio-item, .page-content .top .showoff-section .block .portfolio li .portfolio-item {
         display: inline-block;
-        float: left;
-        margin: 0 15px; }
-        .page-content .bottom .comments .comment .author-image .img-circle {
-          min-width: 100px;
-          max-width: 150px;
-          float: left;
-          display: inline-block; }
-      .page-content .bottom .comments .comment .content {
-        overflow: hidden; }
+        max-width: 300px;
+        background-color: white;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) !important;
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) !important;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) !important;
+        padding: 5px; }
+        .page-content .top .showoff-section .block .projects li .portfolio-item img, .page-content .top .showoff-section .block .portfolio li .portfolio-item img {
+          max-width: 300px;
+          position: relative;
+          left: -5px;
+          top: -5px; }
+        .page-content .top .showoff-section .block .projects li .portfolio-item .name, .page-content .top .showoff-section .block .portfolio li .portfolio-item .name {
+          position: relative;
+          font-size: 20px;
+          bottom: 40px;
+          background: rgba(255, 255, 255, 0.7); }
+        .page-content .top .showoff-section .block .projects li .portfolio-item .aim, .page-content .top .showoff-section .block .projects li .portfolio-item .role, .page-content .top .showoff-section .block .projects li .portfolio-item .skills, .page-content .top .showoff-section .block .projects li .portfolio-item .exp, .page-content .top .showoff-section .block .projects li .portfolio-item .link, .page-content .top .showoff-section .block .portfolio li .portfolio-item .aim, .page-content .top .showoff-section .block .portfolio li .portfolio-item .role, .page-content .top .showoff-section .block .portfolio li .portfolio-item .skills, .page-content .top .showoff-section .block .portfolio li .portfolio-item .exp, .page-content .top .showoff-section .block .portfolio li .portfolio-item .link {
+          font-size: 14px;
+          text-align: both; }
 
 #nav.affix {
   position: relative;
@@ -845,5 +860,9 @@ hr {
 
 .clear {
   clear: both; }
+
+@media screen and (max-width: 767px) {
+  .block {
+    margin-bottom: 20px; } }
 
 /*# sourceMappingURL=profile.css.map */
