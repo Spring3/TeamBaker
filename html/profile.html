@@ -47,7 +47,7 @@
     <div class="page-content">
       <div class="top col-xs-12">
         <div class="content">
-          <div class="left col-xs-12 col-sm-3">
+          <div class="left col-xs-12 col-sm-4">
             <div class="avatar-container">
               <img class="profile-avatar" src="../img/profile_avatar.jpg">
               <ul class="edit-buttons">
@@ -71,7 +71,7 @@
             </div>
 
           </div>
-          <div class="mid col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-4">
+          <div class="mid col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-5">
 
             <div class="block centered">
               <h4>Basic info</h4>
@@ -95,6 +95,11 @@
                     <p class="key">Age:</p>
                     <p class="value">23</p>
                 </div>
+                <div class="clear"></div>
+                <div class="info">
+                  <p class="key">Status:</p>
+                  <p class="value">Busy</p>
+                </div>
               </div>
             </div>
             <div class="clear"></div>
@@ -108,25 +113,40 @@
             </div>
 
           </div>
-          <div class="right col-xs-12 col-sm-5">
-            <h4 class="centered">Notifications</h4>
-            <div class="panel panel-hashtag col-xs-12 col-sm-12 col-lg-4 col-lg-offset-1">
-              <div class="panel-heading">
-                <h3 class="panel-title">Notification</h3>
+
+          <div class="right col-xs-12 col-sm-3">
+            <div class="block">
+              <h4>85 Followers</h4>
+              <div class="wrapper">
+                <ul class="followers">
+                  <li class="follower">
+                    <a class="avatar" href="profile.html" style="background-image: url('../img/smokey.gif');"></a>
+                  </li>
+                  <li class="follower">
+                    <a class="avatar" href="profile.html" style="background-image: url('../img/vd.jpg');"></a>
+                  </li>
+                  <li class="follower">
+                    <a class="avatar" href="profile.html" style="background-image: url('../img/particles.gif');"></a>
+                  </li>
+                  <li class="follower">
+                    <a class="avatar" href="profile.html" style="background-image: url('../img/dust.gif');"></a>
+                  </li>
+                </ul>
               </div>
-              <div class="panel-body">
-                <div class="info-container">
-                  <ul class="hashtag-params">
-                    <li class="param">
-                      <span>Notification message here.</span>
-                    </li>
-                  </ul>
-                </div>
+            </div>
+            <div class="block">
+              <h4> 25 Following</h4>
+              <div class="wrapper">
+                <ul class="following">
+                  <li class="who-following">
+                    <a class="avatar" href="profile.html"></a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="clear"></div>
-          <section class="showoff-section col-xs-12 col-sm-8 col-sm-offset-2">
+
+          <section class="showoff-section col-xs-12 col-sm-8">
             <div class="block centered">
               <h4>Projects</h4>
               <ul class="projects">
@@ -153,13 +173,38 @@
               <ul class="portfolio">
                 <li>
                   <div class="portfolio-item">
-                    <img src="../img/proj_img-3.jpg"></img>
-                    <p class="name">TeamBaker</p>
-                    <p class="role">Role: CEO, developer</p>
-                    <p class="skills">Skills: Scss, Bootstrap, CSS, HTML, JS</p>
-                    <p class="exp">Exp: 2 months</p>
-                    <p class="aim">Aim: Make it easier for people to find themselves a project.</p>
-                    <p class="link"><a href="../index.html">Link</a></p>
+                    <div class="image-wrapper">
+                      <a href="../html/project.html">
+                        <img src="../img/proj_img-3.jpg"></img>
+                        <p class="name">TeamBaker</p>
+                      </a>
+                    </div>
+                    <div class="description-sector">
+                      <div class="wrapper">
+                        <div class="info first">
+                          <p class="key">Role:</p>
+                          <p class="value role">CEO, developer</p>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="info">
+                          <p class="key">Skills:</p>
+                          <p class="value skills">Scss, Bootstrap, CSS, HTML, JS</p>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="info">
+                          <p class="key">Exp:</p>
+                          <p class="value exp"> 2 months</p>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="info">
+                          <p class="key">Aim:</p>
+                          <p class="value aim">Make it easier for people to find themselves a project.</p>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="info">
+                          <p class="link"><a href="../index.html">Link</a></p>
+                        </div>
+                    </div>
                   </div>
                 </li>
               </ul>
@@ -354,6 +399,7 @@
     <script src="../js/formplate.min.js"></script>
     <link href="../css/formplate.css" rel="stylesheet">
     <script src="../js/bootstrap-rating-input.min.js"></script>
+    <script src="../js/readmore.min.js"></script>
     <script src="../js/profile.js"></script>
   </body>
 </html>

@@ -99,36 +99,37 @@ $color-add: #00b488;
           h4{
             margin-top: 0;
           }
-          .wrapper{
-            display:inline-block;
-            .info{
-              display: block;
-              width:100%;
-              height:30px;
-              margin: 0 auto;
-
-              .key{
-                float:left;
-                width: 80px;
-                display: inline-block;
-              }
-              .value{
-                float:left;
-                display:inline-block;
-                word-break: break-all;
-              }
-            }
-          }
           .skills{
             list-style:none;
             text-align: center;
           }
         }
       }
+
       .right{
-        float:right;
-        h4{
-          margin-top:0;
+        .block{
+          h4{
+            margin-top:0;
+          }
+          .wrapper{
+            .followers, .following{
+              list-style:none;
+              .follower, .who-following{
+                display:inline-block;
+                margin:5px;
+                .avatar{
+                  display:inline-block;
+                  background-size: cover;
+                  background-position-x: center;
+                  background-position-y: center;
+                  width: 40px;
+                  height: 40px;
+                  max-width: 40px;
+                  max-height: 40px;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -143,45 +144,91 @@ $color-add: #00b488;
             display:inline-block;
             .project{
               display:inline-block;
+              position:relative;
+              margin: 5px 5px;
+              a{
+                display:inline-block;
+              }
               img{
                 max-width:300px;
               }
               .name{
-                position: relative;
-                bottom: 32px;
+                position: absolute;
+                bottom: 0px;
                 background: rgba(255, 255, 255, 0.7);
                 padding: 5px;
+                width:100%;
+                margin:0;
               }
             }
 
             .portfolio-item{
               display:inline-block;
+              position:relative;
               max-width:300px;
               background-color: white;
               -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) !important;
               -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) !important;
               box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) !important;
-              padding: 5px;
-              img{
-                max-width:300px;
-                position: relative;
-                left: -5px;
-                top: -5px;
-              }
-              .name{
+              .image-wrapper{
                 position:relative;
-                font-size:20px;
-                bottom: 40px;
-                background: rgba(255, 255, 255, 0.7);
+                display:inline-block;
+                left:0px;
+                top:0px;
+                img{
+                  max-width:300px;
+                  position: relative;
+                  left: 0px;
+                  top: 0px;
+                }
+                .name{
+                  position: absolute;
+                  font-size:20px;
+                  bottom: -11px;
+                  left:0px;
+                  background: rgba(255, 255, 255, 0.7);
+                  width:100%;
+                }
+
               }
               .aim, .role, .skills, .exp, .link{
                 font-size:14px;
                 text-align:both;
               }
+              .info.first{
+                margin-top:20px;
+              }
+              .key{
+                font-size:14px;
+              }
+              .aim{
+                width:200px;
+              }
             }
           }
         }
       }
+    }
+  }
+}
+
+.wrapper{
+  display:inline-block;
+  .info{
+    display: block;
+    width:100%;
+    height:100%;
+    margin: 0 auto;
+
+    .key{
+      float:left;
+      width: 80px;
+      display: inline-block;
+    }
+    .value{
+      float:left;
+      display:inline-block;
+      word-break: break-all;
     }
   }
 }
