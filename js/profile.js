@@ -41,8 +41,8 @@ $(document).ready(function(){
 
   $('body').formplate();
   $('.description-sector').readmore({
-    moreLink: '<a href="#" class="morebtn button grey square">Description<i class="fa fa-caret-down"></i></i></a>',
-    lessLink: '<a href="#" class="lessbtn button grey square">Hide</a>',
+    moreLink: '<a href="#" class="morebtn button black square">Description<i class="fa fa-caret-down"></i></i></a>',
+    lessLink: '<a href="#" class="lessbtn button line-black square">Hide</a>',
     speed: 900,
     collapsedHeight:0
   });
