@@ -38,6 +38,7 @@ $('#update_form').click(function(){
 });
 
 $(document).ready(function(){
+  refreshIndexes();
 
   $('body').formplate();
   $('.description-sector').readmore({
@@ -47,4 +48,32 @@ $(document).ready(function(){
     collapsedHeight:0
   });
 
+  initMasonry();
 });
+
+function initMasonry(){
+  var $grid = $('.portfolio');
+  $grid.masonry({
+    // set itemSelector so .grid-sizer is not used in layout
+    itemSelector: '.portfolio-item',
+    // use element for option
+    columnWidth: '.portfolio-item',
+    gutter: 5,
+    percentPosition: false,
+    isOriginTop: true,
+    isResizeBound: true,
+    isFitWidth: true,
+    isAnimated: true,
+    animationOptions: {
+      duration: 800,
+      easing: 'linear',
+      queue: false
+    }
+  });
+}
+
+function refreshIndexes(){
+  $('.portfolio-item').each(function(index){
+    $(this).css('z-index', 999-index);
+  });
+}

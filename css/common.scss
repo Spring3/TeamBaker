@@ -64,7 +64,18 @@ a:hover{
 .underlined{
   position: relative;
   color:$color-smoothe;
+}
 
+.opacity-transistion{
+  opacity: .6;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+
+}
+.opacity-transistion:hover{
+  opacity:1;
 }
 
 .underlined:after{

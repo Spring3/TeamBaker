@@ -39,6 +39,16 @@ a:hover {
   position: relative;
   color: #5f5f5f; }
 
+.opacity-transistion {
+  opacity: .6;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out; }
+
+.opacity-transistion:hover {
+  opacity: 1; }
+
 .underlined:after {
   display: block;
   position: absolute;
@@ -779,15 +789,15 @@ hr {
           bottom: 4px;
           margin: 0;
           width: 100%;
-          background: rgba(255, 255, 255, 0.7);
+          background: rgba(56, 56, 56, 0.7);
           padding: 5px; }
           .page-content .top .content .left .avatar-container .edit-buttons li {
             display: inline;
             margin-left: 15px; }
             .page-content .top .content .left .avatar-container .edit-buttons li a {
-              color: #3F3F3F; }
+              color: #cacaca; }
             .page-content .top .content .left .avatar-container .edit-buttons li a:hover {
-              color: #747474; }
+              color: white; }
       .page-content .top .content .left .full-name {
         text-align: center;
         font-size: 24px;
@@ -856,13 +866,15 @@ hr {
               max-width: 40px;
               max-height: 40px; }
   .page-content .top .showoff-section .block .projects, .page-content .top .showoff-section .block .portfolio {
-    list-style: none; }
+    list-style: none;
+    margin: 0 auto; }
     .page-content .top .showoff-section .block .projects li, .page-content .top .showoff-section .block .portfolio li {
       display: inline-block; }
       .page-content .top .showoff-section .block .projects li .project, .page-content .top .showoff-section .block .portfolio li .project {
         display: inline-block;
         position: relative;
-        margin: 5px 5px; }
+        margin: 5px 5px;
+        background-color: white; }
         .page-content .top .showoff-section .block .projects li .project a, .page-content .top .showoff-section .block .portfolio li .project a {
           display: inline-block; }
         .page-content .top .showoff-section .block .projects li .project img, .page-content .top .showoff-section .block .portfolio li .project img {
@@ -896,7 +908,8 @@ hr {
             bottom: -11px;
             left: 0px;
             background: rgba(255, 255, 255, 0.7);
-            width: 100%; }
+            width: 100%;
+            padding: 5px; }
         .page-content .top .showoff-section .block .projects li .portfolio-item .aim, .page-content .top .showoff-section .block .projects li .portfolio-item .role, .page-content .top .showoff-section .block .projects li .portfolio-item .skills, .page-content .top .showoff-section .block .projects li .portfolio-item .exp, .page-content .top .showoff-section .block .projects li .portfolio-item .link, .page-content .top .showoff-section .block .portfolio li .portfolio-item .aim, .page-content .top .showoff-section .block .portfolio li .portfolio-item .role, .page-content .top .showoff-section .block .portfolio li .portfolio-item .skills, .page-content .top .showoff-section .block .portfolio li .portfolio-item .exp, .page-content .top .showoff-section .block .portfolio li .portfolio-item .link {
           font-size: 14px;
           text-align: both; }

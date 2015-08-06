@@ -26,6 +26,7 @@ $color-add: #00b488;
   color: $color-linkedIn;
 }
 
+
 .page-content{
   margin-top: 70px;
   width: 100%;
@@ -59,16 +60,16 @@ $color-add: #00b488;
             bottom: 4px;
             margin:0;
             width:100%;
-            background: rgba(255, 255, 255, 0.7);
+            background: rgba(56,56,56,0.7);
             padding: 5px;
             li{
               display:inline;
               margin-left:15px;
               a{
-                color: $color-main-hover;
+                color: $color-smoothe-white;
               }
               a:hover{
-                color: $color-main;
+                color: white;
               }
             }
 
@@ -174,12 +175,14 @@ $color-add: #00b488;
         }
         .projects, .portfolio{
           list-style:none;
+          margin: 0 auto;
           li{
             display:inline-block;
             .project{
               display:inline-block;
               position:relative;
               margin: 5px 5px;
+              background-color:white;
               a{
                 display:inline-block;
               }
@@ -220,6 +223,7 @@ $color-add: #00b488;
                   left:0px;
                   background: rgba(255, 255, 255, 0.7);
                   width:100%;
+                  padding:5px;
                 }
 
               }
