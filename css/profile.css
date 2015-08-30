@@ -770,7 +770,10 @@ hr {
       text-align: center;
       margin-bottom: 40px;
       background-color: #383838;
-      padding: 40px 20px; }
+      padding: 40px 20px;
+      -webkit-box-shadow: inset 0px 0px 21px -6px black;
+      -moz-box-shadow: inset 0px 0px 21px -6px black;
+      box-shadow: inset 0px 0px 21px -4px black; }
       .page-content .top .content .left .avatar-container {
         display: inline-block;
         position: relative;
@@ -819,6 +822,18 @@ hr {
             font-size: 24px; }
           .page-content .top .content .left .rating-container .rating-input i:hover {
             cursor: pointer; }
+      .page-content .top .content .left .notifications {
+        margin-top: 50px;
+        display: inline-block; }
+        .page-content .top .content .left .notifications .panel {
+          position: relative; }
+      .page-content .top .content .left div.hidden-lg {
+        position: relative; }
+        .page-content .top .content .left div.hidden-lg .counter {
+          color: white !important;
+          position: relative;
+          top: -20px;
+          right: -20px; }
     .page-content .top .content .mid .block {
       padding: 5px;
       border: solid 1px #cacaca;
@@ -826,7 +841,8 @@ hr {
       -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) !important;
       -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) !important;
       box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) !important;
-      background-color: white; }
+      background-color: white;
+      position: relative; }
       .page-content .top .content .mid .block h4 {
         margin-top: 0; }
       .page-content .top .content .mid .block .skills {
@@ -865,60 +881,68 @@ hr {
               height: 40px;
               max-width: 40px;
               max-height: 40px; }
-  .page-content .top .showoff-section .block .projects, .page-content .top .showoff-section .block .portfolio {
-    list-style: none;
-    margin: 0 auto; }
-    .page-content .top .showoff-section .block .projects li, .page-content .top .showoff-section .block .portfolio li {
-      display: inline-block; }
-      .page-content .top .showoff-section .block .projects li .project, .page-content .top .showoff-section .block .portfolio li .project {
-        display: inline-block;
-        position: relative;
-        margin: 5px 5px;
-        background-color: white; }
-        .page-content .top .showoff-section .block .projects li .project a, .page-content .top .showoff-section .block .portfolio li .project a {
-          display: inline-block; }
-        .page-content .top .showoff-section .block .projects li .project img, .page-content .top .showoff-section .block .portfolio li .project img {
-          max-width: 300px; }
-        .page-content .top .showoff-section .block .projects li .project .name, .page-content .top .showoff-section .block .portfolio li .project .name {
-          position: absolute;
-          bottom: 0px;
-          background: rgba(255, 255, 255, 0.7);
-          padding: 5px;
-          width: 100%;
-          margin: 0; }
-      .page-content .top .showoff-section .block .projects li .portfolio-item, .page-content .top .showoff-section .block .portfolio li .portfolio-item {
-        display: inline-block;
-        position: relative;
-        max-width: 300px;
-        background-color: white;
-        margin: 5px; }
-        .page-content .top .showoff-section .block .projects li .portfolio-item .image-wrapper, .page-content .top .showoff-section .block .portfolio li .portfolio-item .image-wrapper {
-          position: relative;
+  .page-content .top .showoff-section .block {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) !important;
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) !important;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) !important;
+    background-color: white;
+    padding: 20px 20px;
+    margin: 20px auto;
+    position: relative; }
+    .page-content .top .showoff-section .block .projects, .page-content .top .showoff-section .block .portfolio {
+      list-style: none;
+      margin: 0 auto; }
+      .page-content .top .showoff-section .block .projects li, .page-content .top .showoff-section .block .portfolio li {
+        display: inline-block; }
+        .page-content .top .showoff-section .block .projects li .project, .page-content .top .showoff-section .block .portfolio li .project {
           display: inline-block;
-          left: 0px;
-          top: 0px; }
-          .page-content .top .showoff-section .block .projects li .portfolio-item .image-wrapper img, .page-content .top .showoff-section .block .portfolio li .portfolio-item .image-wrapper img {
-            max-width: 300px;
+          position: relative;
+          margin: 5px 5px;
+          background-color: white; }
+          .page-content .top .showoff-section .block .projects li .project a, .page-content .top .showoff-section .block .portfolio li .project a {
+            display: inline-block; }
+          .page-content .top .showoff-section .block .projects li .project img, .page-content .top .showoff-section .block .portfolio li .project img {
+            max-width: 300px; }
+          .page-content .top .showoff-section .block .projects li .project .name, .page-content .top .showoff-section .block .portfolio li .project .name {
+            position: absolute;
+            bottom: 0px;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 5px;
+            width: 100%;
+            margin: 0; }
+        .page-content .top .showoff-section .block .projects li .portfolio-item, .page-content .top .showoff-section .block .portfolio li .portfolio-item {
+          display: inline-block;
+          position: relative;
+          max-width: 300px;
+          background-color: white;
+          margin: 5px; }
+          .page-content .top .showoff-section .block .projects li .portfolio-item .image-wrapper, .page-content .top .showoff-section .block .portfolio li .portfolio-item .image-wrapper {
             position: relative;
+            display: inline-block;
             left: 0px;
             top: 0px; }
-          .page-content .top .showoff-section .block .projects li .portfolio-item .image-wrapper .name, .page-content .top .showoff-section .block .portfolio li .portfolio-item .image-wrapper .name {
-            position: absolute;
-            font-size: 20px;
-            bottom: -11px;
-            left: 0px;
-            background: rgba(255, 255, 255, 0.7);
-            width: 100%;
-            padding: 5px; }
-        .page-content .top .showoff-section .block .projects li .portfolio-item .aim, .page-content .top .showoff-section .block .projects li .portfolio-item .role, .page-content .top .showoff-section .block .projects li .portfolio-item .skills, .page-content .top .showoff-section .block .projects li .portfolio-item .exp, .page-content .top .showoff-section .block .projects li .portfolio-item .link, .page-content .top .showoff-section .block .portfolio li .portfolio-item .aim, .page-content .top .showoff-section .block .portfolio li .portfolio-item .role, .page-content .top .showoff-section .block .portfolio li .portfolio-item .skills, .page-content .top .showoff-section .block .portfolio li .portfolio-item .exp, .page-content .top .showoff-section .block .portfolio li .portfolio-item .link {
-          font-size: 14px;
-          text-align: both; }
-        .page-content .top .showoff-section .block .projects li .portfolio-item .info.first, .page-content .top .showoff-section .block .portfolio li .portfolio-item .info.first {
-          margin-top: 20px; }
-        .page-content .top .showoff-section .block .projects li .portfolio-item .key, .page-content .top .showoff-section .block .portfolio li .portfolio-item .key {
-          font-size: 14px; }
-        .page-content .top .showoff-section .block .projects li .portfolio-item .aim, .page-content .top .showoff-section .block .portfolio li .portfolio-item .aim {
-          width: 200px; }
+            .page-content .top .showoff-section .block .projects li .portfolio-item .image-wrapper img, .page-content .top .showoff-section .block .portfolio li .portfolio-item .image-wrapper img {
+              max-width: 300px;
+              position: relative;
+              left: 0px;
+              top: 0px; }
+            .page-content .top .showoff-section .block .projects li .portfolio-item .image-wrapper .name, .page-content .top .showoff-section .block .portfolio li .portfolio-item .image-wrapper .name {
+              position: absolute;
+              font-size: 20px;
+              bottom: -11px;
+              left: 0px;
+              background: rgba(255, 255, 255, 0.7);
+              width: 100%;
+              padding: 5px; }
+          .page-content .top .showoff-section .block .projects li .portfolio-item .aim, .page-content .top .showoff-section .block .projects li .portfolio-item .role, .page-content .top .showoff-section .block .projects li .portfolio-item .skills, .page-content .top .showoff-section .block .projects li .portfolio-item .exp, .page-content .top .showoff-section .block .projects li .portfolio-item .link, .page-content .top .showoff-section .block .portfolio li .portfolio-item .aim, .page-content .top .showoff-section .block .portfolio li .portfolio-item .role, .page-content .top .showoff-section .block .portfolio li .portfolio-item .skills, .page-content .top .showoff-section .block .portfolio li .portfolio-item .exp, .page-content .top .showoff-section .block .portfolio li .portfolio-item .link {
+            font-size: 14px;
+            text-align: both; }
+          .page-content .top .showoff-section .block .projects li .portfolio-item .info.first, .page-content .top .showoff-section .block .portfolio li .portfolio-item .info.first {
+            margin-top: 20px; }
+          .page-content .top .showoff-section .block .projects li .portfolio-item .key, .page-content .top .showoff-section .block .portfolio li .portfolio-item .key {
+            font-size: 14px; }
+          .page-content .top .showoff-section .block .projects li .portfolio-item .aim, .page-content .top .showoff-section .block .portfolio li .portfolio-item .aim {
+            width: 200px; }
 
 .wrapper {
   display: inline-block; }
@@ -950,6 +974,18 @@ hr {
 
 hr {
   border: solid 1px #cacaca; }
+
+.btn-close {
+  position: absolute;
+  padding: 5px 10px;
+  right: 0px;
+  top: 0px; }
+
+.btn-edit {
+  position: absolute;
+  padding: 5px 10px;
+  right: 5px;
+  top: 0px; }
 
 @media screen and (max-width: 767px) {
   .block {
